@@ -1,0 +1,138 @@
+{
+  "Acne and Rosacea Photos": {
+    "display_name": "Mụn trứng cá và trứng cá đỏ",
+    "related_disease_ids": [
+      "acne",
+      "rosacea"
+    ]
+  },
+  "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions": {
+    "display_name": "Dày sừng ánh sáng, ung thư tế bào đáy và tổn thương ác tính khác",
+    "related_disease_ids": [
+      "actinic-keratoses",
+      "non-melanoma-skin-cancer"
+    ]
+  },
+  "Atopic Dermatitis Photos": {
+    "display_name": "Viêm da cơ địa",
+    "related_disease_ids": [
+      "atopic-dermatitis"
+    ]
+  },
+  "Bullous Disease Photos": {
+    "display_name": "Nhóm bệnh bóng nước",
+    "related_disease_ids": [
+      "pemphigus-vulgaris",
+      "bullous-pemphigoid",
+      "epidermolysis-bullosa"
+    ]
+  },
+  "Cellulitis Impetigo and other Bacterial Infections": {
+    "display_name": "Viêm mô tế bào, chốc lở và nhiễm khuẩn khác",
+    "related_disease_ids": [
+      "cellulitis",
+      "impetigo"
+    ]
+  },
+  "Eczema Photos": {
+    "display_name": "Nhóm chàm / eczema",
+    "related_disease_ids": [
+      "atopic-dermatitis",
+      "discoid-eczema",
+      "pompholyx"
+    ]
+  },
+  "Exanthems and Drug Eruptions": {
+    "display_name": "Nhóm ban phát và phát ban do thuốc",
+    "related_disease_ids": []
+  },
+  "Hair Loss Photos Alopecia and other Hair Diseases": {
+    "display_name": "Rụng tóc và các bệnh tóc khác",
+    "related_disease_ids": [
+      "alopecia-areata"
+    ]
+  },
+  "Herpes HPV and other STDs Photos": {
+    "display_name": "Herpes, HPV và bệnh lây truyền qua đường tình dục khác",
+    "related_disease_ids": []
+  },
+  "Light Diseases and Disorders of Pigmentation": {
+    "display_name": "Bệnh liên quan ánh sáng và rối loạn sắc tố",
+    "related_disease_ids": [
+      "vitiligo"
+    ]
+  },
+  "Lupus and other Connective Tissue diseases": {
+    "display_name": "Lupus và bệnh mô liên kết khác",
+    "related_disease_ids": []
+  },
+  "Melanoma Skin Cancer Nevi and Moles": {
+    "display_name": "Nhóm gồm ung thư hắc tố, ung thư da, nơ vi và nốt ruồi",
+    "related_disease_ids": [
+      "melanoma",
+      "non-melanoma-skin-cancer"
+    ]
+  },
+  "Nail Fungus and other Nail Disease": {
+    "display_name": "Nấm móng và bệnh móng khác",
+    "related_disease_ids": [
+      "fungal-nail-infection"
+    ]
+  },
+  "Poison Ivy Photos and other Contact Dermatitis": {
+    "display_name": "Viêm da do cây độc và viêm da tiếp xúc khác",
+    "related_disease_ids": [
+      "contact-dermatitis"
+    ]
+  },
+  "Psoriasis pictures Lichen Planus and related diseases": {
+    "display_name": "Vảy nến, lichen phẳng và bệnh liên quan",
+    "related_disease_ids": [
+      "psoriasis",
+      "lichen-planus"
+    ]
+  },
+  "Scabies Lyme Disease and other Infestations and Bites": {
+    "display_name": "Ghẻ, bệnh Lyme, nhiễm ký sinh và vết cắn khác",
+    "related_disease_ids": [
+      "scabies"
+    ]
+  },
+  "Seborrheic Keratoses and other Benign Tumors": {
+    "display_name": "Dày sừng tiết bã và các u lành tính khác",
+    "related_disease_ids": []
+  },
+  "Systemic Disease": {
+    "display_name": "Nhóm bệnh hệ thống",
+    "related_disease_ids": []
+  },
+  "Tinea Ringworm Candidiasis and other Fungal Infections": {
+    "display_name": "Nấm da, Candida và nhiễm nấm khác",
+    "related_disease_ids": [
+      "ringworm",
+      "athletes-foot",
+      "pityriasis-versicolor"
+    ]
+  },
+  "Urticaria Hives": {
+    "display_name": "Mề đay",
+    "related_disease_ids": [
+      "hives"
+    ]
+  },
+  "Vascular Tumors": {
+    "display_name": "Nhóm u mạch",
+    "related_disease_ids": []
+  },
+  "Vasculitis Photos": {
+    "display_name": "Nhóm viêm mạch",
+    "related_disease_ids": []
+  },
+  "Warts Molluscum and other Viral Infections": {
+    "display_name": "Mụn cóc, u mềm lây và nhiễm virus khác",
+    "related_disease_ids": [
+      "warts",
+      "molluscum-contagiosum"
+    ]
+  }
+}

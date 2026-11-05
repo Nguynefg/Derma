@@ -1,0 +1,1778 @@
+[
+  {
+    "key": "acanthosis-nigricans",
+    "names": [
+      "Acanthosis nigricans"
+    ],
+    "src": "/assets/library/diseases/acanthosis-nigricans.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acanthosis-nigricans4.jpg",
+    "creator": "Madhero88",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "en:Acanthosis nigricans",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "b32c641bf7e9028e68ff2e79ed57a2557163981ca4c4f0c0da724354f365b3c7"
+  },
+  {
+    "key": "psoriasis",
+    "names": [
+      "Psoriasis"
+    ],
+    "src": "/assets/library/diseases/psoriasis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psoriasis_on_back1.jpg",
+    "creator": "Psoriasis_on_back.jpg: Marnanel\nderivative work: James Heilman, MD (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Psoriasis of the back.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "b48090bc8b835d0d0abe0b73c1f8c1fd8d9b048f7b47ba72ea8f8dcf914a968a"
+  },
+  {
+    "key": "vitiligo",
+    "names": [
+      "Vitiligo"
+    ],
+    "src": "/assets/library/diseases/vitiligo.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vitiligo2.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Vitiligo of the hand in a person with dark skin.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a916aa02f34b2c04c4c913f33242270652da10d80eeedbd80c6c747df7ac5e38"
+  },
+  {
+    "key": "atopic-dermatitis",
+    "names": [
+      "Atopic dermatitis"
+    ],
+    "src": "/assets/library/diseases/atopic-dermatitis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atopy2010.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Atopy of the flexure crease of the elbow.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6bb70ba4bf6818bcd4f10a8c1713945e5fb0f4a801117fcee900aa47939e3cf1"
+  },
+  {
+    "key": "alopecia-areata",
+    "names": [
+      "Alopecia areata"
+    ],
+    "src": "/assets/library/diseases/alopecia-areata.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allopecia_areata.JPG",
+    "creator": "Abbassyma at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Alopecia areata.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f5dcbf776bfca9c0a336f9fa8e059dc05c6a453734f0fb912d30477fe141d8bc"
+  },
+  {
+    "key": "tinea-corporis",
+    "names": [
+      "Tinea corporis"
+    ],
+    "src": "/assets/library/diseases/tinea-corporis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ringworm_on_the_arm,_or_tinea_corporis_due_to_Trichophyton_mentagrophytes_PHIL_2938_lores.jpg",
+    "creator": "CDC/ Dr. Lucille K. Georg",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "ID#:\t2938\nDescription:\tThis patient presented with ringworm on the arm, or tinea corporis due to Trichophyton mentagrophytes.\nThe genus Trichophyton inhabits the soil, humans or animals, and is one of the leading causes of hair, skin and nail infections, or dermatophytosis in humans.\nContent Providers(s):\tCDC/Dr. Lucille K. Georg\nCreation Date:\t1964\n\nCopyright Restrictions:\tNone - This image is in the public domain and thus free of any copyright restrictions. As a matter of courtesy we request that the content provider be credited and notified in any public or private usage of this image.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "637d3a5104923a1ef934479a9a973806ce9fe9569693457eb96a268ce8a2b207"
+  },
+  {
+    "key": "rosacea",
+    "names": [
+      "Rosacea"
+    ],
+    "src": "/assets/library/diseases/rosacea.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosacea.jpg",
+    "creator": "Michael Sand, Daniel Sand, Christina Thrandorf, Volker Paech, Peter Altmeyer, Falk G Bechara",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "description": "Rosacea. Erythema and telangiectasia are seen over the cheeks, nasolabial area and nose. Inflammatory papules and pustules can be observed over the nose. The absence of comedos is a helpful tool to distinguish rosacea from acne.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "fd8ba9584f5dbe4cb8a05acd385905b06cbd895b515d4c8d317891ad5eae84c5"
+  },
+  {
+    "key": "pityriasis-rosea",
+    "names": [
+      "Pityriasis rosea"
+    ],
+    "src": "/assets/library/diseases/pityriasis-rosea.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pityriasisrosa.png",
+    "creator": "James Heilman,MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Pityriasis rosea",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "0d23311e328beca5cad12a3262b5c9c48aad92a3144594f9582823d222549b16"
+  },
+  {
+    "key": "seborrheic-dermatitis",
+    "names": [
+      "Seborrhoeic dermatitis",
+      "Seborrheic dermatitis"
+    ],
+    "src": "/assets/library/diseases/seborrheic-dermatitis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seborrhoeic_dermatitis_highres.jpg",
+    "creator": "Roymishali",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Seborrhoeic dermatitis",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "eb8e5d0344c660e40428b93f31fdd7970387024e47a619b5e4bd1b070d986a10"
+  },
+  {
+    "key": "scabies",
+    "names": [
+      "Scabies"
+    ],
+    "src": "/assets/library/diseases/scabies.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scabies-burrow.jpg",
+    "creator": "Michael Geary",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Close-up photo of a scabies burrow. The large scaly patch at the left is due to scratching. The scabies mite traveled toward the upper right and can be seen at the end of the burrow.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f4fc0f4b996a067d38ed6aee438166f971e120a8b7a3c76f4bb1bf8f176afde2"
+  },
+  {
+    "key": "molluscum-contagiosum",
+    "names": [
+      "Molluscum contagiosum"
+    ],
+    "src": "/assets/library/diseases/molluscum-contagiosum.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molluscaklein.jpg",
+    "creator": "E van Herk",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Molluscum contagiosum, or water wart",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1b0374da8080542aab9f091a765e9558a010ec6283fd38cc790043e07f553290"
+  },
+  {
+    "key": "keratosis-pilaris",
+    "names": [
+      "Keratosis pilaris"
+    ],
+    "src": "/assets/library/diseases/keratosis-pilaris.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keratosis_pilaris_(moderate).jpg",
+    "creator": "QuarterNotes",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Chicken skin found on the calf",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "d2d6117623ef12ef642e435e7b6943cf3ddaa3cc7994b701ad7896e109455bda"
+  },
+  {
+    "key": "onychomycosis",
+    "names": [
+      "Onychomycosis"
+    ],
+    "src": "/assets/library/diseases/onychomycosis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oncymycosis.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Onychomycosis of the toenails.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "442b7ca158cec567f45b9be1116bef6fc9f65bd931598f119641dd0f512642cc"
+  },
+  {
+    "key": "gout",
+    "names": [
+      "Gout"
+    ],
+    "src": "/assets/library/diseases/gout.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gout_Signs_and_Symptoms.jpg",
+    "creator": "www.scientificanimations.com/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Medical animation still showing swelling, joint stiffness and aching around the joint in foot.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "47023568ee5abfbf6eb3b49904f60cce0205aedd88449df14d28ea5fad06669a"
+  },
+  {
+    "key": "osteoarthritis",
+    "names": [
+      "Osteoarthritis"
+    ],
+    "src": "/assets/library/diseases/osteoarthritis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heberden-Arthrose.JPG",
+    "creator": "Drahreg01",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Artróza - deformity kloubů na prstech (Heberdenovy uzly)",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6b1bd0afc76ce4e678813e32766ad6991d0f165111e1311b3d6b8f87548548ba"
+  },
+  {
+    "key": "rheumatoid-arthritis",
+    "names": [
+      "Rheumatoid arthritis"
+    ],
+    "src": "/assets/library/diseases/rheumatoid-arthritis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rheumatoid_Arthritis.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "A hand severely affected by rheumatoid arthritis.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "9b1b8b48107b447efead84e6346981ee8a1f4c0b1c5025264138495408b604f7"
+  },
+  {
+    "key": "asthma",
+    "names": [
+      "Asthma"
+    ],
+    "src": "/assets/library/diseases/asthma.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asthma_(Lungs).png",
+    "creator": "BruceBlaus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Asthma. Animation in the reference.[1]",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "7ec76e69422808bc7582318a6bd9c69089f26927a5296ff3079bbb3f724bda8d"
+  },
+  {
+    "key": "cataract",
+    "names": [
+      "Cataract"
+    ],
+    "src": "/assets/library/diseases/cataract.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cataract_in_human_eye.png",
+    "creator": "Rakesh Ahuja, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Cataract in Human Eye",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a65790e78231e59a1879646333f4d085810e90b999f62e13d3ecb233968a7c90"
+  },
+  {
+    "key": "gerd",
+    "names": [
+      "Gastroesophageal reflux disease",
+      "Gastro-oesophageal reflux disease"
+    ],
+    "src": "/assets/library/diseases/gerd.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gastroesophageal_reflux_barium_X-ray.jpg",
+    "creator": "Steven Fruitsmaak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "X-ray of the abdomen and chest in a patient with a gastrostomy. Radiocontrast was injected into the stomach and quickly seen migrating upwards through the entire esophagus. The patient had severe reflux esophagitis (Los Angeles grade D).",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "e9c6040f4843be51a96227f9583465047d981802099ba99404363d2c23c388e4"
+  },
+  {
+    "key": "kidney-stones",
+    "names": [
+      "Kidney stones",
+      "Kidney stone disease",
+      "Renal calculi"
+    ],
+    "src": "/assets/library/diseases/kidney-stones.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nefrolit.jpg",
+    "creator": "Robert R. Wal",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Kidney stone",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "485bb4bbec93601f4289b649d8b6acd9eff62fe094e5edcf8028f18a5df18295"
+  },
+  {
+    "key": "923dede874874050659a",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Intertrigo_interdigital_%C3%A0_CA.jpg",
+    "creator": "Grook Da Oger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Intertrigo interdigital à Candida Albicans - Pied d’athlète",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "5fa307b1fe5cb4864495ba2c911ce4bf4c1016dd1e03b2fddb1743cae36e346e",
+    "names": [
+      "Candidal intertrigo"
+    ],
+    "src": "/assets/library/diseases/923dede874874050659a.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "be00b61243372c22b95e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cherry_angioma.jpg",
+    "creator": "Midasblenny",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "This is cherry angioma on an adult person's arm.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a7c0175a733bd192a5ccbd685c47b6be17a8a1724b67d412c4e79cf02015a002",
+    "names": [
+      "Cherry angioma"
+    ],
+    "src": "/assets/library/diseases/be00b61243372c22b95e.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "afffde901d4c745da6d2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Histopathology_of_dermatofibroma.jpg",
+    "creator": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest:  None\nMikael Häggström, M.D.Consent note: Consent from the patient or patient's relatives is regarded as redundant, because of absence of identifiable features (List of HIPAA identifiers) in the media and case information (See also HIPAA case reports guidance).",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Histopathology of dermatofibroma, with basilar hyperpigmentation of the overlying epidermis (top right), and spindled fibroblasts with collagen entrapment. HE stain.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "264569830bd39ef1938a332ed296c73ad0bc7ef82265044d57a1681cba458ddd",
+    "names": [
+      "Dermatofibroma"
+    ],
+    "src": "/assets/library/diseases/afffde901d4c745da6d2.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "1bd26e5be1585782c531",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inflamed_epidermal_inclusion_cyst.jpg",
+    "creator": "Steven Fruitsmaak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "An inflamed epidermoid cyst (aka epidermal inclusion cyst or sebaceous cyst) on the neck.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "e3d34e30ef77be7f440c3ce9348ac00e7e9a516193db4a087782fd487cf742c4",
+    "names": [
+      "Epidermoid cyst"
+    ],
+    "src": "/assets/library/diseases/1bd26e5be1585782c531.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "88d6f8a7dcbda32cbf41",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erythrasma.jpg",
+    "creator": "Mohammad2018",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Quelles sont les complications de l'erythrasma?\nErythrasma est généralement auto-limitant. Elle peut être compliquée par une dermatite de contact, une lichénification, une pigmentation postinflammatoire et une coïnfection avec d'autres bactéries, levures et dermatophytes.\nLes complications graves sont très rares. Les corynébactéries pourraient causer des abcès, une cellulite, un granulome cutané, une endocardite, une pyélonéphrite, une endophtalmie, une infection de la fistule artérioveineuse et une méningite.\nComment le diagnostic d'erythrasma est-il posé?\nErythrasma a une apparence clinique typique. Le diagnostic peut être étayé par les investigations suivantes.\n• Examen cutané des lampes en bois: le rayonnement ultraviolet à grande longueur d’onde provoque l’érythrasma à produire une fluorescence de couleur rose corail due à la coproporphyrine III libérée par la bactérie.\n• Écouvillon ou grattage de la peau: la microscopie peut révéler des bâtonnets filamenteux à Gram positif. Le bleu de méthylène souille également C minutissimum.\nQuel est le traitement de l'érythrasma?\nErythrasma peut être traité avec un antibiotique antiseptique ou topique tel que:\n• Crème à l'acide fusidique\n• solution de clindamycine\n• onguent de Whitfield\nUne infection étendue peut être traitée avec des antibiotiques oraux, y compris l'érythromycine ou la tétracycline, et répond habituellement rapidement.\nLa thérapie photodynamique utilisant la lumière rouge (large bande, pic à 635 nm) a également été utilisée pour traiter les patients présentant un érythrasme.\nPrévention de l'érythrasma\n\nLa récurrence de l'érythrasma est fréquente. Un savon antibactérien peut être utilisé pour prévenir les récidives. Le traitement peut être répété si nécessaire.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "047a947ef28d2a6bb4af4b3e97bb0dbd62053863ce7a15bab9dfb0980b8e26ad",
+    "names": [
+      "Erythrasma"
+    ],
+    "src": "/assets/library/diseases/88d6f8a7dcbda32cbf41.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "6655d19fc3cdcc88e342",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male-pattern_hair_loss.jpg",
+    "creator": "BlaiserPascal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Male pattern hair loss",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f808cfa6944cd8c2e1d42a071ff72fc41763bdc1062cff3e78e0ff91399175f0",
+    "names": [
+      "Male pattern hair loss"
+    ],
+    "src": "/assets/library/diseases/6655d19fc3cdcc88e342.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "a7fab9f28f6d93f34134",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isolated_folliculitis.jpg",
+    "creator": "Jmarchn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Folliculitis, single lesion",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "55bb2db7bba5c499b90b5be093beae1a1d2a7e5e3e232fabb986fb1ebd29a976",
+    "names": [
+      "Folliculitis"
+    ],
+    "src": "/assets/library/diseases/a7fab9f28f6d93f34134.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "461e80dca151619491aa",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axillary_intertrigo.png",
+    "creator": "National Institute for Occupational Safety and Health",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Axillary intertrigo - a pathogenic bacterial growth in the armpit",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "94fae0740f40b80402ee31b30d849ca29066484c59a482799a2bd9c868db1046",
+    "names": [
+      "Intertrigo"
+    ],
+    "src": "/assets/library/diseases/461e80dca151619491aa.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "084c2f5500aaa5f0b1e4",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichen_simplex_chronicus_-_very_low_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Very low magnification micrograph of lichen simplex chronicus, abbreviated LSC. H&E stain. Skin biopsy.\nFeatures:\n\nAcanthosis (epidermal thickening).\nHyperkeratosis (thickened stratum corneum).\nParakeratosis = retention of nuclei in the stratum corneum.\n+/- Spongiosis (epidermal intercellular edema -- cells appear to have a clear halo around 'em).\nRelated images\n\n\t\t\n\t\t\t\n\t\t\tLow mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Intermed. mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t High mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Very high mag.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "17dd312f606811207d62b2e6388dcb4dc232cb3db06ee54e4f4eafa7a045f0db",
+    "names": [
+      "Lichen simplex",
+      "Lichen simplex chronicus"
+    ],
+    "src": "/assets/library/diseases/084c2f5500aaa5f0b1e4.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "50248dc68309777be0cc",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pityrosporum_folliculitis_2.jpg",
+    "creator": "Ran Yuping et al.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Left: A 25-year-old man with complains of slightly pruritic, monomorphic follicular papules, pustules, and secondary keloid on the upper trunk and neck. Right: SEM of the hair follicle from the upper trunk. These demonstrated a large number of globular or orbicular-ovate yeasts of budding daughter cell, with collar structure around the budding.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1a2ee458d7277aaec7188851a0ed0acd76d06b3a1f3219ab2e4ab545882cce93",
+    "names": [
+      "Malassezia folliculitis"
+    ],
+    "src": "/assets/library/diseases/50248dc68309777be0cc.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4bb6003ffc4d7d5ddd37",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onycholysis_left_hand_34yo_male_ring_and_little_fingers_non-fungal.jpg",
+    "creator": "CopperKettle",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Onycholysis on my (CopperKettle) left hand. Ring and little fingers affected. Fungal probe negative. Causes unknown. Image acquired using EPSON Perfection 640 flatbed scanner.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "eeaf4789bdb4ddbbb307d96e40d65a0056c6e17787de3f73deb530a68ec6ad74",
+    "names": [
+      "Onycholysis"
+    ],
+    "src": "/assets/library/diseases/4bb6003ffc4d7d5ddd37.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c78cc89749e3337d27fd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acute_paronychia_with_pus-filled_abscess_on_finger,_photographed_by_Glen_Humble_-_3_September_2011.jpg",
+    "creator": "Glen",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "My sore finger. This is a whitlow and dammed painful. Would not wish it on my worst enemy!",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "bb7459a26bdff0ed8a48e5c0ba51a7ea00f62ce95609034bbb25c499efa6b1ac",
+    "names": [
+      "Paronychia"
+    ],
+    "src": "/assets/library/diseases/c78cc89749e3337d27fd.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "e9f5a41ecf7adc4c6ca6",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pemphigus_vulgaris_-_intermed_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Intermediate magnification micrograph of pemphigus vulgaris. H&E stain.\nRelated images\n\n\t\t\n\t\t\t\n\t\t\tLow mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\tIntermed. mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\tHigh mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\tVery high mag.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "b6ceda4f24edbf1b97bd387746267e6934fa0fbb6f6413ea71310f349b038e9f",
+    "names": [
+      "Pemphigus vulgaris"
+    ],
+    "src": "/assets/library/diseases/e9f5a41ecf7adc4c6ca6.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "b2086a12040448333d99",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Periorale_Dermatitis.jpg",
+    "creator": "Johannes Köhler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Typisches Bild einer milden perioralen Dermatitis: flächiges Erythem (Rötung), entzündliche Papeln (Knötchen) und periorale Blässe.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6decadce36f48302ecc6755d6e8a4794bafa6e276634a42c566203def44aa6f7",
+    "names": [
+      "Periorificial dermatitis",
+      "Perioral dermatitis"
+    ],
+    "src": "/assets/library/diseases/b2086a12040448333d99.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1c242ec53efc258b0e30",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tinea_versicolor1.jpg",
+    "creator": "Sarahrosenau on Flickr.com",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "Tinea versicolor en el abdomen de una dama-",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a6ef40770f8bb6517705a80abf06d95303d940c91c9cca74f2b9448290496ba5",
+    "names": [
+      "Pityriasis versicolor",
+      "Tinea versicolor"
+    ],
+    "src": "/assets/library/diseases/1c242ec53efc258b0e30.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "f6b554987bc8474ed97f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SkinTumors-PB061062.JPG",
+    "creator": "LWozniak&KWZielinski",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Pyogenic granuloma",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "71ee690017165233bb6930bfec8e1d34a7b21a6ef1d5eddf52f5ddf9098ca6e2",
+    "names": [
+      "Pyogenic granuloma"
+    ],
+    "src": "/assets/library/diseases/f6b554987bc8474ed97f.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "d7d04b4ff9a89e39ec6f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seborrheic_keratosis_on_human_back.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Many seborrheic keratosis on the back of a person with Leser–Trélat sign due to colon cancer.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "ca1fefcb3821ba348db171ae2b23735a93213c8c11a59c09e5d8a9ef1e920648",
+    "names": [
+      "Seborrhoeic keratosis",
+      "Seborrheic keratosis"
+    ],
+    "src": "/assets/library/diseases/d7d04b4ff9a89e39ec6f.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "7dec40edf4d7936d14fe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NeckAcrochordons.jpg",
+    "creator": "Jmarchn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Several acrochordons in the skin of the lower neck. Soft consistency, the bottom acrochordon taking pedunculated shape",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "b3fa945b40a9d5c9e6e1f79a6f7175df08b6dae9979fafa1d3af4fb33adfb20f",
+    "names": [
+      "Skin tags",
+      "Skin tag"
+    ],
+    "src": "/assets/library/diseases/7dec40edf4d7936d14fe.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "2cc4c51b49f8e7abb69f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liver_spots,_light-skinned_Caucasian_man,_age_63.jpg",
+    "creator": "Beyond My Ken",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Liver spots on the left hand of a 63 year old light-skinned Caucasian man",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "b88fa8b6ab49f06793f3807438a6a2f30293e3eac78b886545e848fa764d8dd9",
+    "names": [
+      "Solar lentigo",
+      "Age spot"
+    ],
+    "src": "/assets/library/diseases/2cc4c51b49f8e7abb69f.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "20ea5068601f3c9077cb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunburn_Treatment_Practices.jpg",
+    "creator": "Phil Kates",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "The primary measure is avoiding further exposure to the sun. The best treatment for most sunburns is time. Most sunburns heal completely within a few weeks.\nNon-steroidal anti-inflammatory drugs (such as ibuprofen or naproxen), and aspirin may decrease redness and pain. Local anesthetics such as benzocaine, however, are contraindicated. Schwellnus et al. states that topical steroids (such as hydrocortisone cream) do not help with sunburns, although the American Academy of Dermatology says they can be used on especially sore areas. \n\nApplying soothing lotions that contain Aloe Vera to the sunburn areas was supported by one review. Others have found aloe vera to have no effect. Aloe Vera has no ability to protect people from sunburns. Another treatment includes using a moisturizer that contains soy.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "b2087f982dcc197e0a6381ee5e6f6c0c1f08d1ef3aa50d4591696774b7bbc88e",
+    "names": [
+      "Sunburn"
+    ],
+    "src": "/assets/library/diseases/20ea5068601f3c9077cb.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "785ee70d592a6f622481",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teigne_tondante_enfant.jpg",
+    "creator": "Gzzz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Tinea capitis",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1bda7c2cf955d7f53ed84d6a324238e578c96281d931717ea2fbab960c2bcadb",
+    "names": [
+      "Tinea capitis"
+    ],
+    "src": "/assets/library/diseases/785ee70d592a6f622481.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "2e17e83091031f73229d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tinea_cruris.jpg",
+    "creator": "Robertgascoin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Tinea cruris (\"Jock itch\") on the inner thigh of a man.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "450e9e1f0c0d6f269f644c39260a97496159ca26076580ada5f7993c6a410bca",
+    "names": [
+      "Tinea cruris"
+    ],
+    "src": "/assets/library/diseases/2e17e83091031f73229d.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "3d6666810eba84a67713",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acne_vulgaris_on_a_very_oily_skin.jpg",
+    "creator": "Roshu Bangal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Image of an 18 year old male with moderate acne vulgaris (white heads). His face appears to be very oily as well.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "9a1cf852775c13536c236b6062122375d877221917c1dd5246f765a104ab5a94",
+    "names": [
+      "Acne"
+    ],
+    "src": "/assets/library/diseases/3d6666810eba84a67713.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "146a08286849a84f80be",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomycetoma_before_treatment.tif",
+    "creator": "(2017-02-13). \"Review of 21 cases of mycetoma from 1991 to 2014 in Rio de Janeiro, Brazil\". PLOS Neglected Tropical Diseases 11 (2): –0005301. DOI:10.1371/journal.pntd.0005301. ISSN 1935-2735. Retrieved on 2017-12-02.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "description": "HIV patient with actinomycetoma before treatment",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "132e4c59d0ad3cf918dd297cc27e1137e33b8b688917a9af26d51482b9a84c06",
+    "names": [
+      "Actinomycetoma"
+    ],
+    "src": "/assets/library/diseases/146a08286849a84f80be.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "fd9239ca53044b5b0cc8",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomycosis_PHIL_2856_lores.jpg",
+    "creator": "CDC/Dr. Thomas F. Sellers/Emory University",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "ID#:\t2856\nDescription:\tA patient with Actinomycosis on the right side of the face.\nActinomyces sp. normally found in the oral cavity is an opportunistic pathogen usually seen only in immunosuppressed patients. Lesions involve long standing swelling, suppuration and the formation of an abscess or granuloma.\nContent Providers(s):\tCDC/Dr. Thomas F. Sellers/Emory University\nProvider Email:\t\nCreation Date:\t1963\n\nCopyright Restrictions:\tNone - This image is in the public domain and thus free of any copyright restrictions. As a matter of courtesy we request that the content provider be credited and notified in any public or private usage of this image.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "24cc1ccd8c70a81df6bec2c7f201a2ff70e7926944e3cd2e70a3d39eb2ca7c09",
+    "names": [
+      "Actinomycosis"
+    ],
+    "src": "/assets/library/diseases/fd9239ca53044b5b0cc8.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "90d20a717d6cb1f248d3",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angular_cheilitis1.jpg",
+    "creator": "Matthew Ferguson 57",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Photograph of bilateral angular cheilitis in an elderly individual with false teeth, iron deficiency anemia and xerostomia\nThis patient signed a consent form a blank copy of which is pasted below:\nConsent Form for Clinical Photography\n• Your clinician would like to take a photograph\n• The image may be used for teaching purposes in a healthcare environment (e.g. a lecture or teaching session with students or junior doctors), in presentations for medical conferences, in professional medical publications (including journals and textbooks), or in websites (e.g. medical articles on Wikipedia under the Creative Commons Attribution-Share Alike 3.0 Unported copyright license*)\n• The image will be taken on a mobile device and then promptly transferred to a secure hard drive along with an electronic copy of this form to be stored for reference\n• You will NEVER be personally identifiable from the image, and you can view it after it has been taken to check you are happy with it\n• Your personal information, such as name and address will NEVER be disclosed with the image. Very general details, such as your rough age and gender may be disclosed. Some medical details about what is shown in the image may also be disclosed, e.g. the diagnosis or appropriate terminology describing the appearance\nI understand and consent to the above\nPatient name …………………………………………\nSigned (patient / parent / legal guardian) …………………………………………\nSigned (clinician) …………………………………………\nDate …………………………………………\nCC BY-SA 3.0 for details please see:\n\nhttps://creativecommons.org/licenses/by-sa/3.0/",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "2d16980c99e607dc5e1cf68979cbc24a7e3cb47b0a5149ac12cbbf0746c80029",
+    "names": [
+      "Angular cheilitis"
+    ],
+    "src": "/assets/library/diseases/90d20a717d6cb1f248d3.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4469f74e9849d644f8e9",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0510_Spondylitis_ankylosans_(morbus_bechterew)_anagoria.JPG",
+    "creator": "Anagoria",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "description": "Spine with spondylitis ankylosans (morbus bechterew) from the region of Heilbronn, early 6th century, shown at the Landesmuseum Württemberg, Stuttgart, Germany",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "40493d2bb8a7d5a3aeb4de4ac71988491d8c925fa2d08bdc30eb1d61a9b77021",
+    "names": [
+      "Ankylosing spondylitis"
+    ],
+    "src": "/assets/library/diseases/4469f74e9849d644f8e9.webp",
+    "caption": "Mẫu cột sống viêm dính khớp"
+  },
+  {
+    "key": "23ee41ff76cce41a504e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthrax_PHIL_2033.png",
+    "creator": "CDC/ James H. Steele",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Anthrax",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6eed8e9b5f37791a2bbcf6ee045d90d6ca57eccfec4d13b195524ed7ea41d09e",
+    "names": [
+      "Anthrax"
+    ],
+    "src": "/assets/library/diseases/23ee41ff76cce41a504e.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4bd424c6d3d146fa2345",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afib_ecg.svg",
+    "creator": "J. Heuser; vectorised and touched up by Marnanel",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Scheme of atrial fibrillation (top) and sinus rhythm (bottom). The purple arrow indicates a P wave, which is lost in atrial fibrillation.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "00b9f4aab38a6416c5902535f209c6590e90ddbbd93209d3ec1968121cc79880",
+    "names": [
+      "Atrial fibrillation"
+    ],
+    "src": "/assets/library/diseases/4bd424c6d3d146fa2345.webp",
+    "caption": "Điện tâm đồ tham khảo"
+  },
+  {
+    "key": "f43158d131ab0ce5b008",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_common_forms_of_Blastocystis_hominis_Valzn.jpg",
+    "creator": "Valentia Lim Valzn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Image shows four common forms of Blastocystis hominis - vacuolar, granular, amoeboid, and cyst forms. Image created by Valentia Lim Zhining on May 14th, 2006.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "93fa4a2f1a36c4a55e78aed86410befd13fc9e1175b88d19e1ba93eb5aec7c48",
+    "names": [
+      "Blastocystosis"
+    ],
+    "src": "/assets/library/diseases/f43158d131ab0ce5b008.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "3ce93ec2a24f691b0aba",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botulism1and2.JPG",
+    "creator": "Herbert L. Fred, MD and Hendrik A. van Dijk",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "Five days after sustaining a compound fracture of  his right arm, this 14-year-old boy noticed that he had blurred vision. Four days later, he could not swallow, move his lips, or protrude his tongue. Other findings included bilateral total ophthalmoplegia with ptosis (left) and dilated, fixed pupils (right). His mental status and sensory examination were normal. When symmetric, descending cranial nerve paralysis develops four to 14 days after an open injury and spares mental and sensory function, think of wound botulism. In this patient, culture of serosanguineous fluid from the fracture site grew Clostridium botulinum.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "4abb3b5adfac63424c0a94d339c59fc5063e6c68be29a1821649bb93f94e5b36",
+    "names": [
+      "Botulism"
+    ],
+    "src": "/assets/library/diseases/3ce93ec2a24f691b0aba.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "42273a46df5df598be2f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemophilus_influenzae_01.jpg",
+    "creator": "CDC/Dr. W.A. Clark (PHIL #1617), 1977.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "en:Haemophilus influenzae bacteria cultured on a blood en:agar plate.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "ce937b7161df84d870a623413d987877b913a13424bb59d1ea6cfae201e7c865",
+    "names": [
+      "Brazilian purpuric fever"
+    ],
+    "src": "/assets/library/diseases/42273a46df5df598be2f.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "4c9ae639bf14dcffcdcc",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bronchitis.jpg",
+    "creator": "National Heart Lung and Blood Institute",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Figure A shows the location of the lungs and bronchial tubes in the body. Figure B is an enlarged, detailed view of a normal bronchial tube. Figure C is an enlarged, detailed view of a bronchial tube with bronchitis. The tube is inflamed and contains more mucus than usual.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "ebd79574985ea0f1eff5b2c6f1ed452050cc7b875c7727a448e298ce38523711",
+    "names": [
+      "Bronchitis"
+    ],
+    "src": "/assets/library/diseases/4c9ae639bf14dcffcdcc.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "bf18670a6d2381e41dd2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bullous_impetigo1.jpg",
+    "creator": "Littlekidsdoc",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Bullous impetigo",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "70fec1b353c6853617cdaa3b30c70b66794d997f05ac30792edb96697aceccce",
+    "names": [
+      "Bullous impetigo"
+    ],
+    "src": "/assets/library/diseases/bf18670a6d2381e41dd2.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "bda4085e3d8898f8b7d0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Legs_Bullous_Pemphigoid.jpg",
+    "creator": "Jubward",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "A photo of legs covered in popped blisters due to bullous pemphigoid",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "0eb761e84b072e9bb8cc8c7ae559768ea1c490e15dc479af7d29e3461c581964",
+    "names": [
+      "Bullous pemphigoid"
+    ],
+    "src": "/assets/library/diseases/bda4085e3d8898f8b7d0.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c8282addc719e08962e2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Campylobacteriosis.png",
+    "creator": "CDC",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Campylobacter",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "bd8269142dc6c6770a8c1faa94881cdd2ee0d4fce3a7556e01eaab3cc2b4c98f",
+    "names": [
+      "Campylobacteriosis"
+    ],
+    "src": "/assets/library/diseases/c8282addc719e08962e2.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "9f973b434f622fb0bc46",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat-scratch-disease.jpg",
+    "creator": "CDC",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "An enlarged lymph node in the armpit region of a person with cat-scratch disease, and wounds from a cat scratch on the hand.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "4dfbb3ae673216c3d7e4eacea3d05d6e8c18e0e605cf11c7645ce52b39c5608f",
+    "names": [
+      "Cat-scratch disease"
+    ],
+    "src": "/assets/library/diseases/9f973b434f622fb0bc46.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "74f78718803aab3823ae",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cellulitis3.jpg",
+    "creator": "RafaelLopez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Cellulitis case, my left knee infected",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "c2b37851b445866aaf0b8e658ccf384dc4b1abb17de88417f87926418817b637",
+    "names": [
+      "Cellulitis"
+    ],
+    "src": "/assets/library/diseases/74f78718803aab3823ae.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "8b1414bef2e3038fa70b",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemophilus_ducreyi_01.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "en:Haemophilus ducreyi bacteria - the causative agent of en:chancroid - stained with en:Gentian Violet.\nObtained from the CDC Public Health Image Library.\n\nImage credit: CDC (PHIL #2119), 1979.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "bf9032153e619068b2699c4a5a35001dc667f9ad609330ddd1a530e4d3bd494f",
+    "names": [
+      "Chancroid"
+    ],
+    "src": "/assets/library/diseases/8b1414bef2e3038fa70b.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "766c2b508c479e0f9db6",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varicela_Aranzales.jpg",
+    "creator": "Camiloaranzales",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Foto de varicela",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "4d1cbca592a9ac40bef8ad2d35def5acbd4c2209d0fbd4050d0b41ed82619df3",
+    "names": [
+      "Chickenpox",
+      "Varicella"
+    ],
+    "src": "/assets/library/diseases/766c2b508c479e0f9db6.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c1f4f07db6314a3eecfd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wintertenen.jpg",
+    "creator": "Sapp",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Chilblains, also called perniosis",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "393658cb9f59b32a242982aa8f2ca19a1c11db4b4d5698beabf6dc1cc368bf7b",
+    "names": [
+      "Chilblains"
+    ],
+    "src": "/assets/library/diseases/c1f4f07db6314a3eecfd.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "2936d04ae8674c8f846d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CKD_-_Chronic_kidney_disease.jpg",
+    "creator": "https://www.scientificanimations.com/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "A graphic representation of a chronically affected kidney.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f7a90ff65e3f683179f9536ad82d37299e122f5e38e9fa0efa312c6cb562d357",
+    "names": [
+      "Chronic kidney disease"
+    ],
+    "src": "/assets/library/diseases/2936d04ae8674c8f846d.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "86dd844512f23ab38140",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copd_versus_healthy_lung.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Enlarged view of lung tissue showing the difference between healthy lung and COPD",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "be37361e00d0566af34a51decf569a3b426dd4c845f947cf64d8837704d5bccd",
+    "names": [
+      "Chronic obstructive pulmonary disease"
+    ],
+    "src": "/assets/library/diseases/86dd844512f23ab38140.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "9df1d7834101d80c32ee",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coeliac_disease_endoscopy.jpg",
+    "creator": "Abhinav Vasudevan, John S Lubel",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "description": "Endoscopic appearance of the second part of the duodenum. There are fissured folds with a scalloped appearance.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "d89c5efc1eb2df1799d85a80d146a1f2f2c3318dda4d7d9534203fa83dfb941c",
+    "names": [
+      "Coeliac disease"
+    ],
+    "src": "/assets/library/diseases/9df1d7834101d80c32ee.webp",
+    "caption": "Ảnh nội soi tá tràng tham khảo"
+  },
+  {
+    "key": "416c6fd0813a8657413b",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutchinson_teeth_congenital_syphilis_PHIL_2385.rsh.jpg",
+    "creator": "CDC/Susan Lindsley",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "A photograph of Hutchinson's teeth resulting from congenital syphilis. Hutchinson’s teeth is a congenital anomaly in which the permanent incisor teeth are narrow and notched. Note the notched edges and \"screwdriver\" shape of the central incisors. Copyright Restrictions: None - This image is in the public domain and thus free of any copyright restrictions. As a matter of courtesy we request that the content provider be credited and notified in any public or private usage of this image.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f1a337a0462d01b734d7e4869f1ab4facf94baa4ce5ae7193d23c2d88cb53d23",
+    "names": [
+      "Congenital syphilis"
+    ],
+    "src": "/assets/library/diseases/416c6fd0813a8657413b.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4e7d30f3232dda19de32",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Contact_dermatitis_around_wound.jpg",
+    "creator": "Digitalgadget at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Contact dermatitis around a healing rugburn. The burn was wrapped in a bandage that the wearer was sensitive to, causing an outbreak of itchy, raised spots.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "0954603ead705e669e137ffd4c21da2730f3be248bbabe580ee39e44b9379734",
+    "names": [
+      "Contact dermatitis"
+    ],
+    "src": "/assets/library/diseases/4e7d30f3232dda19de32.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "a34c50d061ebd3ae188e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baby_With_Cradle_Cap.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "0bf1d8e5badedec484203121de1a97ba9cdaadc03024266b45984610c789c6f3",
+    "names": [
+      "Cradle cap"
+    ],
+    "src": "/assets/library/diseases/a34c50d061ebd3ae188e.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c0da41525ef4f641f6e2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cryptosporidiosis_-_very_high_mag_-_cropped.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Very high magnification micrograph of cryptosporidiosis (cryptosporidium infection). H&E stain. Colonic biopsy.\nRelated images\n\n\t\t\n\t\t\t\n\t\t\t Very high mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Very high mag.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1c8d8769a6fa4f5b639d7cc2ebf6f73568bfbf62e9fa0b00682abdeaad2099a6",
+    "names": [
+      "Cryptosporidiosis"
+    ],
+    "src": "/assets/library/diseases/c0da41525ef4f641f6e2.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "7c4b0b3da6f0cc945403",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandruff01.jpg",
+    "creator": "Horoporo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Scanning Electron Microscope picture of freshly prepared human dandruff sample.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "cd6bc05615aca0e08752842cd887519fe6f463ce84f027bd703e53a9044074c9",
+    "names": [
+      "Dandruff"
+    ],
+    "src": "/assets/library/diseases/7c4b0b3da6f0cc945403.webp",
+    "caption": "Ảnh hiển vi mẫu gàu"
+  },
+  {
+    "key": "96bcd99f61c6a37abafe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_vein_thrombosis_of_the_right_leg.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "A deep vein thrombosis of the right leg.  Note the swelling and redness.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1bf7056f649d2c46d22843886da0381ff97f2791a6e20d26dbda44c6dfa41cc2",
+    "names": [
+      "Deep vein thrombosis"
+    ],
+    "src": "/assets/library/diseases/96bcd99f61c6a37abafe.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "d47b1ebd8fee2855c812",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dirty_white_pseudomembrane_classically_seen_in_diphtheria_2013-07-06_11-07.jpg",
+    "creator": "User:Dileepunnikri",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Dirty white pseudomembrane classically seen in diphtheria",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "627375100614e6372bf616405a57f670fec9824905d327260ca288a569b9784d",
+    "names": [
+      "Diphtheria"
+    ],
+    "src": "/assets/library/diseases/d47b1ebd8fee2855c812.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c30aa94eb4a912e7b959",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_introduction_to_dermatology_(1905)_ecthyma.jpg",
+    "creator": "Norman Purvis Walker",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "debc009e2da673384f84a7c6ce983bf0ac74e73fa692de3af1e90b685f14caad",
+    "names": [
+      "Ecthyma"
+    ],
+    "src": "/assets/library/diseases/c30aa94eb4a912e7b959.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1251d0efec86ce4f9bc7",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike-waves.png",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "0ff9d792449b84e2a85dc7b4616c4d4f6f81b4f233e8b016d22bd1709788f36f",
+    "names": [
+      "Epilepsy"
+    ],
+    "src": "/assets/library/diseases/1251d0efec86ce4f9bc7.webp",
+    "caption": "Điện não đồ tham khảo"
+  },
+  {
+    "key": "5ae0d81f98c4bbac466c",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Facial_erysipelas.jpg",
+    "creator": "CDC/Dr. Thomas F. Sellers/Emory University",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "A person suffering from a facial erysipelas infection.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "d4df273f276ce67f8072faeee13a9bfc1eaf3b406a6fcb12b80c3d693b846753",
+    "names": [
+      "Erysipelas"
+    ],
+    "src": "/assets/library/diseases/5ae0d81f98c4bbac466c.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "50338c616909fc89fa4b",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diseases_of_Swine_31-1.png",
+    "creator": "R. L. Wood",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "31.1. Cellular and colonial morphology of Erysipelothrix rhusiopathiae. Upper row: ×1200, crystal violet; lower row: ×32. (Courtesy National Animal Disease Center, Ames, Iowa.)",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a377d4d7d532cc53e16c98f5c9862520fa7b731974676ed8e1f7fbbf221fdf7d",
+    "names": [
+      "Erysipeloid"
+    ],
+    "src": "/assets/library/diseases/50338c616909fc89fa4b.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "aacf31aea5f6ac88c511",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erythema_multiforme_minor_of_the_hand.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Erythema multiforme minor (make note of the blanching centers of the lesion)",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f14600df24b51de79c39c7842b791ac31d00845d1a4033aafe7891ff70743d21",
+    "names": [
+      "Erythema multiforme"
+    ],
+    "src": "/assets/library/diseases/aacf31aea5f6ac88c511.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "7b81e9b62382afad5aee",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENlegs.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "A case of erythema nodosum",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1d051bffc8ca6b8a35779dfe4795d18fc958b6ff103a9671f8f98e9075acb493",
+    "names": [
+      "Erythema nodosum"
+    ],
+    "src": "/assets/library/diseases/7b81e9b62382afad5aee.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4e86515db528ba456c89",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landkartenzunge_005.jpg",
+    "creator": "Bin im Garten",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Landkartenzunge = Lingua geographica",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a70067c3a85931bc472a76fc213b464eb2dccd47d2ea94c56ffc71ef887c593f",
+    "names": [
+      "Geographic tongue"
+    ],
+    "src": "/assets/library/diseases/4e86515db528ba456c89.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "5645f1ac79253d4243b7",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giardia_lamblia_SEM_8698_lores.jpg",
+    "creator": "CDC / Mahmud Tari",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "This scanning electron micrograph (SEM) revealed some of the external ultrastructural details displayed by a flagellated Giardia lamblia protozoan parasite. G. lamblia is the organism responsible for causing the diarrheal disease \"giardiasis\". Once an animal or person has been infected with this protozoan, the parasite lives in the intestine, and is passed in the stool. Because the parasite is protected by an outer shell, it can survive outside the body, and in the environment for long periods of time.\nCysts are resistant forms and are responsible for transmission of giardiasis. Both cysts and trophozoites can be found in the feces (diagnostic stages). The cysts are hardy and can survive several months in cold water. Infection occurs by the ingestion of cysts in contaminated water, food, or by the fecal-oral route (hands or fomites). In the small intestine, excystation releases trophozoites (each cyst produces two trophozoites). Trophozoites multiply by longitudinal binary fission, remaining in the lumen of the proximal small bowel where they can be free or attached to the mucosa by a ventral sucking disk. Encystation occurs as the parasites transit toward the colon. The cyst is the stage found most commonly in non-diarrheal feces. Because the cysts are infectious when passed in the stool or shortly afterward, person-to-person transmission is possible. While animals are infected with Giardia, their importance as a reservoir is unclear.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "8afc2fda939d396c5e93a912b4313d8f10225abd4223dc38c235d277b497316c",
+    "names": [
+      "Giardiasis"
+    ],
+    "src": "/assets/library/diseases/5645f1ac79253d4243b7.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "39b510e413edff2393fe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donovan-bodies.png",
+    "creator": "UW Infectious Diseases Education & Assessment (IDEA) Program",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Drawing of Donovan bodies",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1e280a90f0d09b1d21156897cadff435845241b38cc89f8462881c3f16fb9a0d",
+    "names": [
+      "Granuloma inguinale"
+    ],
+    "src": "/assets/library/diseases/39b510e413edff2393fe.webp",
+    "caption": "Minh họa thể Donovan trên xét nghiệm"
+  },
+  {
+    "key": "a8c126270098613cc128",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guttate_psoriasis.jpg",
+    "creator": "Bobjgalindo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Guttate psoriasis diagnosed in a 30 year old female with elevated ASO, treatment course unspecified.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a4aacfcd37a4561399c3cf265b61d30a2ad4ef202e2c3711b4dae5166a3b4550",
+    "names": [
+      "Guttate psoriasis"
+    ],
+    "src": "/assets/library/diseases/a8c126270098613cc128.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "7b38275b42f6f8ddb4fb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elevated_JVP.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "A person with congestive heart failure who presented with an exceedingly elevated JVP, the arrow is pointing to the external jugular vein (marked by the arrow) however, JVD is measured by the internal jugular vein which can also be seen here",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a07403470c3865f4b35014238f4aa014b46ba7ce42c6864315c59f5f69e9ef4e",
+    "names": [
+      "Heart failure"
+    ],
+    "src": "/assets/library/diseases/7b38275b42f6f8ddb4fb.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "0151eab9932cb31d1646",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ichthyosis_(1).jpg",
+    "creator": "Gzzz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Ichthyosis vulgaris in a 12 year old child.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "eeb293247ce9aec016590243520d692db6fe6ff1a013ee31d9af7632026ba841",
+    "names": [
+      "Ichthyosis"
+    ],
+    "src": "/assets/library/diseases/0151eab9932cb31d1646.webp",
+    "caption": "Ví dụ bệnh vảy cá thông thường"
+  },
+  {
+    "key": "222b78b39d5c16755104",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Impetigo2020.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Impetigo",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "cfcd1c14e655d950742b29fe1f90ea90a9d287517651ba47ca87fc08c2f1a9fc",
+    "names": [
+      "Impetigo"
+    ],
+    "src": "/assets/library/diseases/222b78b39d5c16755104.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "ef6f7973d0b3dbad0f52",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lymphadanopathy.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Lyphadenopathy in someone with mononucleosis",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f986b846354699a791fcd23847892929225b0e8bff333bed5bbacc0d699ef6e5",
+    "names": [
+      "Infectious mononucleosis"
+    ],
+    "src": "/assets/library/diseases/ef6f7973d0b3dbad0f52.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "25bd8255f000c869df94",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irritable_bowel_syndrome.jpg",
+    "creator": "http://www.scientificanimations.com",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "3D medical animation still showing Irritable bowel syndrome and tenesmus in the pip.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "c664d52a0b05fd74eff943f50382ef601b9ecf92c7dcc188216247e6aec65c3b",
+    "names": [
+      "Irritable bowel syndrome"
+    ],
+    "src": "/assets/library/diseases/25bd8255f000c869df94.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "2ac8cf65c7d628579398",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichen_sclerosus_svg_hariadhi.svg",
+    "creator": "Hariadhi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Lichen sclerosus",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "f54ebddccac1405bedd3e3f7f125db8374fe7c4023544b8958082fb1ec92700e",
+    "names": [
+      "Lichen sclerosus"
+    ],
+    "src": "/assets/library/diseases/2ac8cf65c7d628579398.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "6c0ab33e00ff5df484be",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Listeria_monocytogenes_PHIL_2287_lores.jpg",
+    "creator": "Elizabeth White",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Electron micrograph of a flagellated Listeria monocytogenes bacterium, Magnified 41,250X. Listeria monocytogenes is the infectious agent responsible for the food borne illness Listeriosis. In the United States, an estimated 2,500 persons become seriously ill with listeriosis each year. Of these, 500 die. Typical size of Listeria: rods 0.4 by 1 to 1.5 µm",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a98df640c8dd80a8ff8874ccc8fdaccc3bda3fe9f1ba7c9e7adbca2f5f8b5a6d",
+    "names": [
+      "Listeriosis"
+    ],
+    "src": "/assets/library/diseases/6c0ab33e00ff5df484be.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "6e79d0e99b44b1cd2e19",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melanoma.jpg",
+    "creator": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "This slide shows a melanoma on a patient's skin.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "711937e942871bf95bca38991fdf219720ff80f34b9e5eec3ebb3b0922d31c7f",
+    "names": [
+      "Melanoma"
+    ],
+    "src": "/assets/library/diseases/6e79d0e99b44b1cd2e19.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "6d33bc870028863d8e31",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mumps_PHIL_130_lores.jpg",
+    "creator": "Photo Credit:\nContent Providers: CDC/NIP/Barbara Rice",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Mumps. Child with mumps.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "45c73d0f61ddd6773a87562eca01eeff367193f261c5d9638f42ef22f39aff5a",
+    "names": [
+      "Mumps"
+    ],
+    "src": "/assets/library/diseases/6d33bc870028863d8e31.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "d087c9cf35ba6fdafff0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:OsteoCutout.png",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "An osteoporotic elderly woman in Japan.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "3c2a54088e1d498ed9173cfcb565d6a95fcc00d51d3e45af914832f41d275766",
+    "names": [
+      "Osteoporosis"
+    ],
+    "src": "/assets/library/diseases/d087c9cf35ba6fdafff0.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "b7691519f5f655c12e1d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parkinson%E2%80%99s_disease_1880s.jpg",
+    "creator": "William Gowers; retouched by User:Dustfreeworld",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Person with Parkinson’s disease. A retouched image from the drawings of a William Gowers. Color, brightness and size adjusted.\nhttps://commons.wikimedia.org/wiki/File:Drawings_of_a_Parkinson_patient_by_William_Gowers.jpg\n\nhttps://movementdisorders.onlinelibrary.wiley.com/doi/full/10.1002/mds.27965",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "61dc2d2063d6a68510f25011127168f47084c87a31791ce7e12d5ec4ab0991e9",
+    "names": [
+      "Parkinson's disease"
+    ],
+    "src": "/assets/library/diseases/b7691519f5f655c12e1d.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "b675367de6f3ac0dc668",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vasculitic_neuropathy_-_plastics_-_intermed_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Intermediate magnification micrograph of a vasculitic neuropathy, also neuropathy due to a vasculitis. Resin section (plastics) with toluidine blue stain.\nThe pathologic features of vasculitic neuropathy are evident:\n\nZonal involvement of the nerve fascicles with:\nLoss of myelin.\nWallerian degeneration.\nRegeneration.\nChronic active vasculitis:\n\nActive features:\nPerivascular and mural inflammatory infiltrate including lymphocytes and histiocytes.\nPlump (reactive) endothelial cells.\nVessel wall cell death (necrosis).\nChronic features:\nVessel wall thickening due to hyperplasia.\nDense fibrous tissue around the vessel.\nThe vasculitis in this case affects both small (< 100 micrometers) and medium vessels.  Granulomas are absent.  Eosinophils are rare.  Histomorphologic, diagnostic considerations are polyarteritis nodosa and microscopic polyangiitis. \n\nRelated images\n\n\t\t\n\t\t\t\n\t\t\t Low mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Intermed. mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t High mag.\n\t\t\n\n\n\t\t\n\t\t\t\n\t\t\t Intermed. mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t High mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Very high mag.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "5b7a688761911dc9f34fea620a7bd3fec31f8dd732eb952c3956205a3b961330",
+    "names": [
+      "Peripheral neuropathy"
+    ],
+    "src": "/assets/library/diseases/b675367de6f3ac0dc668.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "5d6ad2a68ae62533ddf5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pitted_keratolysis_3.jpg",
+    "creator": "Evan Saap",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Right foot affected with pitted keratolysis",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "8ce0fa4bc1ea052c8c3201ec1a2f9309d481e9b1b1967c4918e3ffafaf40248d",
+    "names": [
+      "Pitted keratolysis"
+    ],
+    "src": "/assets/library/diseases/5d6ad2a68ae62533ddf5.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "fbed37c6a59b92d993b0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_in_influensa_and_H_influenzae,_posteroanterior,_annotated.jpg",
+    "creator": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest:  None\nMikael Häggström, M.D.Consent note: Written informed consent was obtained from the individual, including online publication.",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Chest radiograph of an 88 year old man, about one week after onset of fever, fatigue and mild coughing. Lab tests detected both Influenza A virus and Haemophilus influenzae. It shows multifocal, patchy consolidation, mainly in the right upper lobe.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "8271266b4bfac2fefffc65e8b25268211d7bcedca2ac1b5a0c5715e1b8390af1",
+    "names": [
+      "Pneumonia"
+    ],
+    "src": "/assets/library/diseases/fbed37c6a59b92d993b0.webp",
+    "caption": "Ảnh X-quang phổi tham khảo"
+  },
+  {
+    "key": "10ed992ab4a267fd7f12",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pseudofolliculitis_Barbae.jpg",
+    "creator": "Army Medical Department",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Picture of Pseudofolliculitis Barbae (PFB) from Madigan Army Medical Center Dermatology and SAUSHEC Dermatology teaching file",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "9052d7475406f81d7f4e02a2872e63c51ae8e341d4518719f9b944d0410aab24",
+    "names": [
+      "Pseudofolliculitis barbae"
+    ],
+    "src": "/assets/library/diseases/10ed992ab4a267fd7f12.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1a9bd313d1cac4df9b78",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opisthotonus_in_a_patient_suffering_from_tetanus_-_Painting_by_Sir_Charles_Bell_-_1809.jpg",
+    "creator": "Sir Charles Bell",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "8244ce9a0fc3e6bf7bde239a0ee3cd9ff216cd8052680e63725d82716825d991",
+    "names": [
+      "Tetanus"
+    ],
+    "src": "/assets/library/diseases/1a9bd313d1cac4df9b78.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "1941afb83ecdecd40c17",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entropion_and_trichiasis_secondary_to_trachoma_A44-652-11.jpg",
+    "creator": "Otis Historical Archives Nat'l Museum of Health & Medicine",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "Entropion and trichiasis secondary to trachoma. Trachoma stage IV. Conjunctivitis, keratitis. Duration: unknown. World War 2. 20th General Hospital.\nSurgical steps for treatment of entropion and trichiasis.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a497247675df80d3841630975d4519807670b95afa976eaee55e5f41a8c7ce7a",
+    "names": [
+      "Trachoma"
+    ],
+    "src": "/assets/library/diseases/1941afb83ecdecd40c17.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "eceb4506d401a8e671d0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accessory_auricle.jpg",
+    "creator": "Klaus D. Peter, Wiehl, Germany",
+    "license": "CC BY 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+    "description": "Praeauricular appendage in 11-year old girl.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "04a1bacd0498fc686def9fc6958d2b4f5f3b3056d9ff9d372c9f026fc038ae0e",
+    "names": [
+      "Accessory auricle"
+    ],
+    "src": "/assets/library/diseases/eceb4506d401a8e671d0.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "8598164d891d294dd3cd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:B_amelogenesis_imperfecta.jpg",
+    "creator": "see above",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "amelogenesis imperfecta, hypoplastic type. Note the association of pitted enamel and open bite.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "3df3f481374b37c27dcf496c8de0600fa153628dc9cbac824e1826480d034ad2",
+    "names": [
+      "Amelogenesis imperfecta"
+    ],
+    "src": "/assets/library/diseases/8598164d891d294dd3cd.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "9f6c1f77887661f77d33",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amniotic_fluid_embolism.jpg",
+    "creator": "Yale Rosen",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "Intravascular squames are present in this example of amniotic fluid embolism.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "063bd9f06dfb939e78f958b4afb896b9410f021c191e1593b065bc1cccfaf44f",
+    "names": [
+      "Amniotic fluid embolism"
+    ],
+    "src": "/assets/library/diseases/9f6c1f77887661f77d33.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "154bd89fd56128123feb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anencephaly-web.jpg",
+    "creator": "Centers for Disease Control and Prevention, National Center on Birth Defects and Developmental Disabilities",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Image depicting an ancephalic newborn\nThe images are in the public domain and thus free of any copyright restrictions. As a matter of courtesy we request that the content provider (Centers for Disease Control and Prevention, National Center on Birth Defects and Developmental Disabilities) be credited and notified in any public or private usage of this image.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1297b0f462032345c47d02586afa51dd00afb39de774444ab8cd8afe0832a1ac",
+    "names": [
+      "Anencephaly"
+    ],
+    "src": "/assets/library/diseases/154bd89fd56128123feb.webp",
+    "caption": "Minh họa dị tật bẩm sinh"
+  },
+  {
+    "key": "99e9e9a72a498427a332",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aniridia.jpg",
+    "creator": "The original uploader was Gardar Rurak at English Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Author: Me",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "2d4f417f84c2cb573f7c71fa992ec9655b30e5adfc78a29294c1c93bd9692e83",
+    "names": [
+      "Aniridia"
+    ],
+    "src": "/assets/library/diseases/99e9e9a72a498427a332.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "53cf21aa4661c2e96fd1",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anotia_Illustration.jpg",
+    "creator": "Centers for Disease Control and Prevention, National Center on Birth Defects and Developmental Disabilities",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Anotia illustration. Image obtained from the CDC.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "d181eb3db1b52f9ce78bea340d36ab0bc7befd19eece40a82712005502c53bce",
+    "names": [
+      "Anotia"
+    ],
+    "src": "/assets/library/diseases/53cf21aa4661c2e96fd1.webp",
+    "caption": "Minh họa dị tật bẩm sinh"
+  },
+  {
+    "key": "b973ed08ed2464c8e1c0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arhinia.jpg",
+    "creator": "Akkuzu G, Akkuzu B, Aydin E, Derbent M, Ozluoglu L",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "Photograph of the patient with partial arrhinia",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "5eeaa2501e1c5a5421825de4a287e015c85ce8dc69cf846deaa4c7d4fca1a416",
+    "names": [
+      "Arrhinia"
+    ],
+    "src": "/assets/library/diseases/b973ed08ed2464c8e1c0.webp",
+    "caption": "Ví dụ khuyết mũi một phần"
+  },
+  {
+    "key": "f9de72da8f529fc20b74",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Membranoese_Choanalatresie_beidseits_NG_-_CT_axial_und_coronar_-_001_-Annotationen.png",
+    "creator": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Membranöse, beidseitige Choanalatresie bei einem Neugeborenen. Darstellung in der Computertomographie axial und koronar (1 mm, Knochenfenster, IMR). Da die beidseitige Choanalatresie ein Notfall ist, ist das Kind intubiert.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "35926f27204b514737f7e21bb87d2955b2913abee05983c37237712cefee8c53",
+    "names": [
+      "Choanal atresia"
+    ],
+    "src": "/assets/library/diseases/f9de72da8f529fc20b74.webp",
+    "caption": "Ảnh CT tham khảo"
+  },
+  {
+    "key": "04a6fe17dc635702f455",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CMV_placentitis1_mini.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Micrograph of cytomegalovirus (CMV) placentitis. H&E stain.  CMV is a TORCH infection.  Compared to chorioamnionitis, TORCH infection are fairly uncommon.  They may result in an abortion (miscarriage).\nThe villi in the image have marked inflammation that is predominately lymphocytic.  A characteristic CMV cell is seen right of centre in the image.  The red blood cells surrounding the chorionic villi are maternal.\n\nRelated images\n\n\t\t\n\t\t\t\n\t\t\t Field #1.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Close-up of Field #1 - shows the characteristic nucleus\n\t\t\n\t\t\n\t\t\t\n\t\t\t Field #2.\n\t\t\n\t\t\n\t\t\t\n\t\t\t Close-up of Field #2 - shows the characteristic nucleus",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "939d024ad28f5b66b1e3ba51da77f1945321a88a26a01f6af722a3f4115f97cc",
+    "names": [
+      "Congenital cytomegalovirus infection"
+    ],
+    "src": "/assets/library/diseases/04a6fe17dc635702f455.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "564625533f09a3af0917",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cataracts_due_to_Congenital_Rubella_Syndrome_(CRS)_PHIL_4284_lores.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "ID#:\t4284\nDescription:\tThis photograph shows the cataracts in a child’s eyes due to Congenital Rubella Syndrome (CRS).\nRubella is a viral disease that can affect susceptible persons of any age. Although generally a mild rash, if contracted in early pregnancy, there can be a high rate of fetal wastage or birth defects, known as Congenital Rubella Syndrome (CRS).\nContent Providers(s):\tCDC\nCreation Date:\t1976\n\nCopyright Restrictions:\tNone - This image is in the public domain and thus free of any copyright restrictions. As a matter of courtesy we request that the content provider be credited and notified in any public or private usage of this image.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "31f1d11d9e8be70c8655f253cce25ce0722d3d618c8224609b610e00edc8fb3a",
+    "names": [
+      "Congenital rubella syndrome"
+    ],
+    "src": "/assets/library/diseases/564625533f09a3af0917.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1f3a82983d392d06ed1d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1471-2350-8-52-2-l.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "a-b. Oral photographs from the affected individual (IV:2 in Fig. 1). The primary teeth showed shade of brown and almost complete attrition of the enmel layer. c. Panorex radiographs from the affected individual",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6276e0f4581030f137c67b95657536369ea1e6e2e538c91a80c6a6bcdb779537",
+    "names": [
+      "Dentinogenesis imperfecta"
+    ],
+    "src": "/assets/library/diseases/1f3a82983d392d06ed1d.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "54c05c06f2b0a1080c20",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diastematomyelie_80jw_-_MR_T2_axial_und_sag.jpg",
+    "creator": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Magnetresonanztomographie (T2 axial und sagittal) einer Diastematomyelie. Der Befund war bei der 80-jährigen Frau bisher nicht bekannt. Leider können keine Angaben zu eventuellen Einschränkungen der Patientin gemacht werden. Aber offenbar kann man damit alt werden.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "ab9f21dc97f4538365d6b1a138bfebc45fc905d655487e3f1180aa2ea6cd5639",
+    "names": [
+      "Diastematomyelia"
+    ],
+    "src": "/assets/library/diseases/54c05c06f2b0a1080c20.webp",
+    "caption": "Ảnh MRI tham khảo"
+  },
+  {
+    "key": "a8dbc2a5ae7d8db4ffa0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ectopic_pregnancy_on_laparoscopy.png",
+    "creator": "Mikael Häggström",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Laparoscopic view, looking from superiorly to inferiorly in the peritoneal cavity which has been pumped up with carbon dioxide gas to visualize the uterus (marked by blue arrows).\nOn the left Fallopian tube there is an ectopic pregnancy and hematosalpinx (marked by red arrows). The right tube is normal.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "73ddbf20ed27132635acd1ea054c943a28b3f7855e46fb168b79e8fb00f99d0b",
+    "names": [
+      "Ectopic pregnancy"
+    ],
+    "src": "/assets/library/diseases/a8dbc2a5ae7d8db4ffa0.webp",
+    "caption": "Ảnh nội soi tham khảo"
+  },
+  {
+    "key": "55a7d5e89f7cb8c28f5e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hypertrophic_decidual_vasculopathy_intermed_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Intermediate magnification micrograph of hypertrophic decidual vasculopathy, as seen in pregnancy-induced hypertension. H&E stain.\nRelated images\n\n\t\t\n\t\t\t\n\t\t\tHigh mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\tLow mag.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6ffc15bdd87bedaf46f31dbb48b0b4e908c0c133eae8002c2febc5347e5d0115",
+    "names": [
+      "Gestational hypertension"
+    ],
+    "src": "/assets/library/diseases/55a7d5e89f7cb8c28f5e.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "d7ec25caaa13c9b8d130",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydranencephaly.jpg",
+    "creator": "Dimitri Agamanolis, M.D Department of Pathology, Akron Children’s Hospital, One Perkins Square, Akron, Ohio, 44308, USA",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "A baby with hydranencephaly, light is shown through skull marking absence of forebrain. \n\"From D. P. Agamanolis http://neuropathology-web.org\"\n\nDimitri Agamanolis, M.D.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "1a0c59079f5832547b578e34f5f10d158cafc629e67bd9aea1fc035652906c32",
+    "names": [
+      "Hydranencephaly"
+    ],
+    "src": "/assets/library/diseases/d7ec25caaa13c9b8d130.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "d5b00145339214a3e123",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gould_Pyle_99.jpg",
+    "creator": "George M. Gould and Walter L. Pyle",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Fig. 99. - Macrostoma by lateral fissures.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "a2982925cff289f95bd27b82e9c651c9a36cf511b37756b431a98755ca1d7b14",
+    "names": [
+      "Macrostomia"
+    ],
+    "src": "/assets/library/diseases/d5b00145339214a3e123.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "77b47573c0e33a766de4",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Head_of_a_boy_with_hypertrophy_of_the_ear_Wellcome_L0062496.jpg",
+    "creator": "Mark, Leonard Portal",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "description": "Watercolour drawing of the head of a boy, aged 14 years, who had hypertrophy of the left ear, with a congenital fibroma on the left side of the neck.\n\nKeywords: Mark, Leonard Portal",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "381956f369b7a616691b13f6b5ce9df86f0f07c49a5f84fd6fe9bb480a7a488c",
+    "names": [
+      "Macrotia"
+    ],
+    "src": "/assets/library/diseases/77b47573c0e33a766de4.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "974df37334b55517069d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Microcephaly-comparison-500px.jpg",
+    "creator": "Centers for Disease Control and Prevention",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Side-view illustration of a baby with microcephaly (left) compared to a baby with a typical head size",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "751c1e0d6f4521476cc34ef9ca9cf1eccaec56dbd71f81a77a5d265e92c09fd8",
+    "names": [
+      "Microcephaly"
+    ],
+    "src": "/assets/library/diseases/974df37334b55517069d.webp",
+    "caption": "Minh họa dị tật bẩm sinh"
+  },
+  {
+    "key": "28be720206f37598a471",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Closure_of_mouth_from_congenital_syphilis.jpg",
+    "creator": "J. Collins Warren M.D. and A. Pearce Gould M.S.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "description": "Closure of mouth from congenital syphilis",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "dca7af68ad7f73ff4ac10b4175f95d7d472ba6e235846c001a9afac52fabaa29",
+    "names": [
+      "Microstomia"
+    ],
+    "src": "/assets/library/diseases/28be720206f37598a471.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "9c496c5a4575bfec5093",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydatidiform_mole_(1)_complete_type.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "cc4a6304fb4c454556c553e1c02b2f66bcdf240bc73461099ffcda9e7eb4ed24",
+    "names": [
+      "Molar pregnancy"
+    ],
+    "src": "/assets/library/diseases/9c496c5a4575bfec5093.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "a8d86a427a6afebb2667",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hypertrophic_decidual_vasculopathy_high_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "High magnification micrograph of hypertrophic decidual vasculopathy, as seen in pregnancy-induced hypertension. H&E stain.\nRelated images\n\n\t\t\n\t\t\t\n\t\t\tIntermed. mag.\n\t\t\n\t\t\n\t\t\t\n\t\t\tLow mag.",
+    "modifications": "Resized without cropping; converted to WebP",
+    "sha256": "6245717e6e6a1d266019dbc6e6cfc6ba94a226b6be139ce8373f38d272180ddd",
+    "names": [
+      "Pre-eclampsia"
+    ],
+    "src": "/assets/library/diseases/a8d86a427a6afebb2667.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  }
+]

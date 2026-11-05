@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: derma
+      POSTGRES_USER: derma
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U derma"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+  web:
+    build: .
+    volumes:
+      - image_data:/app/data/images
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://derma:${POSTGRES_PASSWORD}@db:5432/derma
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  postgres_data:
+  image_data:

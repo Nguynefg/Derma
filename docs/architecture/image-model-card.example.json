@@ -1,0 +1,27 @@
+{
+  "version": "replace-with-reviewed-version",
+  "architecture": "resnet18",
+  "image_type": "clinical",
+  "input_size": 224,
+  "checkpoint": "best.pt",
+  "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "dataset_manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "labels": [
+    {
+      "label": "replace-class-1",
+      "disease_id": "acne"
+    },
+    {
+      "label": "replace-class-2",
+      "disease_id": "psoriasis"
+    }
+  ],
+  "minimum_score": 0.8,
+  "minimum_margin": 0.2,
+  "temperature": 1.0,
+  "evaluation_report": "evaluation.json",
+  "evaluation_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "reviewed_for_research": false,
+  "reviewed_by": "Replace with actual reviewer",
+  "usage_note": "Draft only. Values and labels are placeholders, not a trained or evaluated model."
+}

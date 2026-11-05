@@ -1,0 +1,729 @@
+/* Layout inspired by the reference, retaining the original Derma purple palette. */
+:root {
+  --canvas: #f8f9fc;
+  --surface: #ffffff;
+  --surface-soft: #f2f0f8;
+  --ink: #242438;
+  --muted: #737386;
+  --purple: #7450b8;
+  --purple-hover: #593a96;
+  --purple-soft: #eee8f8;
+  --border: #e7e7ef;
+  --mint: #eee8f8;
+  --mint-ink: #7450b8;
+  --scene: #f0edf9;
+  --hero-wash: #eee8f8;
+  --shadow: 0 8px 30px #193d2e06;
+  --accent-lilac: #e8dff7;
+  --display-font: 'Be Vietnam Pro', 'Segoe UI', sans-serif;
+}
+:root[data-theme='dark'] {
+  --canvas: #161820;
+  --surface: #20232e;
+  --surface-soft: #292b39;
+  --ink: #efedf7;
+  --muted: #b0afc1;
+  --purple: #ba9aed;
+  --purple-hover: #d2b7fc;
+  --purple-soft: #373047;
+  --border: #353847;
+  --mint: #373047;
+  --mint-ink: #ba9aed;
+  --scene: #272231;
+  --hero-wash: #30283d;
+  --accent-lilac: #373047;
+}
+body {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.site-header {
+  background: var(--canvas);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: none;
+}
+.header-inner {
+  max-width: 1320px;
+  min-height: 76px;
+  padding: 12px 28px;
+  gap: 22px;
+}
+.brand-icon {
+  background: #7450b8;
+  color: #eee8f8;
+  border-radius: 50%;
+  box-shadow: none;
+}
+.brand-word strong {
+  color: var(--ink);
+  font-size: 26px;
+  letter-spacing: -1px;
+}
+.brand-dot {
+  color: var(--purple);
+}
+.brand-word small {
+  font-size: 12px;
+}
+.desktop-nav {
+  padding: 5px;
+  background: var(--accent-lilac);
+  border-radius: 40px;
+}
+.desktop-nav button {
+  color: var(--ink);
+  padding: 8px 11px;
+  font-size: 13px;
+}
+.desktop-nav button.active {
+  background: var(--surface);
+  color: var(--purple);
+  box-shadow: 0 2px 6px #24243808;
+}
+.desktop-nav button:hover {
+  background: color-mix(in srgb, var(--surface) 65%, transparent);
+}
+.button,
+.login-button {
+  border-radius: 30px;
+  font-size: 14px;
+  min-height: 42px;
+}
+.button.primary,
+.login-button,
+.assistant-send {
+  background: #7450b8;
+  color: #fff;
+  box-shadow: none;
+}
+.button.primary:hover,
+.login-button:hover,
+.assistant-send:hover {
+  background: #593a96;
+}
+.button.secondary {
+  background: var(--surface);
+  color: var(--purple);
+  border-color: var(--border);
+}
+.icon-button,
+.theme-toggle {
+  border-radius: 50%;
+}
+.profile-button > span {
+  background: var(--accent-lilac);
+  color: var(--ink);
+}
+.subnav {
+  font-size: 13px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.page-content {
+  animation: botanical-enter 0.3s ease both;
+}
+.page-banner,
+.symptom-studio-hero {
+  border: 0;
+  background: var(--scene);
+  border-radius: 24px;
+  padding: 30px 34px;
+  box-shadow: none;
+  color: var(--ink);
+}
+.page-banner h1,
+.symptom-hero-copy h1 {
+  font-family: var(--display-font);
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: var(--ink);
+}
+.page-banner p,
+.symptom-hero-copy > p {
+  color: var(--muted);
+  font-size: 15px;
+}
+.eyebrow,
+.section-kicker,
+.symptom-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--purple);
+}
+.page-art {
+  opacity: 0.85;
+}
+/* Homepage: a quiet two-tone introduction and three clear entry points. */
+.discover-hero {
+  margin-top: 24px;
+  background: var(--mint);
+  color: var(--ink);
+  border: 0;
+  border-radius: 30px;
+  box-shadow: none;
+  padding: 30px 36px;
+  gap: 30px;
+}
+.discover-copy {
+  padding: 6px 0;
+}
+.discover-eyebrow {
+  color: var(--purple);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+.discover-copy h1 {
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-size: clamp(38px, 3.8vw, 54px);
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  line-height: 1.12;
+  margin: 20px 0;
+}
+.discover-copy h1 em {
+  color: var(--purple);
+}
+.discover-copy > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+.discover-search {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 40px;
+  padding: 7px 8px 7px 18px;
+  box-shadow: none;
+  margin-top: 22px;
+}
+.discover-search input {
+  font-size: 14px;
+}
+.discover-search > button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #7450b8;
+  color: #fff;
+}
+.discover-search > button:hover {
+  background: #593a96;
+}
+.discover-suggestions,
+.discover-trust {
+  color: var(--muted);
+  font-size: 12px;
+}
+.discover-suggestions button {
+  background: transparent;
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 20%, transparent);
+  border-radius: 30px;
+}
+.discover-suggestions button:hover {
+  color: var(--purple);
+  border-color: var(--purple);
+  background: var(--surface);
+}
+.discover-trust svg {
+  color: var(--purple);
+}
+.discover-trust i {
+  background: var(--border);
+}
+.discover-visual {
+  padding: 14px;
+  border-radius: 24px;
+  background: var(--accent-lilac);
+}
+.knowledge-scene {
+  height: 230px;
+  max-width: 400px;
+  margin: auto;
+}
+.knowledge-note {
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px #24243810;
+  transform: rotate(-2deg);
+}
+.knowledge-note strong {
+  font-size: 12px;
+}
+.knowledge-note small {
+  font-size: 11px;
+}
+.discover-paths {
+  margin-top: 12px;
+  gap: 8px;
+}
+.discover-paths > button {
+  min-height: 60px;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.discover-paths strong {
+  font-size: 13px;
+}
+.discover-paths small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.discover-paths button > span {
+  background: var(--mint);
+  color: var(--purple);
+}
+.discover-footnote {
+  font-size: 12px;
+  margin-bottom: 20px;
+  border-top: 0;
+}
+.mosaic-heading {
+  margin-top: 36px;
+}
+.mosaic-heading h2,
+.section-heading h2,
+.landing-cta h2 {
+  font-family: var(--display-font);
+  font-weight: 500;
+  font-size: clamp(28px, 3vw, 38px);
+  letter-spacing: -0.8px;
+}
+.mosaic-card {
+  border: 0;
+  border-radius: 24px;
+  min-height: 320px;
+  padding: 24px;
+  box-shadow: none;
+}
+.mosaic-assistant {
+  background: var(--accent-lilac);
+  color: var(--ink);
+}
+.mosaic-images {
+  background: var(--scene);
+  color: var(--ink);
+}
+.mosaic-symptoms {
+  background: #f1eafa;
+  color: #49325e;
+}
+:root[data-theme='dark'] .mosaic-symptoms {
+  background: #352b40;
+  color: #f1e8fb;
+}
+.mosaic-card h2 {
+  font-family: var(--display-font);
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+}
+.mosaic-card p,
+.mosaic-topline,
+.mosaic-cta {
+  color: inherit;
+}
+.mosaic-card p {
+  font-size: 14px;
+}
+.mosaic-cta {
+  font-size: 13px;
+  border-top-color: #73738630;
+}
+.mosaic-orb {
+  width: 86px;
+  height: 86px;
+}
+.how-grid article {
+  border-radius: 18px;
+  background: var(--surface);
+  padding: 24px;
+}
+.landing-cta {
+  background: #7450b8;
+  color: #f4efff;
+  box-shadow: none;
+}
+.landing-cta h2 {
+  color: #f4efff;
+}
+.landing-cta p,
+.landing-cta .section-kicker {
+  color: #ded1ef;
+}
+.site-footer {
+  background: #242438;
+  color: #f4efff;
+}
+.site-footer p,
+.site-footer button,
+.site-footer small,
+.site-footer h3 {
+  color: #ded1ef;
+}
+/* Library and shared content */
+.panel,
+.modal,
+.library-tools {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 20px;
+  box-shadow: none;
+}
+.library-tools {
+  padding: 18px;
+}
+.library-search {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  box-shadow: none;
+}
+.filter-chip {
+  border-radius: 30px;
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 13px;
+}
+.filter-chip.selected {
+  background: #7450b8;
+  color: white;
+  border-color: #7450b8;
+  box-shadow: none;
+}
+.unified-library-card,
+.disease-card,
+.topic-card {
+  background: var(--surface);
+  border-color: var(--border);
+  border-radius: 20px;
+  box-shadow: none;
+  overflow: hidden;
+}
+.unified-library-card:hover,
+.disease-card:hover,
+.topic-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--purple);
+  box-shadow: 0 10px 24px #24243809;
+}
+.library-card-body {
+  padding: 20px;
+  gap: 10px;
+}
+.library-card-body h3,
+.unified-card-title {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+}
+.library-card-group {
+  background: var(--scene);
+  color: var(--purple);
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.library-card-body > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.disease-cover-placeholder {
+  background: var(--scene);
+  color: var(--muted);
+}
+input:not([type='checkbox']):not([type='radio']),
+select,
+textarea {
+  border-color: var(--border);
+  color: var(--ink);
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--purple);
+}
+.management-toolbar input,
+.management-toolbar select,
+.auth-form input,
+.auth-form textarea,
+.auth-form select {
+  background: var(--canvas);
+  border-radius: 12px;
+}
+.table-wrap {
+  border-color: var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+.table-wrap th {
+  background: var(--scene);
+  color: var(--muted);
+  font-size: 12px;
+}
+.table-wrap td {
+  border-color: var(--border);
+  font-size: 14px;
+}
+.table-wrap tbody tr:hover {
+  background: var(--canvas);
+}
+.pagination button {
+  border-radius: 50%;
+}
+.pagination button.active {
+  background: #7450b8;
+  color: #fff;
+}
+.modal-backdrop {
+  background: #24163865;
+  backdrop-filter: blur(5px);
+}
+.modal h2 {
+  font-size: 23px;
+  letter-spacing: -0.5px;
+}
+/* Symptoms */
+.symptom-picker {
+  padding: 24px;
+}
+.symptom-section-kicker {
+  color: var(--purple);
+}
+.symptom-choice {
+  background: var(--canvas);
+  border-color: var(--border);
+  border-radius: 14px;
+}
+.symptom-choice.selected {
+  background: var(--mint);
+  border-color: var(--purple);
+}
+.symptom-summary-masthead {
+  background: #7450b8;
+  color: #f4efff;
+}
+.symptom-summary-masthead .step-label,
+.symptom-selection-number small {
+  color: #ded1ef;
+}
+.symptom-orbit-core {
+  background: #7450b8;
+  box-shadow: 0 16px 30px #7450b825;
+}
+.symptom-orbit-badge.spark {
+  background: var(--accent-lilac);
+  color: var(--ink);
+}
+.symptom-specialty-tabs {
+  scrollbar-width: thin;
+}
+/* Images and AI */
+.image-upload-studio {
+  border: 1px dashed var(--purple);
+  background: var(--scene);
+  border-radius: 18px;
+}
+.image-upload-studio:hover {
+  background: var(--mint);
+}
+.image-guidance {
+  background: var(--surface);
+  border-color: var(--border);
+}
+.assistant-studio {
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: none;
+}
+.assistant-brand > span,
+.assistant-orb,
+.assistant-avatar {
+  background: var(--mint);
+  color: var(--purple);
+  box-shadow: none;
+}
+.assistant-welcome h1 {
+  font-family: var(--display-font);
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+.assistant-suggestions button {
+  background: var(--canvas);
+  border-color: var(--border);
+}
+.assistant-suggestions button:nth-child(2) {
+  background: var(--hero-wash);
+}
+.assistant-input-box {
+  background: var(--canvas);
+  border-radius: 20px;
+  border-color: var(--border);
+  box-shadow: none;
+}
+.assistant-turn.user .assistant-turn-body {
+  background: var(--mint);
+  border-color: transparent;
+}
+.assistant-footnote {
+  color: var(--muted);
+}
+@keyframes botanical-enter {
+  from {
+    opacity: 0.65;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 1280px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header-inner {
+    padding: 12px 20px;
+  }
+  .discover-hero {
+    grid-template-columns: 1fr;
+    padding: 26px;
+    gap: 20px;
+  }
+  .discover-copy h1 {
+    font-size: 42px;
+  }
+  .discover-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: center;
+  }
+  .knowledge-scene {
+    width: 100%;
+    height: 220px;
+  }
+  .discover-paths {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .knowledge-note {
+    display: none;
+  }
+  .page-banner,
+  .symptom-studio-hero {
+    padding: 26px;
+  }
+}
+@media (max-width: 520px) {
+  body {
+    font-size: 15px;
+  }
+  .header-inner {
+    min-height: 64px;
+    padding: 10px 16px;
+    gap: 10px;
+  }
+  .brand-word strong {
+    font-size: 24px;
+  }
+  .brand-word small {
+    display: none;
+  }
+  .discover-hero {
+    margin: 14px 12px 0;
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+  .discover-copy h1 {
+    font-size: 37px;
+  }
+  .discover-visual {
+    display: block;
+    padding: 12px;
+  }
+  .knowledge-scene {
+    height: 170px;
+    max-width: 260px;
+  }
+  .discover-paths {
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+  .discover-paths > button {
+    min-height: 72px;
+    padding: 9px;
+  }
+  .discover-paths strong {
+    font-size: 12px;
+  }
+  .discover-paths small {
+    font-size: 11px;
+  }
+  .discover-paths button > span {
+    display: none;
+  }
+  .mosaic-card {
+    min-height: 300px;
+  }
+  .mosaic-card h2 {
+    font-size: 28px;
+  }
+  .page-banner,
+  .symptom-studio-hero {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+  .page-banner h1,
+  .symptom-hero-copy h1 {
+    font-size: 32px;
+  }
+  .library-tools,
+  .symptom-picker {
+    padding: 16px;
+  }
+  .assistant-studio {
+    border-radius: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-content {
+    animation: none;
+  }
+}
+
+/* Restore contrast for artwork and links on light lavender surfaces. */
+.discover-paths strong,
+.discover-paths small {
+  background: transparent;
+}
+.discover-paths button > span {
+  background: transparent;
+  color: var(--purple);
+}
+.sculpture-tag {
+  color: var(--purple);
+  background: var(--surface);
+  border-color: var(--border);
+}
+:root[data-theme='dark'] .discover-search > button,
+:root[data-theme='dark'] .button.primary,
+:root[data-theme='dark'] .login-button,
+:root[data-theme='dark'] .assistant-send {
+  background: #7450b8;
+  color: white;
+}
+.discover-paths button strong { color: var(--ink); }
+.discover-paths button small { color: var(--muted); }
+.discover-paths button > span { color: var(--purple); background: var(--purple-soft); }

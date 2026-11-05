@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.npm-cache": true,
+    "**/*.tsbuildinfo": true,
+    ".venv": true,
+    ".venv-research": true,
+    "**/node_modules": true,
+    "frontend/dist": true
+  }
+}

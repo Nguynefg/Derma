@@ -1,0 +1,2 @@
+-r base.txt
+pyodbc>=5.2,<6

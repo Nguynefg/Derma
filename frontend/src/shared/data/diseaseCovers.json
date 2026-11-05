@@ -1,0 +1,1421 @@
+[
+  {
+    "key": "acanthosis-nigricans",
+    "names": [
+      "Acanthosis nigricans"
+    ],
+    "src": "/assets/library/diseases/acanthosis-nigricans.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acanthosis-nigricans4.jpg",
+    "creator": "Madhero88",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "psoriasis",
+    "names": [
+      "Psoriasis"
+    ],
+    "src": "/assets/library/diseases/psoriasis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psoriasis_on_back1.jpg",
+    "creator": "Psoriasis_on_back.jpg: Marnanel\nderivative work: James Heilman, MD (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "key": "vitiligo",
+    "names": [
+      "Vitiligo"
+    ],
+    "src": "/assets/library/diseases/vitiligo.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vitiligo2.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "atopic-dermatitis",
+    "names": [
+      "Atopic dermatitis"
+    ],
+    "src": "/assets/library/diseases/atopic-dermatitis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atopy2010.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "alopecia-areata",
+    "names": [
+      "Alopecia areata"
+    ],
+    "src": "/assets/library/diseases/alopecia-areata.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allopecia_areata.JPG",
+    "creator": "Abbassyma at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain"
+  },
+  {
+    "key": "tinea-corporis",
+    "names": [
+      "Tinea corporis"
+    ],
+    "src": "/assets/library/diseases/tinea-corporis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ringworm_on_the_arm,_or_tinea_corporis_due_to_Trichophyton_mentagrophytes_PHIL_2938_lores.jpg",
+    "creator": "CDC/ Dr. Lucille K. Georg",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain"
+  },
+  {
+    "key": "rosacea",
+    "names": [
+      "Rosacea"
+    ],
+    "src": "/assets/library/diseases/rosacea.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosacea.jpg",
+    "creator": "Michael Sand, Daniel Sand, Christina Thrandorf, Volker Paech, Peter Altmeyer, Falk G Bechara",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  {
+    "key": "pityriasis-rosea",
+    "names": [
+      "Pityriasis rosea"
+    ],
+    "src": "/assets/library/diseases/pityriasis-rosea.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pityriasisrosa.png",
+    "creator": "James Heilman,MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "seborrheic-dermatitis",
+    "names": [
+      "Seborrhoeic dermatitis",
+      "Seborrheic dermatitis"
+    ],
+    "src": "/assets/library/diseases/seborrheic-dermatitis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seborrhoeic_dermatitis_highres.jpg",
+    "creator": "Roymishali",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "scabies",
+    "names": [
+      "Scabies"
+    ],
+    "src": "/assets/library/diseases/scabies.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scabies-burrow.jpg",
+    "creator": "Michael Geary",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain"
+  },
+  {
+    "key": "molluscum-contagiosum",
+    "names": [
+      "Molluscum contagiosum"
+    ],
+    "src": "/assets/library/diseases/molluscum-contagiosum.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molluscaklein.jpg",
+    "creator": "E van Herk",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "key": "keratosis-pilaris",
+    "names": [
+      "Keratosis pilaris"
+    ],
+    "src": "/assets/library/diseases/keratosis-pilaris.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keratosis_pilaris_(moderate).jpg",
+    "creator": "QuarterNotes",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "key": "onychomycosis",
+    "names": [
+      "Onychomycosis"
+    ],
+    "src": "/assets/library/diseases/onychomycosis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oncymycosis.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "gout",
+    "names": [
+      "Gout"
+    ],
+    "src": "/assets/library/diseases/gout.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gout_Signs_and_Symptoms.jpg",
+    "creator": "www.scientificanimations.com/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "key": "osteoarthritis",
+    "names": [
+      "Osteoarthritis"
+    ],
+    "src": "/assets/library/diseases/osteoarthritis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heberden-Arthrose.JPG",
+    "creator": "Drahreg01",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "key": "rheumatoid-arthritis",
+    "names": [
+      "Rheumatoid arthritis"
+    ],
+    "src": "/assets/library/diseases/rheumatoid-arthritis.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rheumatoid_Arthritis.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "asthma",
+    "names": [
+      "Asthma"
+    ],
+    "src": "/assets/library/diseases/asthma.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asthma_(Lungs).png",
+    "creator": "BruceBlaus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "key": "cataract",
+    "names": [
+      "Cataract"
+    ],
+    "src": "/assets/library/diseases/cataract.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cataract_in_human_eye.png",
+    "creator": "Rakesh Ahuja, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "key": "gerd",
+    "names": [
+      "Gastroesophageal reflux disease",
+      "Gastro-oesophageal reflux disease"
+    ],
+    "src": "/assets/library/diseases/gerd.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gastroesophageal_reflux_barium_X-ray.jpg",
+    "creator": "Steven Fruitsmaak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "key": "kidney-stones",
+    "names": [
+      "Kidney stones",
+      "Kidney stone disease",
+      "Renal calculi"
+    ],
+    "src": "/assets/library/diseases/kidney-stones.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nefrolit.jpg",
+    "creator": "Robert R. Wal",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain"
+  },
+  {
+    "key": "923dede874874050659a",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Intertrigo_interdigital_%C3%A0_CA.jpg",
+    "creator": "Grook Da Oger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Candidal intertrigo"
+    ],
+    "src": "/assets/library/diseases/923dede874874050659a.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "be00b61243372c22b95e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cherry_angioma.jpg",
+    "creator": "Midasblenny",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Cherry angioma"
+    ],
+    "src": "/assets/library/diseases/be00b61243372c22b95e.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "afffde901d4c745da6d2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Histopathology_of_dermatofibroma.jpg",
+    "creator": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest:  None\nMikael Häggström, M.D.Consent note: Consent from the patient or patient's relatives is regarded as redundant, because of absence of identifiable features (List of HIPAA identifiers) in the media and case information (See also HIPAA case reports guidance).",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "names": [
+      "Dermatofibroma"
+    ],
+    "src": "/assets/library/diseases/afffde901d4c745da6d2.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "1bd26e5be1585782c531",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inflamed_epidermal_inclusion_cyst.jpg",
+    "creator": "Steven Fruitsmaak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Epidermoid cyst"
+    ],
+    "src": "/assets/library/diseases/1bd26e5be1585782c531.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "88d6f8a7dcbda32cbf41",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erythrasma.jpg",
+    "creator": "Mohammad2018",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Erythrasma"
+    ],
+    "src": "/assets/library/diseases/88d6f8a7dcbda32cbf41.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "6655d19fc3cdcc88e342",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male-pattern_hair_loss.jpg",
+    "creator": "BlaiserPascal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Male pattern hair loss"
+    ],
+    "src": "/assets/library/diseases/6655d19fc3cdcc88e342.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "a7fab9f28f6d93f34134",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isolated_folliculitis.jpg",
+    "creator": "Jmarchn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Folliculitis"
+    ],
+    "src": "/assets/library/diseases/a7fab9f28f6d93f34134.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "461e80dca151619491aa",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axillary_intertrigo.png",
+    "creator": "National Institute for Occupational Safety and Health",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Intertrigo"
+    ],
+    "src": "/assets/library/diseases/461e80dca151619491aa.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "084c2f5500aaa5f0b1e4",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichen_simplex_chronicus_-_very_low_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Lichen simplex",
+      "Lichen simplex chronicus"
+    ],
+    "src": "/assets/library/diseases/084c2f5500aaa5f0b1e4.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "50248dc68309777be0cc",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pityrosporum_folliculitis_2.jpg",
+    "creator": "Ran Yuping et al.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Malassezia folliculitis"
+    ],
+    "src": "/assets/library/diseases/50248dc68309777be0cc.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4bb6003ffc4d7d5ddd37",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onycholysis_left_hand_34yo_male_ring_and_little_fingers_non-fungal.jpg",
+    "creator": "CopperKettle",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Onycholysis"
+    ],
+    "src": "/assets/library/diseases/4bb6003ffc4d7d5ddd37.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c78cc89749e3337d27fd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acute_paronychia_with_pus-filled_abscess_on_finger,_photographed_by_Glen_Humble_-_3_September_2011.jpg",
+    "creator": "Glen",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "names": [
+      "Paronychia"
+    ],
+    "src": "/assets/library/diseases/c78cc89749e3337d27fd.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "e9f5a41ecf7adc4c6ca6",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pemphigus_vulgaris_-_intermed_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Pemphigus vulgaris"
+    ],
+    "src": "/assets/library/diseases/e9f5a41ecf7adc4c6ca6.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "b2086a12040448333d99",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Periorale_Dermatitis.jpg",
+    "creator": "Johannes Köhler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Periorificial dermatitis",
+      "Perioral dermatitis"
+    ],
+    "src": "/assets/library/diseases/b2086a12040448333d99.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1c242ec53efc258b0e30",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tinea_versicolor1.jpg",
+    "creator": "Sarahrosenau on Flickr.com",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "names": [
+      "Pityriasis versicolor",
+      "Tinea versicolor"
+    ],
+    "src": "/assets/library/diseases/1c242ec53efc258b0e30.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "f6b554987bc8474ed97f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SkinTumors-PB061062.JPG",
+    "creator": "LWozniak&KWZielinski",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Pyogenic granuloma"
+    ],
+    "src": "/assets/library/diseases/f6b554987bc8474ed97f.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "d7d04b4ff9a89e39ec6f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seborrheic_keratosis_on_human_back.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Seborrhoeic keratosis",
+      "Seborrheic keratosis"
+    ],
+    "src": "/assets/library/diseases/d7d04b4ff9a89e39ec6f.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "7dec40edf4d7936d14fe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NeckAcrochordons.jpg",
+    "creator": "Jmarchn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Skin tags",
+      "Skin tag"
+    ],
+    "src": "/assets/library/diseases/7dec40edf4d7936d14fe.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "2cc4c51b49f8e7abb69f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liver_spots,_light-skinned_Caucasian_man,_age_63.jpg",
+    "creator": "Beyond My Ken",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Solar lentigo",
+      "Age spot"
+    ],
+    "src": "/assets/library/diseases/2cc4c51b49f8e7abb69f.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "20ea5068601f3c9077cb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunburn_Treatment_Practices.jpg",
+    "creator": "Phil Kates",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "names": [
+      "Sunburn"
+    ],
+    "src": "/assets/library/diseases/20ea5068601f3c9077cb.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "785ee70d592a6f622481",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teigne_tondante_enfant.jpg",
+    "creator": "Gzzz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Tinea capitis"
+    ],
+    "src": "/assets/library/diseases/785ee70d592a6f622481.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "2e17e83091031f73229d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tinea_cruris.jpg",
+    "creator": "Robertgascoin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Tinea cruris"
+    ],
+    "src": "/assets/library/diseases/2e17e83091031f73229d.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "3d6666810eba84a67713",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acne_vulgaris_on_a_very_oily_skin.jpg",
+    "creator": "Roshu Bangal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Acne"
+    ],
+    "src": "/assets/library/diseases/3d6666810eba84a67713.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "146a08286849a84f80be",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomycetoma_before_treatment.tif",
+    "creator": "(2017-02-13). \"Review of 21 cases of mycetoma from 1991 to 2014 in Rio de Janeiro, Brazil\". PLOS Neglected Tropical Diseases 11 (2): –0005301. DOI:10.1371/journal.pntd.0005301. ISSN 1935-2735. Retrieved on 2017-12-02.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "names": [
+      "Actinomycetoma"
+    ],
+    "src": "/assets/library/diseases/146a08286849a84f80be.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "fd9239ca53044b5b0cc8",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomycosis_PHIL_2856_lores.jpg",
+    "creator": "CDC/Dr. Thomas F. Sellers/Emory University",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Actinomycosis"
+    ],
+    "src": "/assets/library/diseases/fd9239ca53044b5b0cc8.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "90d20a717d6cb1f248d3",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angular_cheilitis1.jpg",
+    "creator": "Matthew Ferguson 57",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Angular cheilitis"
+    ],
+    "src": "/assets/library/diseases/90d20a717d6cb1f248d3.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4469f74e9849d644f8e9",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0510_Spondylitis_ankylosans_(morbus_bechterew)_anagoria.JPG",
+    "creator": "Anagoria",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "names": [
+      "Ankylosing spondylitis"
+    ],
+    "src": "/assets/library/diseases/4469f74e9849d644f8e9.webp",
+    "caption": "Mẫu cột sống viêm dính khớp"
+  },
+  {
+    "key": "23ee41ff76cce41a504e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthrax_PHIL_2033.png",
+    "creator": "CDC/ James H. Steele",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Anthrax"
+    ],
+    "src": "/assets/library/diseases/23ee41ff76cce41a504e.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4bd424c6d3d146fa2345",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afib_ecg.svg",
+    "creator": "J. Heuser; vectorised and touched up by Marnanel",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "names": [
+      "Atrial fibrillation"
+    ],
+    "src": "/assets/library/diseases/4bd424c6d3d146fa2345.webp",
+    "caption": "Điện tâm đồ tham khảo"
+  },
+  {
+    "key": "f43158d131ab0ce5b008",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_common_forms_of_Blastocystis_hominis_Valzn.jpg",
+    "creator": "Valentia Lim Valzn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "names": [
+      "Blastocystosis"
+    ],
+    "src": "/assets/library/diseases/f43158d131ab0ce5b008.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "3ce93ec2a24f691b0aba",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botulism1and2.JPG",
+    "creator": "Herbert L. Fred, MD and Hendrik A. van Dijk",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "names": [
+      "Botulism"
+    ],
+    "src": "/assets/library/diseases/3ce93ec2a24f691b0aba.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "42273a46df5df598be2f",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemophilus_influenzae_01.jpg",
+    "creator": "CDC/Dr. W.A. Clark (PHIL #1617), 1977.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Brazilian purpuric fever"
+    ],
+    "src": "/assets/library/diseases/42273a46df5df598be2f.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "4c9ae639bf14dcffcdcc",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bronchitis.jpg",
+    "creator": "National Heart Lung and Blood Institute",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Bronchitis"
+    ],
+    "src": "/assets/library/diseases/4c9ae639bf14dcffcdcc.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "bf18670a6d2381e41dd2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bullous_impetigo1.jpg",
+    "creator": "Littlekidsdoc",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Bullous impetigo"
+    ],
+    "src": "/assets/library/diseases/bf18670a6d2381e41dd2.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "bda4085e3d8898f8b7d0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Legs_Bullous_Pemphigoid.jpg",
+    "creator": "Jubward",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Bullous pemphigoid"
+    ],
+    "src": "/assets/library/diseases/bda4085e3d8898f8b7d0.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c8282addc719e08962e2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Campylobacteriosis.png",
+    "creator": "CDC",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Campylobacteriosis"
+    ],
+    "src": "/assets/library/diseases/c8282addc719e08962e2.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "9f973b434f622fb0bc46",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat-scratch-disease.jpg",
+    "creator": "CDC",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Cat-scratch disease"
+    ],
+    "src": "/assets/library/diseases/9f973b434f622fb0bc46.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "74f78718803aab3823ae",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cellulitis3.jpg",
+    "creator": "RafaelLopez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "names": [
+      "Cellulitis"
+    ],
+    "src": "/assets/library/diseases/74f78718803aab3823ae.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "8b1414bef2e3038fa70b",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemophilus_ducreyi_01.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Chancroid"
+    ],
+    "src": "/assets/library/diseases/8b1414bef2e3038fa70b.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "766c2b508c479e0f9db6",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varicela_Aranzales.jpg",
+    "creator": "Camiloaranzales",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Chickenpox",
+      "Varicella"
+    ],
+    "src": "/assets/library/diseases/766c2b508c479e0f9db6.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c1f4f07db6314a3eecfd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wintertenen.jpg",
+    "creator": "Sapp",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Chilblains"
+    ],
+    "src": "/assets/library/diseases/c1f4f07db6314a3eecfd.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "2936d04ae8674c8f846d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CKD_-_Chronic_kidney_disease.jpg",
+    "creator": "https://www.scientificanimations.com/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Chronic kidney disease"
+    ],
+    "src": "/assets/library/diseases/2936d04ae8674c8f846d.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "86dd844512f23ab38140",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copd_versus_healthy_lung.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Chronic obstructive pulmonary disease"
+    ],
+    "src": "/assets/library/diseases/86dd844512f23ab38140.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "9df1d7834101d80c32ee",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coeliac_disease_endoscopy.jpg",
+    "creator": "Abhinav Vasudevan, John S Lubel",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "names": [
+      "Coeliac disease"
+    ],
+    "src": "/assets/library/diseases/9df1d7834101d80c32ee.webp",
+    "caption": "Ảnh nội soi tá tràng tham khảo"
+  },
+  {
+    "key": "416c6fd0813a8657413b",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutchinson_teeth_congenital_syphilis_PHIL_2385.rsh.jpg",
+    "creator": "CDC/Susan Lindsley",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Congenital syphilis"
+    ],
+    "src": "/assets/library/diseases/416c6fd0813a8657413b.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4e7d30f3232dda19de32",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Contact_dermatitis_around_wound.jpg",
+    "creator": "Digitalgadget at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Contact dermatitis"
+    ],
+    "src": "/assets/library/diseases/4e7d30f3232dda19de32.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "a34c50d061ebd3ae188e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baby_With_Cradle_Cap.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "names": [
+      "Cradle cap"
+    ],
+    "src": "/assets/library/diseases/a34c50d061ebd3ae188e.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c0da41525ef4f641f6e2",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cryptosporidiosis_-_very_high_mag_-_cropped.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Cryptosporidiosis"
+    ],
+    "src": "/assets/library/diseases/c0da41525ef4f641f6e2.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "7c4b0b3da6f0cc945403",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandruff01.jpg",
+    "creator": "Horoporo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Dandruff"
+    ],
+    "src": "/assets/library/diseases/7c4b0b3da6f0cc945403.webp",
+    "caption": "Ảnh hiển vi mẫu gàu"
+  },
+  {
+    "key": "96bcd99f61c6a37abafe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_vein_thrombosis_of_the_right_leg.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Deep vein thrombosis"
+    ],
+    "src": "/assets/library/diseases/96bcd99f61c6a37abafe.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "d47b1ebd8fee2855c812",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dirty_white_pseudomembrane_classically_seen_in_diphtheria_2013-07-06_11-07.jpg",
+    "creator": "User:Dileepunnikri",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Diphtheria"
+    ],
+    "src": "/assets/library/diseases/d47b1ebd8fee2855c812.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "c30aa94eb4a912e7b959",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_introduction_to_dermatology_(1905)_ecthyma.jpg",
+    "creator": "Norman Purvis Walker",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Ecthyma"
+    ],
+    "src": "/assets/library/diseases/c30aa94eb4a912e7b959.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1251d0efec86ce4f9bc7",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike-waves.png",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "names": [
+      "Epilepsy"
+    ],
+    "src": "/assets/library/diseases/1251d0efec86ce4f9bc7.webp",
+    "caption": "Điện não đồ tham khảo"
+  },
+  {
+    "key": "5ae0d81f98c4bbac466c",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Facial_erysipelas.jpg",
+    "creator": "CDC/Dr. Thomas F. Sellers/Emory University",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Erysipelas"
+    ],
+    "src": "/assets/library/diseases/5ae0d81f98c4bbac466c.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "50338c616909fc89fa4b",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diseases_of_Swine_31-1.png",
+    "creator": "R. L. Wood",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Erysipeloid"
+    ],
+    "src": "/assets/library/diseases/50338c616909fc89fa4b.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "aacf31aea5f6ac88c511",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erythema_multiforme_minor_of_the_hand.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Erythema multiforme"
+    ],
+    "src": "/assets/library/diseases/aacf31aea5f6ac88c511.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "7b81e9b62382afad5aee",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENlegs.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Erythema nodosum"
+    ],
+    "src": "/assets/library/diseases/7b81e9b62382afad5aee.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "4e86515db528ba456c89",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landkartenzunge_005.jpg",
+    "creator": "Bin im Garten",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Geographic tongue"
+    ],
+    "src": "/assets/library/diseases/4e86515db528ba456c89.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "5645f1ac79253d4243b7",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giardia_lamblia_SEM_8698_lores.jpg",
+    "creator": "CDC / Mahmud Tari",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Giardiasis"
+    ],
+    "src": "/assets/library/diseases/5645f1ac79253d4243b7.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "39b510e413edff2393fe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donovan-bodies.png",
+    "creator": "UW Infectious Diseases Education & Assessment (IDEA) Program",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Granuloma inguinale"
+    ],
+    "src": "/assets/library/diseases/39b510e413edff2393fe.webp",
+    "caption": "Minh họa thể Donovan trên xét nghiệm"
+  },
+  {
+    "key": "a8c126270098613cc128",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guttate_psoriasis.jpg",
+    "creator": "Bobjgalindo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Guttate psoriasis"
+    ],
+    "src": "/assets/library/diseases/a8c126270098613cc128.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "7b38275b42f6f8ddb4fb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elevated_JVP.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Heart failure"
+    ],
+    "src": "/assets/library/diseases/7b38275b42f6f8ddb4fb.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "0151eab9932cb31d1646",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ichthyosis_(1).jpg",
+    "creator": "Gzzz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Ichthyosis"
+    ],
+    "src": "/assets/library/diseases/0151eab9932cb31d1646.webp",
+    "caption": "Ví dụ bệnh vảy cá thông thường"
+  },
+  {
+    "key": "222b78b39d5c16755104",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Impetigo2020.jpg",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Impetigo"
+    ],
+    "src": "/assets/library/diseases/222b78b39d5c16755104.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "ef6f7973d0b3dbad0f52",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lymphadanopathy.JPG",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Infectious mononucleosis"
+    ],
+    "src": "/assets/library/diseases/ef6f7973d0b3dbad0f52.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "25bd8255f000c869df94",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irritable_bowel_syndrome.jpg",
+    "creator": "http://www.scientificanimations.com",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Irritable bowel syndrome"
+    ],
+    "src": "/assets/library/diseases/25bd8255f000c869df94.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "2ac8cf65c7d628579398",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichen_sclerosus_svg_hariadhi.svg",
+    "creator": "Hariadhi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Lichen sclerosus"
+    ],
+    "src": "/assets/library/diseases/2ac8cf65c7d628579398.webp",
+    "caption": "Sơ đồ minh họa bệnh"
+  },
+  {
+    "key": "6c0ab33e00ff5df484be",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Listeria_monocytogenes_PHIL_2287_lores.jpg",
+    "creator": "Elizabeth White",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Listeriosis"
+    ],
+    "src": "/assets/library/diseases/6c0ab33e00ff5df484be.webp",
+    "caption": "Ảnh tác nhân gây bệnh tham khảo"
+  },
+  {
+    "key": "6e79d0e99b44b1cd2e19",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melanoma.jpg",
+    "creator": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Melanoma"
+    ],
+    "src": "/assets/library/diseases/6e79d0e99b44b1cd2e19.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "6d33bc870028863d8e31",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mumps_PHIL_130_lores.jpg",
+    "creator": "Photo Credit:\nContent Providers: CDC/NIP/Barbara Rice",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Mumps"
+    ],
+    "src": "/assets/library/diseases/6d33bc870028863d8e31.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "d087c9cf35ba6fdafff0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:OsteoCutout.png",
+    "creator": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Osteoporosis"
+    ],
+    "src": "/assets/library/diseases/d087c9cf35ba6fdafff0.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "b7691519f5f655c12e1d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parkinson%E2%80%99s_disease_1880s.jpg",
+    "creator": "William Gowers; retouched by User:Dustfreeworld",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Parkinson's disease"
+    ],
+    "src": "/assets/library/diseases/b7691519f5f655c12e1d.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "b675367de6f3ac0dc668",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vasculitic_neuropathy_-_plastics_-_intermed_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Peripheral neuropathy"
+    ],
+    "src": "/assets/library/diseases/b675367de6f3ac0dc668.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "5d6ad2a68ae62533ddf5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pitted_keratolysis_3.jpg",
+    "creator": "Evan Saap",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "names": [
+      "Pitted keratolysis"
+    ],
+    "src": "/assets/library/diseases/5d6ad2a68ae62533ddf5.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "fbed37c6a59b92d993b0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_in_influensa_and_H_influenzae,_posteroanterior,_annotated.jpg",
+    "creator": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest:  None\nMikael Häggström, M.D.Consent note: Written informed consent was obtained from the individual, including online publication.",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "names": [
+      "Pneumonia"
+    ],
+    "src": "/assets/library/diseases/fbed37c6a59b92d993b0.webp",
+    "caption": "Ảnh X-quang phổi tham khảo"
+  },
+  {
+    "key": "10ed992ab4a267fd7f12",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pseudofolliculitis_Barbae.jpg",
+    "creator": "Army Medical Department",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Pseudofolliculitis barbae"
+    ],
+    "src": "/assets/library/diseases/10ed992ab4a267fd7f12.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1a9bd313d1cac4df9b78",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opisthotonus_in_a_patient_suffering_from_tetanus_-_Painting_by_Sir_Charles_Bell_-_1809.jpg",
+    "creator": "Sir Charles Bell",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Tetanus"
+    ],
+    "src": "/assets/library/diseases/1a9bd313d1cac4df9b78.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "1941afb83ecdecd40c17",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entropion_and_trichiasis_secondary_to_trachoma_A44-652-11.jpg",
+    "creator": "Otis Historical Archives Nat'l Museum of Health & Medicine",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "names": [
+      "Trachoma"
+    ],
+    "src": "/assets/library/diseases/1941afb83ecdecd40c17.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "eceb4506d401a8e671d0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accessory_auricle.jpg",
+    "creator": "Klaus D. Peter, Wiehl, Germany",
+    "license": "CC BY 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+    "names": [
+      "Accessory auricle"
+    ],
+    "src": "/assets/library/diseases/eceb4506d401a8e671d0.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "8598164d891d294dd3cd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:B_amelogenesis_imperfecta.jpg",
+    "creator": "see above",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "names": [
+      "Amelogenesis imperfecta"
+    ],
+    "src": "/assets/library/diseases/8598164d891d294dd3cd.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "9f6c1f77887661f77d33",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amniotic_fluid_embolism.jpg",
+    "creator": "Yale Rosen",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "names": [
+      "Amniotic fluid embolism"
+    ],
+    "src": "/assets/library/diseases/9f6c1f77887661f77d33.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "154bd89fd56128123feb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anencephaly-web.jpg",
+    "creator": "Centers for Disease Control and Prevention, National Center on Birth Defects and Developmental Disabilities",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Anencephaly"
+    ],
+    "src": "/assets/library/diseases/154bd89fd56128123feb.webp",
+    "caption": "Minh họa dị tật bẩm sinh"
+  },
+  {
+    "key": "99e9e9a72a498427a332",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aniridia.jpg",
+    "creator": "The original uploader was Gardar Rurak at English Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "names": [
+      "Aniridia"
+    ],
+    "src": "/assets/library/diseases/99e9e9a72a498427a332.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "53cf21aa4661c2e96fd1",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anotia_Illustration.jpg",
+    "creator": "Centers for Disease Control and Prevention, National Center on Birth Defects and Developmental Disabilities",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Anotia"
+    ],
+    "src": "/assets/library/diseases/53cf21aa4661c2e96fd1.webp",
+    "caption": "Minh họa dị tật bẩm sinh"
+  },
+  {
+    "key": "b973ed08ed2464c8e1c0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arhinia.jpg",
+    "creator": "Akkuzu G, Akkuzu B, Aydin E, Derbent M, Ozluoglu L",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "names": [
+      "Arrhinia"
+    ],
+    "src": "/assets/library/diseases/b973ed08ed2464c8e1c0.webp",
+    "caption": "Ví dụ khuyết mũi một phần"
+  },
+  {
+    "key": "f9de72da8f529fc20b74",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Membranoese_Choanalatresie_beidseits_NG_-_CT_axial_und_coronar_-_001_-Annotationen.png",
+    "creator": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Choanal atresia"
+    ],
+    "src": "/assets/library/diseases/f9de72da8f529fc20b74.webp",
+    "caption": "Ảnh CT tham khảo"
+  },
+  {
+    "key": "04a6fe17dc635702f455",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CMV_placentitis1_mini.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Congenital cytomegalovirus infection"
+    ],
+    "src": "/assets/library/diseases/04a6fe17dc635702f455.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "564625533f09a3af0917",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cataracts_due_to_Congenital_Rubella_Syndrome_(CRS)_PHIL_4284_lores.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Congenital rubella syndrome"
+    ],
+    "src": "/assets/library/diseases/564625533f09a3af0917.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "1f3a82983d392d06ed1d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1471-2350-8-52-2-l.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "names": [
+      "Dentinogenesis imperfecta"
+    ],
+    "src": "/assets/library/diseases/1f3a82983d392d06ed1d.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "54c05c06f2b0a1080c20",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diastematomyelie_80jw_-_MR_T2_axial_und_sag.jpg",
+    "creator": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Diastematomyelia"
+    ],
+    "src": "/assets/library/diseases/54c05c06f2b0a1080c20.webp",
+    "caption": "Ảnh MRI tham khảo"
+  },
+  {
+    "key": "a8dbc2a5ae7d8db4ffa0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ectopic_pregnancy_on_laparoscopy.png",
+    "creator": "Mikael Häggström",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Ectopic pregnancy"
+    ],
+    "src": "/assets/library/diseases/a8dbc2a5ae7d8db4ffa0.webp",
+    "caption": "Ảnh nội soi tham khảo"
+  },
+  {
+    "key": "55a7d5e89f7cb8c28f5e",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hypertrophic_decidual_vasculopathy_intermed_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Gestational hypertension"
+    ],
+    "src": "/assets/library/diseases/55a7d5e89f7cb8c28f5e.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "d7ec25caaa13c9b8d130",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydranencephaly.jpg",
+    "creator": "Dimitri Agamanolis, M.D Department of Pathology, Akron Children’s Hospital, One Perkins Square, Akron, Ohio, 44308, USA",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Hydranencephaly"
+    ],
+    "src": "/assets/library/diseases/d7ec25caaa13c9b8d130.webp",
+    "caption": "Ảnh trường hợp tham khảo"
+  },
+  {
+    "key": "d5b00145339214a3e123",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gould_Pyle_99.jpg",
+    "creator": "George M. Gould and Walter L. Pyle",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Macrostomia"
+    ],
+    "src": "/assets/library/diseases/d5b00145339214a3e123.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "77b47573c0e33a766de4",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Head_of_a_boy_with_hypertrophy_of_the_ear_Wellcome_L0062496.jpg",
+    "creator": "Mark, Leonard Portal",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "names": [
+      "Macrotia"
+    ],
+    "src": "/assets/library/diseases/77b47573c0e33a766de4.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "974df37334b55517069d",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Microcephaly-comparison-500px.jpg",
+    "creator": "Centers for Disease Control and Prevention",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Microcephaly"
+    ],
+    "src": "/assets/library/diseases/974df37334b55517069d.webp",
+    "caption": "Minh họa dị tật bẩm sinh"
+  },
+  {
+    "key": "28be720206f37598a471",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Closure_of_mouth_from_congenital_syphilis.jpg",
+    "creator": "J. Collins Warren M.D. and A. Pearce Gould M.S.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "names": [
+      "Microstomia"
+    ],
+    "src": "/assets/library/diseases/28be720206f37598a471.webp",
+    "caption": "Tranh y khoa lịch sử tham khảo"
+  },
+  {
+    "key": "9c496c5a4575bfec5093",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydatidiform_mole_(1)_complete_type.jpg",
+    "creator": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "names": [
+      "Molar pregnancy"
+    ],
+    "src": "/assets/library/diseases/9c496c5a4575bfec5093.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "a8d86a427a6afebb2667",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hypertrophic_decidual_vasculopathy_high_mag.jpg",
+    "creator": "Nephron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "names": [
+      "Pre-eclampsia"
+    ],
+    "src": "/assets/library/diseases/a8d86a427a6afebb2667.webp",
+    "caption": "Ảnh mô bệnh học tham khảo"
+  }
+]
