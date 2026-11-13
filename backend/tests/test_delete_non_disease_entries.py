@@ -8,6 +8,8 @@ from sqlalchemy.orm import Session
 from app.database.models import Base, Disease, User, ImageRecord, Bookmark, DiseaseSymptom, Symptom, Reference, MedicalDocument, DocumentVersion
 
 spec=importlib.util.spec_from_file_location('delete_reviewed',Path(__file__).resolve().parents[2]/'scripts/maintenance/delete_non_disease_entries.py')
+if not Path(spec.origin).is_file():
+    pytest.skip('Retired non-disease deletion script is not installed.', allow_module_level=True)
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 
 def fixture():

@@ -1,0 +1,58 @@
+[
+  {
+    "key": "shingles",
+    "name": "Zona thần kinh",
+    "english_name": "Shingles (herpes zoster)",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Zona thần kinh' (Shingles / Herpes zoster). A stylized torso / ribcage side profile showing a gentle curved cluster of small soft pink vesicles/rash along a dermatome line. Elegant flowing wavy paper cutout layers in pastel lavender, warm ivory cream, and soft blush, with minimalist botanical leaves and flora.",
+    "file": "shingles.webp"
+  },
+  {
+    "key": "ringworm",
+    "name": "Nấm da (hắc lào)",
+    "english_name": "Ringworm (tinea)",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Nấm da / Hắc lào' (Ringworm / Tinea). A stylized adult forearm showing a distinct clean circular ring-shaped lesion with gentle pink raised borders and a clearer center. Pale lavender and warm white curved wavy paper relief, violet #7450b8 accents and soft muted coral, framed by botanical leaves.",
+    "file": "ringworm.webp"
+  },
+  {
+    "key": "dyshidrotic-eczema",
+    "name": "Tổ đỉa",
+    "english_name": "Dyshidrotic eczema (pompholyx)",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Tổ đỉa' (Dyshidrotic eczema / Pompholyx). A stylized adult palm and sides of fingers showing tiny, delicate, clear pinhead-sized deep-seated vesicles in a clustered pattern. Wavy paper relief in lavender, violet, and soft coral.",
+    "file": "dyshidrotic-eczema.webp"
+  },
+  {
+    "key": "warts-and-verrucas",
+    "name": "Mụn cóc",
+    "english_name": "Warts and verrucas",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Mụn cóc' (Warts and verrucas). A stylized adult hand showing a single small, neat, textured benign papule on the dorsal finger. Pale lavender and warm white curved wavy paper relief, violet #7450b8 accents and soft muted coral.",
+    "file": "warts-and-verrucas.webp"
+  },
+  {
+    "key": "cold-sores",
+    "name": "Herpes môi",
+    "english_name": "Cold sores",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Herpes môi' (Cold sores). A stylized side-angle close-up of lips showing a small, neat cluster of tiny clear fluid vesicles on the outer border of the lip. Pale lavender and warm white curved wavy paper relief with paper botanical leaves.",
+    "file": "cold-sores.webp"
+  },
+  {
+    "key": "heat-rash",
+    "name": "Rôm sảy",
+    "english_name": "Heat rash (miliaria)",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Rôm sảy' (Heat rash / Miliaria). A stylized child's upper chest and neck with subtle, scattered pinhead-sized clear sweat droplets and soft pinkish heat rash papules, framed by wavy paper-relief layers.",
+    "file": "heat-rash.webp"
+  },
+  {
+    "key": "melasma",
+    "name": "Nám da",
+    "english_name": "Melasma",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Nám da' (Melasma). Elegant 3D sculpted clay side profile of a woman with delicate, dignified light-brown melasma pigmentation on cheek and temple, set against curved paper-cut layers in lavender, violet, ivory, and soft coral.",
+    "file": "melasma.webp"
+  },
+  {
+    "key": "hand-foot-and-mouth-disease",
+    "name": "Bệnh tay chân miệng",
+    "english_name": "Hand, foot and mouth disease",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Bệnh tay chân miệng' (Hand, foot and mouth disease). A stylized small gentle toddler hand and foot showing a few tiny distinct pale red spots and oval clear vesicles on the palm and sole.",
+    "file": "hand-foot-and-mouth-disease.webp"
+  }
+]

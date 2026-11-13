@@ -1,8 +1,11 @@
 import importlib.util
 from pathlib import Path
 from types import SimpleNamespace
+import pytest
 
 spec = importlib.util.spec_from_file_location('word_sync', Path(__file__).resolve().parents[2]/'scripts/import_export/sync_word_database.py')
+if not Path(spec.origin).is_file():
+    pytest.skip('Retired Word database sync script is not installed.', allow_module_level=True)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 

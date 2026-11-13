@@ -1,21 +1,17 @@
-import { useState } from 'react';
 import {
   ArrowRight,
-  ArrowUpRight,
   BookOpen,
-  ScanLine,
   Search,
   ShieldCheck,
-  Sparkles,
-  Stethoscope,
 } from 'lucide-react';
 import type { Disease } from '../shared/types/index';
+import { HomeDiscovery } from './HomeDiscovery';
 import { TopicCard } from '../features/library/components/TopicCard';
-import { KnowledgeArtwork } from '../shared/components/KnowledgeArtwork';
 import { LoadingSkeleton } from '../shared/components/Visuals';
 
 type Props = {
   diseases: Disease[];
+  browse: (specialty: string) => void;
   search: (query: string) => void;
   navigate: (page: 'questions' | 'symptoms' | 'images' | 'sources' | 'library') => void;
   open: (disease: Disease) => void;
@@ -24,175 +20,21 @@ type Props = {
   retry?: () => void;
 };
 
-export function HomePage({ diseases, search, navigate, open, loading, loadError, retry }: Props) {
-  const [query, setQuery] = useState('');
+export function HomePage({ diseases, search, browse, navigate, open, loading, loadError, retry }: Props) {
   const featured = ['atopic-dermatitis', 'asthma', 'type-2-diabetes']
     .map((id) => diseases.find((d) => d.slug === id))
     .filter((d): d is Disease => Boolean(d));
   const topics = featured.length ? featured : diseases.slice(0, 3);
+  const specialties = [...new Set(diseases.map(d => d.specialty).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'vi'));
   return (
     <div className="home-page">
-      <section className="discover-hero">
-        <div className="discover-copy">
-          <span className="discover-eyebrow">
-            <span /> MỘT NƠI ĐỂ HIỂU THÊM VỀ SỨC KHỎE
-          </span>
-          <h1>
-            Hiểu sức khỏe.
-            <br />
-            <em>Chạm tới an tâm.</em>
-          </h1>
-          <p>
-            Khám phá kiến thức sức khỏe bằng tiếng Việt. Tìm một chủ đề, nhận biết dấu hiệu và hỏi
-            thêm khi bạn cần.
-          </p>
-          <form
-            className="discover-search"
-            onSubmit={(event) => {
-              event.preventDefault();
-              search(query);
-            }}
-          >
-            <Search size={22} aria-hidden="true" />
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              maxLength={300}
-              placeholder="Tìm tên bệnh, triệu chứng…"
-              aria-label="Tìm tên bệnh hoặc từ khóa"
-            />
-            <button type="submit" aria-label="Tìm kiếm trong thư viện">
-              <ArrowRight size={22} />
-            </button>
-          </form>
-          <div className="discover-suggestions">
-            <span>Thử tìm</span>
-            {['Viêm da cơ địa', 'Mụn trứng cá', 'Vảy nến'].map((value) => (
-              <button key={value} onClick={() => search(value)}>
-                {value}
-                <ArrowUpRight size={13} />
-              </button>
-            ))}
-          </div>
-          <div className="discover-trust">
-            <ShieldCheck size={17} />
-            <span>Có nguồn để đối chiếu</span>
-            <i />
-            <BookOpen size={17} />
-            <span>Đọc theo cách của bạn</span>
-          </div>
-        </div>
-        <div className="discover-visual">
-          <KnowledgeArtwork />
-          <div className="discover-paths">
-            <button onClick={() => navigate('symptoms')}>
-              <span className="path-symbol mint">
-                <Stethoscope size={21} />
-              </span>
-              <span>
-                <strong>Từ một dấu hiệu</strong>
-                <small>Khám phá triệu chứng</small>
-              </span>
-              <ArrowUpRight size={18} />
-            </button>
-            <button onClick={() => navigate('questions')}>
-              <span className="path-symbol lilac">
-                <Sparkles size={21} />
-              </span>
-              <span>
-                <strong>Từ một câu hỏi</strong>
-                <small>Trò chuyện cùng AI</small>
-              </span>
-              <ArrowUpRight size={18} />
-            </button>
-          </div>
-        </div>
-      </section>
-      <div className="discover-footnote">
-        <InfoMark /> Thông tin tham khảo giúp bạn tìm hiểu, không thay thế bác sĩ chẩn đoán.
-      </div>
-
-      <div className="mosaic-heading">
-        <span className="section-kicker">KHÁM PHÁ THEO CÁCH CỦA BẠN</span>
-        <h2>Bắt đầu từ đâu cũng được.</h2>
-      </div>
-      <section className="feature-mosaic" aria-label="Chọn cách khám phá">
-        <button className="mosaic-card mosaic-assistant" onClick={() => navigate('questions')}>
-          <span className="mosaic-topline">
-            <span>GÓC TRÒ CHUYỆN</span>
-            <ArrowUpRight size={22} />
-          </span>
-          <div className="mosaic-orb" aria-hidden="true">
-            <Sparkles size={46} strokeWidth={1.2} />
-            <i />
-            <i />
-          </div>
-          <div>
-            <h2>
-              Hỏi điều bạn nghĩ.
-              <br />
-              Hiểu điều bạn cần.
-            </h2>
-            <p>Một cuộc trò chuyện để cùng bạn tìm hiểu sức khỏe.</p>
-          </div>
-          <span className="mosaic-cta">
-            Trò chuyện cùng trợ lý <ArrowRight size={17} />
-          </span>
-        </button>
-        <button className="mosaic-card mosaic-images" onClick={() => navigate('images')}>
-          <span className="mosaic-topline">
-            <span>KHÁM PHÁ BẰNG ẢNH</span>
-            <ArrowUpRight size={22} />
-          </span>
-          <div className="mosaic-scan" aria-hidden="true">
-            <div />
-            <ScanLine size={62} strokeWidth={1} />
-            <span />
-          </div>
-          <div>
-            <h2>
-              Thêm một
-              <br />
-              góc nhìn.
-            </h2>
-            <p>Quan sát dấu hiệu trên ảnh da và tìm bài viết tham khảo.</p>
-          </div>
-          <span className="mosaic-cta">
-            Chọn hình ảnh <ArrowRight size={17} />
-          </span>
-        </button>
-        <button className="mosaic-card mosaic-symptoms" onClick={() => navigate('symptoms')}>
-          <span className="mosaic-topline">
-            <span>LẮNG NGHE CƠ THỂ</span>
-            <ArrowUpRight size={22} />
-          </span>
-          <div className="mosaic-pulse" aria-hidden="true">
-            <Stethoscope size={70} strokeWidth={1} />
-            <span>01</span>
-            <span>02</span>
-          </div>
-          <div>
-            <h2>
-              Từ những
-              <br />
-              dấu hiệu nhỏ.
-            </h2>
-            <p>Chọn điều bạn nhận thấy để khám phá nội dung liên quan.</p>
-          </div>
-          <span className="mosaic-cta">
-            Tra cứu triệu chứng <ArrowRight size={17} />
-          </span>
-        </button>
-      </section>
-
+      <HomeDiscovery specialties={specialties} search={search} browse={browse} navigate={navigate} />
       <section className="landing-section home-library-section">
         <div className="section-heading split-heading">
           <div>
             <span className="section-kicker">THƯ VIỆN BỆNH LÝ</span>
             <h2>
-              Thông tin bạn có thể
-              <br />
-              <span>đọc và đối chiếu.</span>
+              Đọc thêm từ thư viện
             </h2>
             <p>Các bản tóm tắt ngắn kèm liên kết đến nguồn tham khảo.</p>
           </div>
@@ -258,11 +100,7 @@ export function HomePage({ diseases, search, navigate, open, loading, loadError,
       <section className="landing-section faq-section">
         <div className="section-heading">
           <span className="section-kicker">TRƯỚC KHI BẠN BẮT ĐẦU</span>
-          <h2>
-            Hiểu rõ cách
-            <br />
-            <span>Derma hoạt động.</span>
-          </h2>
+          <h2>Hiểu rõ cách <span>Derma hoạt động.</span></h2>
         </div>
         <div className="faq-list">
           <details>
@@ -329,10 +167,3 @@ export function HomePage({ diseases, search, navigate, open, loading, loadError,
   );
 }
 
-function InfoMark() {
-  return (
-    <span className="hero-info-mark" aria-hidden="true">
-      i
-    </span>
-  );
-}

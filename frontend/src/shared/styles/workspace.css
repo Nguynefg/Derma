@@ -1,0 +1,489 @@
+/* Search-first workspace: structure shared by every feature page. */
+.assistant-reply a {
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+.external-ai-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 14px 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+  cursor: pointer;
+}
+.external-ai-consent input {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--purple);
+}
+.web-sources {
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 18px 0;
+}
+.web-sources > strong {
+  font-size: 14px;
+}
+.web-sources > p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 6px 0 12px;
+}
+.web-sources > div {
+  display: grid;
+  gap: 8px;
+}
+.web-sources a {
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  padding-block: 5px;
+}
+.web-sources iframe {
+  border: 0;
+  width: 100%;
+  min-height: 160px;
+  margin-top: 12px;
+  border-radius: 9px;
+  background: var(--surface);
+}
+.health-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 24px;
+  padding-top: 28px;
+}
+.workspace-search-panel {
+  padding: 34px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+.workspace-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--purple);
+}
+.workspace-search-panel h1 {
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  margin: 24px 0 18px;
+  font-weight: 700;
+}
+.workspace-search-panel h1 span {
+  color: var(--purple);
+}
+.workspace-search-panel > p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 510px;
+  margin-bottom: 26px;
+}
+.workspace-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 8px 17px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--canvas);
+}
+.workspace-search:focus-within {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px var(--purple-soft);
+}
+.workspace-search > svg {
+  color: var(--muted);
+}
+.workspace-search input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 0;
+  color: var(--ink);
+}
+.workspace-search button {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--action);
+  color: var(--on-action);
+}
+.workspace-search button:hover {
+  background: var(--action-hover);
+}
+.workspace-keywords {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.workspace-keywords > span {
+  color: var(--muted);
+  font-size: 12px;
+  margin-right: 2px;
+}
+.workspace-keywords button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 9px;
+  font-size: 12px;
+  background: var(--surface);
+}
+.workspace-keywords button:hover {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+.workspace-trust {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 26px;
+}
+.workspace-trust svg {
+  color: var(--purple);
+}
+.workspace-paths {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px;
+  background: var(--purple-soft);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+.workspace-paths > .workspace-eyebrow {
+  margin: 4px 0 12px;
+  font-size: 10px;
+}
+.workspace-paths > button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  min-height: 94px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.workspace-paths > button:hover {
+  border-color: var(--purple);
+  box-shadow: var(--shadow);
+  transform: translateX(3px);
+}
+.workspace-path-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--surface-soft);
+  color: var(--purple);
+}
+.workspace-paths strong {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  color: var(--ink);
+}
+.workspace-paths small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  display: block;
+  margin-top: 4px;
+}
+.workspace-paths > button > svg {
+  margin-left: auto;
+  color: var(--purple);
+  width: 16px;
+}
+.workspace-notice {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.home-page .landing-section {
+  padding-top: 34px;
+  margin-inline: 0;
+  width: 100%;
+}
+.home-page .section-heading h2 {
+  font-size: 26px;
+  line-height: 1.4;
+}
+.home-page .section-heading {
+  margin-bottom: 22px;
+}
+.home-page .how-section {
+  background: transparent;
+  border-radius: 0;
+}
+.home-page .how-grid article {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 18px;
+  padding: 24px;
+}
+.home-page .faq-section {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+}
+.home-page .faq-section h2 br {
+  display: none;
+}
+.home-page .faq-list {
+  width: 100%;
+}
+.desktop-nav button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.desktop-nav button svg {
+  flex-shrink: 0;
+}
+@media (min-width: 1101px) {
+  .site-header {
+    backdrop-filter: none;
+  }
+  .header-inner {
+    max-width: none;
+    padding: 14px 24px;
+    min-height: 78px;
+  }
+  .header-actions {
+    margin-left: auto;
+  }
+  .desktop-nav {
+    display: flex;
+    position: fixed;
+    z-index: 31;
+    top: 98px;
+    left: 20px;
+    bottom: 20px;
+    width: 210px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface);
+    padding: 16px 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 7px;
+    box-shadow: var(--shadow);
+    overflow-y: auto;
+  }
+  .desktop-nav::before {
+    content: 'KHÁM PHÁ';
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    padding: 10px 14px 14px;
+    font-weight: 700;
+  }
+  .desktop-nav button {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    border-radius: 11px;
+    text-align: left;
+    font-size: 13px;
+  }
+  .desktop-nav button.active {
+    background: var(--purple-soft);
+    color: var(--purple);
+    font-weight: 700;
+  }
+  .desktop-nav button:last-child {
+    margin-top: auto;
+    border-top: 1px solid var(--border);
+    border-radius: 0 0 10px 10px;
+    padding-top: 20px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  main:not(.home-main),
+  main.home-main {
+    max-width: none;
+    margin: 0 24px 0 254px;
+    width: auto;
+    padding: 0 0 48px;
+  }
+  .subnav {
+    max-width: none;
+    margin-left: 254px;
+    margin-right: 24px;
+    padding: 24px 0;
+  }
+  .site-footer {
+    margin-left: 254px;
+    margin-right: 24px;
+    border-radius: 22px 22px 0 0;
+  }
+  .page-banner {
+    min-height: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 4px 0 28px;
+  }
+  .page-banner .page-artwork {
+    display: none;
+  }
+  .page-banner h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  .assistant-page {
+    max-width: none;
+  }
+}
+@media (max-width: 1100px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: inline-grid;
+  }
+  .health-workspace {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 18px;
+    padding: 20px;
+  }
+  .workspace-search-panel {
+    padding: 26px;
+  }
+  .workspace-paths {
+    padding: 18px;
+  }
+  .workspace-notice {
+    margin-inline: 24px;
+  }
+  .home-page .landing-section {
+    padding-inline: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .health-workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .workspace-paths {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .workspace-paths > .workspace-eyebrow {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+  .workspace-paths > button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .workspace-paths > button > svg {
+    display: none;
+  }
+  .home-page .faq-section {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .health-workspace {
+    padding: 16px;
+    gap: 16px;
+  }
+  .workspace-search-panel {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+  .workspace-search-panel h1 {
+    font-size: 32px;
+    margin-top: 18px;
+  }
+  .workspace-search-panel > p {
+    font-size: 15px;
+  }
+  .workspace-paths {
+    display: flex;
+    padding: 20px;
+    border-radius: 18px;
+  }
+  .workspace-paths > button {
+    min-height: 80px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .workspace-paths > button > svg {
+    display: block;
+  }
+  .workspace-keywords {
+    gap: 7px;
+  }
+  .workspace-eyebrow {
+    font-size: 10px;
+  }
+  .workspace-notice {
+    margin-inline: 20px;
+    align-items: flex-start;
+  }
+  .home-page .landing-section {
+    padding-inline: 20px;
+    padding-top: 30px;
+  }
+  .home-page .split-heading {
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
+
+/* Clearly explain abstentions without presenting an empty diagnosis result. */
+.image-inconclusive { border-left: 4px solid #8761bb; padding: clamp(20px, 3vw, 30px); }
+.image-inconclusive-heading { display: flex; align-items: center; gap: 14px; }
+.image-inconclusive-heading > svg { flex-shrink: 0; color: #7650a8; }
+.image-inconclusive h3 { margin: 6px 0 0; font-size: clamp(18px, 2vw, 22px); line-height: 1.45; }
+.image-inconclusive p, .image-inconclusive li { line-height: 1.75; }
+.image-inconclusive-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.image-inconclusive-actions .button { min-height: 44px; }
+@media (max-width: 540px) { .image-inconclusive-actions .button { width: 100%; } }

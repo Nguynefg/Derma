@@ -1,75 +1,5 @@
 [
   {
-    "key": "acanthosis-nigricans",
-    "names": [
-      "Acanthosis nigricans"
-    ],
-    "src": "/assets/library/diseases/acanthosis-nigricans.webp",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acanthosis-nigricans4.jpg",
-    "creator": "Madhero88",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "description": "en:Acanthosis nigricans",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "b32c641bf7e9028e68ff2e79ed57a2557163981ca4c4f0c0da724354f365b3c7"
-  },
-  {
-    "key": "psoriasis",
-    "names": [
-      "Psoriasis"
-    ],
-    "src": "/assets/library/diseases/psoriasis.webp",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psoriasis_on_back1.jpg",
-    "creator": "Psoriasis_on_back.jpg: Marnanel\nderivative work: James Heilman, MD (talk)",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "description": "Psoriasis of the back.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "b48090bc8b835d0d0abe0b73c1f8c1fd8d9b048f7b47ba72ea8f8dcf914a968a"
-  },
-  {
-    "key": "vitiligo",
-    "names": [
-      "Vitiligo"
-    ],
-    "src": "/assets/library/diseases/vitiligo.webp",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vitiligo2.JPG",
-    "creator": "James Heilman, MD",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "description": "Vitiligo of the hand in a person with dark skin.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "a916aa02f34b2c04c4c913f33242270652da10d80eeedbd80c6c747df7ac5e38"
-  },
-  {
-    "key": "atopic-dermatitis",
-    "names": [
-      "Atopic dermatitis"
-    ],
-    "src": "/assets/library/diseases/atopic-dermatitis.webp",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atopy2010.JPG",
-    "creator": "James Heilman, MD",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "description": "Atopy of the flexure crease of the elbow.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "6bb70ba4bf6818bcd4f10a8c1713945e5fb0f4a801117fcee900aa47939e3cf1"
-  },
-  {
-    "key": "alopecia-areata",
-    "names": [
-      "Alopecia areata"
-    ],
-    "src": "/assets/library/diseases/alopecia-areata.webp",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allopecia_areata.JPG",
-    "creator": "Abbassyma at English Wikipedia",
-    "license": "Public domain",
-    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
-    "description": "Alopecia areata.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "f5dcbf776bfca9c0a336f9fa8e059dc05c6a453734f0fb912d30477fe141d8bc"
-  },
-  {
     "key": "tinea-corporis",
     "names": [
       "Tinea corporis"
@@ -223,20 +153,6 @@
     "description": "A hand severely affected by rheumatoid arthritis.",
     "modifications": "Resized without cropping; converted to WebP",
     "sha256": "9b1b8b48107b447efead84e6346981ee8a1f4c0b1c5025264138495408b604f7"
-  },
-  {
-    "key": "asthma",
-    "names": [
-      "Asthma"
-    ],
-    "src": "/assets/library/diseases/asthma.webp",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asthma_(Lungs).png",
-    "creator": "BruceBlaus",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "description": "Asthma. Animation in the reference.[1]",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "7ec76e69422808bc7582318a6bd9c69089f26927a5296ff3079bbb3f724bda8d"
   },
   {
     "key": "cataract",
@@ -620,21 +536,6 @@
     "caption": "Ảnh trường hợp tham khảo"
   },
   {
-    "key": "3d6666810eba84a67713",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acne_vulgaris_on_a_very_oily_skin.jpg",
-    "creator": "Roshu Bangal",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "description": "Image of an 18 year old male with moderate acne vulgaris (white heads). His face appears to be very oily as well.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "9a1cf852775c13536c236b6062122375d877221917c1dd5246f765a104ab5a94",
-    "names": [
-      "Acne"
-    ],
-    "src": "/assets/library/diseases/3d6666810eba84a67713.webp",
-    "caption": "Ảnh trường hợp tham khảo"
-  },
-  {
     "key": "146a08286849a84f80be",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomycetoma_before_treatment.tif",
     "creator": "(2017-02-13). \"Review of 21 cases of mycetoma from 1991 to 2014 in Rio de Janeiro, Brazil\". PLOS Neglected Tropical Diseases 11 (2): –0005301. DOI:10.1371/journal.pntd.0005301. ISSN 1935-2735. Retrieved on 2017-12-02.",
@@ -875,22 +776,6 @@
     "caption": "Ảnh tác nhân gây bệnh tham khảo"
   },
   {
-    "key": "766c2b508c479e0f9db6",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varicela_Aranzales.jpg",
-    "creator": "Camiloaranzales",
-    "license": "Public domain",
-    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
-    "description": "Foto de varicela",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "4d1cbca592a9ac40bef8ad2d35def5acbd4c2209d0fbd4050d0b41ed82619df3",
-    "names": [
-      "Chickenpox",
-      "Varicella"
-    ],
-    "src": "/assets/library/diseases/766c2b508c479e0f9db6.webp",
-    "caption": "Ảnh trường hợp tham khảo"
-  },
-  {
     "key": "c1f4f07db6314a3eecfd",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wintertenen.jpg",
     "creator": "Sapp",
@@ -966,21 +851,6 @@
     "caption": "Ảnh trường hợp tham khảo"
   },
   {
-    "key": "4e7d30f3232dda19de32",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Contact_dermatitis_around_wound.jpg",
-    "creator": "Digitalgadget at English Wikipedia",
-    "license": "Public domain",
-    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
-    "description": "Contact dermatitis around a healing rugburn. The burn was wrapped in a bandage that the wearer was sensitive to, causing an outbreak of itchy, raised spots.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "0954603ead705e669e137ffd4c21da2730f3be248bbabe580ee39e44b9379734",
-    "names": [
-      "Contact dermatitis"
-    ],
-    "src": "/assets/library/diseases/4e7d30f3232dda19de32.webp",
-    "caption": "Ảnh trường hợp tham khảo"
-  },
-  {
     "key": "a34c50d061ebd3ae188e",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baby_With_Cradle_Cap.jpg",
     "creator": "Wikimedia Commons",
@@ -1009,21 +879,6 @@
     ],
     "src": "/assets/library/diseases/c0da41525ef4f641f6e2.webp",
     "caption": "Ảnh mô bệnh học tham khảo"
-  },
-  {
-    "key": "7c4b0b3da6f0cc945403",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandruff01.jpg",
-    "creator": "Horoporo",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "description": "Scanning Electron Microscope picture of freshly prepared human dandruff sample.",
-    "modifications": "Resized without cropping; converted to WebP",
-    "sha256": "cd6bc05615aca0e08752842cd887519fe6f463ce84f027bd703e53a9044074c9",
-    "names": [
-      "Dandruff"
-    ],
-    "src": "/assets/library/diseases/7c4b0b3da6f0cc945403.webp",
-    "caption": "Ảnh hiển vi mẫu gàu"
   },
   {
     "key": "96bcd99f61c6a37abafe",
@@ -1774,5 +1629,288 @@
     ],
     "src": "/assets/library/diseases/a8d86a427a6afebb2667.webp",
     "caption": "Ảnh mô bệnh học tham khảo"
+  },
+  {
+    "key": "albuminuria-a2",
+    "names": [
+      "Albuminuria, grade A2",
+      "Albumin niệu, Giai đoạn A2"
+    ],
+    "src": "/assets/library/illustrations/albuminuria-a2.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "albuminuria-a3",
+    "names": [
+      "Albuminuria, grade A3",
+      "Albumin niệu, Giai đoạn A3"
+    ],
+    "src": "/assets/library/illustrations/albuminuria-a3.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "alpha-thalassemia",
+    "names": [
+      "Alpha thalassaemia",
+      "Alpha thalassemia"
+    ],
+    "src": "/assets/library/illustrations/alpha-thalassemia.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "alpha-thalassemia-other",
+    "names": [
+      "Other specified alpha thalassaemia",
+      "Other specified alpha thalassemia",
+      "Alpha thalassaemia, other specified",
+      "Alpha thalassemia khác được xác định"
+    ],
+    "src": "/assets/library/illustrations/alpha-thalassemia-other.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "alpha-thalassemia-unspecified",
+    "names": [
+      "Alpha thalassaemia, unspecified",
+      "Alpha thalassemia, unspecified",
+      "Alpha thalassemia, không biệt định"
+    ],
+    "src": "/assets/library/illustrations/alpha-thalassemia-unspecified.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "specific-phobia",
+    "names": [
+      "Specific phobia",
+      "Ám ảnh sợ đặc hiệu"
+    ],
+    "src": "/assets/library/illustrations/specific-phobia.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "atopic-dermatitis",
+    "names": [
+      "Atopic dermatitis",
+      "Viêm da cơ địa"
+    ],
+    "src": "/assets/library/illustrations/atopic-dermatitis.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "asthma",
+    "names": [
+      "Asthma",
+      "Hen phế quản"
+    ],
+    "src": "/assets/library/illustrations/asthma.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "type-2-diabetes",
+    "names": [
+      "Type 2 diabetes",
+      "Đái tháo đường típ 2"
+    ],
+    "src": "/assets/library/illustrations/type-2-diabetes.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "acne",
+    "names": [
+      "Acne",
+      "Mụn trứng cá"
+    ],
+    "src": "/assets/library/illustrations/acne.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "alopecia-areata",
+    "names": [
+      "Alopecia areata",
+      "Rụng tóc từng mảng"
+    ],
+    "src": "/assets/library/illustrations/alopecia-areata.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "psoriasis",
+    "names": [
+      "Psoriasis",
+      "Vảy nến"
+    ],
+    "src": "/assets/library/illustrations/psoriasis.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "vitiligo",
+    "names": [
+      "Vitiligo",
+      "Bạch biến"
+    ],
+    "src": "/assets/library/illustrations/vitiligo.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "allergic-rhinitis",
+    "names": [
+      "Allergic rhinitis",
+      "Viêm mũi dị ứng"
+    ],
+    "src": "/assets/library/illustrations/allergic-rhinitis.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "acanthosis-nigricans",
+    "names": [
+      "Acanthosis nigricans",
+      "Gai đen"
+    ],
+    "src": "/assets/library/illustrations/acanthosis-nigricans.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "chickenpox",
+    "names": [
+      "Chickenpox",
+      "Thủy đậu"
+    ],
+    "src": "/assets/library/illustrations/chickenpox.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "contact-dermatitis",
+    "names": [
+      "Contact dermatitis",
+      "Viêm da tiếp xúc"
+    ],
+    "src": "/assets/library/illustrations/contact-dermatitis.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "dandruff",
+    "names": [
+      "Dandruff",
+      "Gàu"
+    ],
+    "src": "/assets/library/illustrations/dandruff.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "hives",
+    "names": [
+      "Hives (urticaria)",
+      "Mề đay"
+    ],
+    "src": "/assets/library/illustrations/hives.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
+  },
+  {
+    "key": "ingrown-toenail",
+    "names": [
+      "Ingrown toenail",
+      "Móng quặp"
+    ],
+    "src": "/assets/library/illustrations/ingrown-toenail.webp",
+    "sourceUrl": "",
+    "creator": "AI-generated illustration",
+    "license": "AI-generated; conceptual educational illustration",
+    "licenseUrl": "",
+    "assetType": "illustration",
+    "caption": "Minh họa khái niệm, không phải ảnh lâm sàng."
   }
 ]

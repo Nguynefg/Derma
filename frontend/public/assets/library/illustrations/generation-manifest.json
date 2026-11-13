@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-11-12T19:13:19.787124+00:00",
+  "style": "Conceptual medical illustration; lavender, violet and muted coral; no text; no clinical photograph",
+  "assets": [
+    {
+      "key": "albuminuria-a2",
+      "generated_file": "exec-ffaa0857-edb5-4c86-899e-3f8890caa4fd.png",
+      "names": [
+        "Albuminuria, grade A2",
+        "Albumin niệu, Giai đoạn A2"
+      ]
+    },
+    {
+      "key": "albuminuria-a3",
+      "generated_file": "exec-9f20d141-f8cc-45f9-b20c-5d9db8524cee.png",
+      "names": [
+        "Albuminuria, grade A3",
+        "Albumin niệu, Giai đoạn A3"
+      ]
+    },
+    {
+      "key": "alpha-thalassemia",
+      "generated_file": "exec-dbfac9b0-2799-414a-af2d-98e662bb83df.png",
+      "names": [
+        "Alpha thalassaemia",
+        "Alpha thalassemia"
+      ]
+    },
+    {
+      "key": "alpha-thalassemia-other",
+      "generated_file": "exec-1ca9b1e9-19de-4912-aeab-e0dc54e8e206.png",
+      "names": [
+        "Other specified alpha thalassaemia",
+        "Other specified alpha thalassemia",
+        "Alpha thalassaemia, other specified",
+        "Alpha thalassemia khác được xác định"
+      ]
+    },
+    {
+      "key": "alpha-thalassemia-unspecified",
+      "generated_file": "exec-d330c260-571a-43fc-bd3c-c6d793e8c935.png",
+      "names": [
+        "Alpha thalassaemia, unspecified",
+        "Alpha thalassemia, unspecified",
+        "Alpha thalassemia, không biệt định"
+      ]
+    },
+    {
+      "key": "specific-phobia",
+      "generated_file": "exec-92fcfeda-efd1-403b-b5da-7bfd249a466a.png",
+      "names": [
+        "Specific phobia",
+        "Ám ảnh sợ đặc hiệu"
+      ]
+    }
+  ]
+}

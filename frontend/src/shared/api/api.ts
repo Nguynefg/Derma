@@ -44,9 +44,9 @@ export async function api<T>(path: string, options: RequestInit = {}): Promise<T
           const key = String(item.loc?.[1] || '');
           const label = fields[key] || 'Thông tin nhập';
           if (item.type === 'string_too_short')
-            return `${label}: nhập ít nhất ${item.ctx?.min_length} ký tự.`;
+            return item.ctx?.min_length != null ? `${label}: nhập ít nhất ${item.ctx.min_length} ký tự.` : `${label}: nội dung quá ngắn.`;
           if (item.type === 'string_too_long')
-            return `${label}: tối đa ${item.ctx?.max_length} ký tự.`;
+            return item.ctx?.max_length != null ? `${label}: tối đa ${item.ctx.max_length} ký tự.` : `${label}: nội dung quá dài.`;
           if (item.type === 'missing') return `${label}: vui lòng nhập thông tin.`;
           if (item.msg?.startsWith('Value error, ')) return `${label}: ${item.msg.slice(13)}`;
           return `${label}: giá trị chưa hợp lệ.`;
@@ -57,7 +57,11 @@ export async function api<T>(path: string, options: RequestInit = {}): Promise<T
     throw new Error(
       typeof data.detail === 'string'
         ? data.detail
-        : 'Thông tin chưa hợp lệ. Vui lòng kiểm tra lại.',
+        : res.status >= 500
+          ? 'Máy chủ chưa tải được dữ liệu. Vui lòng thử lại sau.'
+          : res.status === 401
+            ? 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.'
+            : 'Thông tin chưa hợp lệ. Vui lòng kiểm tra lại.',
     );
   }
   if (res.status === 204) return undefined as T;

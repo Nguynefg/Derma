@@ -1,4 +1,4 @@
-import type { ImageChatContext } from '../assistant/components/AssistantChat';
+import { Reply, type ImageChatContext } from '../assistant/components/AssistantChat';
 import { useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
@@ -19,6 +19,9 @@ import {
 import { api } from '../../shared/api/api';
 import { PageHeading } from '../../shared/components/Decor';
 import type { User } from '../../shared/types/index';
+import { ImageArchive } from './components/ImageArchive';
+import { SaveButton } from '../profile/components/SaveButton';
+import { WebSources, type WebSource } from '../../shared/components/WebSources';
 
 type Quality = {
   status: 'needs_review' | 'no_obvious_issue';
@@ -30,6 +33,7 @@ type Quality = {
 };
 type Result = {
   status: string;
+  reason?: string;
   message: string;
   observations?: string;
   observation_labels?: { id: string; name: string }[];
@@ -47,7 +51,11 @@ type Result = {
   related_articles?: { disease_id: string; name: string }[];
   stored: boolean;
   image_record_id?: string | null;
-  database_match?: { status: 'matched' | 'inconclusive' | 'not_evaluated'; message: string };
+  database_match?: { status: 'matched' | 'missing_article' | 'inconclusive' | 'not_evaluated'; message: string };
+  external_sources?: WebSource[];
+  search_suggestions_html?: string;
+  fallback?: { status: string; reason?: string; message?: string; model?: string; upstream_status?: number; error_kind?: string };
+  external_result?: { status: string; reply: string; evidence_status?: string; source_reply?: string; source_lookup?: {status: string; message?: string}; external_sources?: WebSource[]; search_suggestions_html?: string };
   candidates?: {
     disease_id: string;
     name: string;
@@ -85,7 +93,7 @@ export function ImagePage({
     [drag, setDrag] = useState(false),
     [error, setError] = useState(''),
     [result, setResult] = useState<Result | null>(null);
-  const [saveImage, setSaveImage] = useState(true);
+  const [saveImage, setSaveImage] = useState(false);
   const input = useRef<HTMLInputElement>(null),
     request = useRef<AbortController | null>(null),
     mounted = useRef(true);
@@ -152,12 +160,13 @@ export function ImagePage({
     setResult(null);
     const controller = new AbortController();
     request.current = controller;
-    const timer = setTimeout(() => controller.abort('timeout'), 60000);
+    const timer = setTimeout(() => controller.abort('timeout'), 90000);
     const data = new FormData();
     data.append('file', file);
     data.append('image_type', 'clinical');
     data.append('save_image', String(saveImage));
-    data.append('analysis_mode', 'gemini');
+    data.append('analysis_mode', 'ai');
+    data.append('allow_external_ai', 'true');
     data.append('observations', JSON.stringify({ site: 'unspecified', label_ids: [] }));
     if (cropEnabled)
       data.append(
@@ -193,6 +202,18 @@ export function ImagePage({
       if (mounted.current) setBusy(false);
     }
   };
+  const [saveNotice, setSaveNotice] = useState('');
+  useEffect(() => setSaveNotice(''), [result]);
+  const hasFindings = Boolean(result && (result.group || result.observations || result.candidates?.length));
+  const hasSupplement = Boolean(result?.external_result?.reply?.trim());
+  const resultHeading = result?.reason === 'model_unavailable'
+    ? 'Mô hình phân tích hiện chưa sẵn sàng'
+    : ({
+        insufficient_confidence: 'Chưa đủ độ tin cậy để gợi ý nhóm bệnh',
+        quality_review_required: 'Cần ảnh rõ hơn để tiếp tục',
+        out_of_scope: 'Ảnh nằm ngoài phạm vi hỗ trợ',
+        catalog_mismatch: 'Thư viện chưa có bài phù hợp với nhãn gợi ý',
+      } as Record<string, string>)[result?.status || ''] || 'Chưa có kết quả đủ cơ sở';
   return (
     <>
       <PageHeading
@@ -436,11 +457,11 @@ export function ImagePage({
               (busy ? 'is-analyzing' : '')
             }
             disabled={!file || !dimensions.width || busy || tooSmall || tooLarge}
-            onClick={analyze}
+            onClick={() => analyze()}
           >
             {busy ? <LoaderCircle size={18} className="spin" /> : <Focus size={18} />}{' '}
             {busy
-              ? 'Đang kiểm tra và đối chiếu…'
+              ? 'Đang phân tích và tìm thông tin…'
               : saveImage && !user
                 ? 'Đăng nhập để lưu và đối chiếu ảnh'
                 : saveImage
@@ -490,8 +511,8 @@ export function ImagePage({
             <ShieldCheck size={24} />
             <h2>Phạm vi phân tích</h2>
             <p>
-              AI quan sát ảnh và gợi ý các chủ đề đang có trong CSDL. Nếu chưa đủ cơ sở, hệ thống
-              trả “Chưa xác định”.
+              ResNet-18 chạy cục bộ để phân loại nhóm ảnh da liễu. Điểm dưới ngưỡng sẽ không có gợi
+              ý. Ảnh ngoài tập huấn luyện vẫn có thể bị phân loại nhầm dù điểm cao.
             </p>
             <p>Kết quả cần được bác sĩ kiểm tra; ảnh mới không tự trở thành ảnh mẫu đã xác nhận.</p>
           </section>
@@ -510,11 +531,42 @@ export function ImagePage({
               ? 'Đã lưu ảnh vào kho riêng; gợi ý AI chưa phải nhãn bệnh đã xác nhận.'
               : 'Ảnh không được lưu.'}
           </p>
-          {result.group && (
-            <div className="panel">
+          <div className="panel image-unified-report">
+          {!hasFindings && !hasSupplement && (
+            <div className="image-inconclusive">
+              <div className="image-inconclusive-heading">
+                <Info size={24} aria-hidden="true" />
+                <div>
+                  <span className="section-kicker">TRẠNG THÁI PHÂN TÍCH</span>
+                  <h3>{resultHeading}</h3>
+                </div>
+              </div>
+              <p>{result.fallback?.status === 'unavailable'
+                ? 'Hiện chưa thể hoàn tất phân tích ảnh. Vui lòng thử lại sau hoặc tra cứu bằng triệu chứng.'
+                : result.message}</p>
+              {result.status === 'insufficient_confidence' && (
+                <p className="muted">Kết quả này không khẳng định có hay không có bệnh. Hãy thử ảnh đủ sáng, lấy nét rõ vùng da và giữ một ít da xung quanh.</p>
+              )}
+              {!!result.quality.issues.length && (
+                <ul>{result.quality.issues.map((issue) => <li key={issue.code}>{issue.message}</li>)}</ul>
+              )}
+              <div className="image-inconclusive-actions">
+                <button className="button primary" disabled={busy} onClick={() => input.current?.click()}>
+                  <Camera size={18} aria-hidden="true" /> Chọn ảnh khác
+                </button>
+                <button className="button secondary" onClick={symptoms}>Tra cứu bằng triệu chứng <ArrowRight size={17} /></button>
+              </div>
+            </div>
+          )}
+          {result.group && !hasSupplement && (
+            <div>
               <span className="section-kicker">NHÓM NHÃN DO MÔ HÌNH GỢI Ý</span>
               <h3>{result.group.name}</h3>
-              <p>{result.message}</p>
+              {result.external_sources?.length ? (
+                <Reply text={result.message} sources={result.external_sources} />
+              ) : (
+                <p>{result.message}</p>
+              )}
               <p className="muted">
                 Điểm nhóm: {result.group.score.toFixed(3)}. {result.score_notice}
               </p>
@@ -531,8 +583,22 @@ export function ImagePage({
               </div>
             </div>
           )}
-          {result.observations && (
-            <article className="panel">
+          {hasSupplement && result.external_result && (
+            <article className="image-report-observations">
+              <span className="section-kicker">BÁO CÁO THAM KHẢO</span>
+              <h3>Nhận xét từ hình ảnh</h3>
+              <Reply text={result.external_result.reply} />
+              <p className="muted">Nhận xét chỉ dựa trên hình ảnh, chưa xác nhận chẩn đoán và không thay thế việc khám bệnh.</p>
+              {result.external_result.source_reply && <><h4>Thông tin tham khảo</h4><Reply text={result.external_result.source_reply} sources={result.external_result.external_sources} /></>}
+              <WebSources sources={result.external_result.external_sources} suggestions={result.external_result.search_suggestions_html} />
+            </article>
+          )}
+          <WebSources
+            sources={result.external_sources}
+            suggestions={result.search_suggestions_html}
+          />
+          {result.observations && !hasSupplement && (
+            <article>
               <span className="section-kicker">NHẬN XÉT TỪ HỆ THỐNG</span>
               <h3>Dấu hiệu quan sát được</h3>
               <p style={{ whiteSpace: 'pre-wrap' }}>{result.observations}</p>
@@ -548,19 +614,25 @@ export function ImagePage({
               <small className="muted">{result.usage_note}</small>
             </article>
           )}
-          <button
+          {(hasFindings || ['external_result', 'external_observation'].includes(result.external_result?.status || '')) && <button
             className="button primary explain-image-button"
             onClick={() =>
               discuss({
-                observations: (result.observations || '').slice(0, 2000),
-                explanation: result.message.slice(0, 3000),
-                disease_ids: (result.candidates || []).slice(0, 3).map((c) => c.disease_id),
+                observations: (result.observations || result.group?.name || '').slice(0, 2000),
+                explanation: (result.external_result?.reply || result.message).slice(0, 3000),
+                external: ['external_result', 'external_observation'].includes(result.external_result?.status || '') || result.method?.endsWith('-web-fallback'),
+                disease_ids: Array.from(
+                  new Set([
+                    ...(result.candidates || []).map((c) => c.disease_id),
+                    ...(result.related_articles || []).map((c) => c.disease_id),
+                  ]),
+                ).slice(0, 3),
               })
             }
           >
             Trao đổi với AI về kết quả này <ArrowRight size={18} />
-          </button>
-          <div className="panel image-next-step">
+          </button>}
+          {hasFindings && !hasSupplement && <div className="image-next-step">
             <div>
               <span className="section-kicker">BƯỚC TIẾP THEO</span>
               <h3>
@@ -568,7 +640,11 @@ export function ImagePage({
                   ? 'Bệnh lý tham khảo có trong thư viện'
                   : 'Tìm hiểu thêm từ dấu hiệu'}
               </h3>
-              <p>{result.message}</p>
+              {result.external_sources?.length ? (
+                <Reply text={result.message} sources={result.external_sources} />
+              ) : (
+                <p>{result.message}</p>
+              )}
             </div>
             {result.candidates && (
               <div className="image-candidates">
@@ -605,9 +681,17 @@ export function ImagePage({
               Tra cứu bằng triệu chứng
               <ArrowRight size={17} />
             </button>
+          </div>}
+          <SaveButton key={result.image_record_id || result.external_result?.reply || result.message}
+            user={user} auth={auth} toast={setSaveNotice} mode="image"
+            query={`Phân tích ảnh: ${result.group?.name || result.external_result?.reply || result.observations || result.message}`}
+            items={[...(result.candidates || []), ...(result.related_articles || [])].map((item) => ({ id: item.disease_id }))} />
+          <small className="muted">Lưu tóm tắt và bài liên quan vào lịch sử; không lưu ảnh gốc.</small>
+          {saveNotice && <p role="status">{saveNotice}</p>}
           </div>
         </section>
       )}
+      {user && <ImageArchive userId={user.id} refreshKey={String(result?.image_record_id || '')} />}
     </>
   );
 }

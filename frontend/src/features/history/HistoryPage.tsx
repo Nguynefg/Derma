@@ -3,6 +3,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Bookmark,
+  Camera,
   LoaderCircle,
   LockKeyhole,
   Search,
@@ -99,11 +100,11 @@ export function HistoryPage({
             {items.map((h) => (
               <article className="history-item" key={h.id}>
                 <span className="quick-icon mint">
-                  {h.mode === 'keyword' ? <Search size={20} /> : <Stethoscope size={20} />}
+                  {h.mode === 'image' ? <Camera size={20} /> : h.mode === 'keyword' ? <Search size={20} /> : <Stethoscope size={20} />}
                 </span>
                 <div>
                   <small>
-                    {h.mode === 'keyword' ? 'Từ khóa' : 'Triệu chứng'} · {formatDate(h.created_at)}
+                    {h.mode === 'image' ? 'Hình ảnh' : h.mode === 'keyword' ? 'Từ khóa' : h.mode === 'question' ? 'Hỏi đáp' : 'Triệu chứng'} · {formatDate(h.created_at)}
                   </small>
                   <h3>{h.query || 'Toàn bộ thư viện'}</h3>
                   <div className="history-links">

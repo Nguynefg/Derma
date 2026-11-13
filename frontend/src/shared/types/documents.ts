@@ -18,10 +18,13 @@ export type Passage = {
 };
 export type Answer = {
   reply?: string;
-  status: 'supported' | 'insufficient_evidence' | 'out_of_scope' | 'general';
+  status: 'supported' | 'insufficient_evidence' | 'out_of_scope' | 'general' | 'external_result';
   message: string;
   method: string;
   passages: Passage[];
+  external_sources?: { title: string; url: string }[];
+  search_suggestions_html?: string;
+  fallback?: { status: string; message?: string };
 };
 export type Doc = {
   id: string;

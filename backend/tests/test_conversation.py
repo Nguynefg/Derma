@@ -53,7 +53,7 @@ def test_greeting_ignores_previous_medical_sources(conversation):
 def test_general_question_after_health_does_not_attach_stale_sources(conversation):
     db, captured = conversation
     result = send({'question': 'Giải thích Python là gì?', 'history': [{'role': 'user', 'content': 'Vảy nến là gì?'}]}, db)
-    assert result['method'] == 'gemini-conversation'
+    assert result['method'] == 'bm25-extractive-v1'
     assert captured[0]['passages'] == []
 
 
@@ -76,6 +76,17 @@ def test_unknown_image_context_cannot_fabricate_disease(conversation):
     result = send({'question': 'Giải thích kết quả ảnh này', 'image_context': {'disease_ids': ['999999']}}, db)
     assert result['status'] == 'insufficient_evidence' and not result['passages']
     assert not captured
+
+
+def test_image_group_context_retrieves_only_linked_published_topic(conversation):
+    from sqlalchemy import select
+    db, captured = conversation
+    topic = db.scalar(select(Disease).where(Disease.slug == 'psoriasis'))
+    result = send({'question': 'Giải thích kết quả ảnh này',
+                   'image_context': {'disease_ids': [str(topic.id)], 'observations': 'Nhóm nhãn tham khảo'}}, db)
+    assert result['status'] == 'supported'
+    assert all(p['disease_id'] == topic.id for p in result['passages'])
+    assert captured[0]['image_context']['disease_ids'] == [str(topic.id)]
 
 
 def test_greeting_does_not_reuse_image_observations(conversation):

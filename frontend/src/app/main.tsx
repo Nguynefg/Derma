@@ -10,6 +10,8 @@ import '../shared/styles/site.css';
 import '../features/assistant/assistant.css';
 import '../shared/styles/refinement.css';
 import '../shared/styles/botanical.css';
+import '../shared/styles/workspace.css';
+import '../shared/styles/catalog.css';
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

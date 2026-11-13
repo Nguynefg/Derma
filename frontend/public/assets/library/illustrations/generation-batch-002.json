@@ -1,0 +1,32 @@
+[
+  {
+    "key": "atopic-dermatitis",
+    "file": "exec-3db3cb41-0e9e-4d9e-8e8a-354e3472942c.png",
+    "disease_id": 6,
+    "names": [
+      "Atopic dermatitis",
+      "Viêm da cơ địa"
+    ],
+    "prompt": "Create one polished landscape 16:9 conceptual medical editorial illustration for a Vietnamese health library card. Gentle sculpted paper and soft 3D forms, warm white and pale lavender background, violet #7450b8 accents and muted coral anatomical forms, subtle shadows, generous crop-safe margins. No text, letters, labels, numbers, logos, watermark, collage or panel grid. This is an educational concept, not a diagnostic clinical photograph. Atopic dermatitis: a simple skin cross-section with a dry disrupted outer barrier, delicate small cracks and mild pink irritation, a small water droplet escaping above to symbolize moisture loss. Clean friendly abstract scientific communication, no bloody wound, no microbes implying infection, no human portrait."
+  },
+  {
+    "key": "asthma",
+    "file": "exec-8b6d34f3-4a48-476f-ac1a-2d0a8a79dce2.png",
+    "disease_id": 101,
+    "names": [
+      "Asthma",
+      "Hen phế quản"
+    ],
+    "prompt": "Create one polished landscape 16:9 conceptual medical editorial illustration for a Vietnamese health library card. Gentle sculpted paper and soft 3D forms, warm white and pale lavender background, violet #7450b8 accents and muted coral anatomical forms, subtle shadows, generous crop-safe margins. No text, letters, labels, numbers, logos, watermark, collage or panel grid. This is an educational concept, not a diagnostic clinical photograph. Asthma: recognizable pair of human lungs with a trachea splitting into two main bronchi, alongside a single magnified airway ring showing a narrowed central opening, thicker wall and a small amount of mucus. No labels or arrows, clean conceptual anatomy, no heart or extra organs."
+  },
+  {
+    "key": "type-2-diabetes",
+    "file": "exec-4843335f-8673-471a-82f7-66eea78f9cf1.png",
+    "disease_id": 117,
+    "names": [
+      "Type 2 diabetes",
+      "Đái tháo đường típ 2"
+    ],
+    "prompt": "Create one polished landscape 16:9 conceptual medical editorial illustration for a Vietnamese health library card. Gentle sculpted paper and soft 3D forms, warm white and pale lavender background, violet #7450b8 accents and muted coral anatomical forms, subtle shadows, generous crop-safe margins. No text, letters, labels, numbers, logos, watermark, collage or panel grid. This is an educational concept, not a diagnostic clinical photograph. Type 2 diabetes: an elegant conceptual pancreas silhouette with small glucose-like spheres outside a stylized cell boundary, and a few simple key-shaped insulin symbols near a cell receptor, representing reduced insulin responsiveness. No exact chemical formula, no syringe or medication, no claimed diagnostic measurement, no sugar cubes or food shaming."
+  }
+]

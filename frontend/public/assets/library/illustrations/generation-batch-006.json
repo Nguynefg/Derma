@@ -1,0 +1,30 @@
+[
+  {
+    "key": "hidradenitis-suppurativa",
+    "name": "Viêm tuyến mồ hôi mủ",
+    "english_name": "Hidradenitis suppurativa (HS)",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Viêm tuyến mồ hôi mủ' (Hidradenitis suppurativa / HS). A stylized adult underarm contour showing a small, neat deep-seated pinkish swelling nodule under the skin surface.",
+    "file": "hidradenitis-suppurativa.webp"
+  },
+  {
+    "key": "athletes-foot",
+    "name": "Nấm bàn chân",
+    "english_name": "Athlete’s foot",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Nấm bàn chân' (Athlete's foot / Tinea pedis). A stylized adult foot focused around the toe web space, showing mild gentle pinkish redness and delicate soft paper peeling between the outer toes.",
+    "file": "athletes-foot.webp"
+  },
+  {
+    "key": "fungal-nail-infection",
+    "name": "Nấm móng",
+    "english_name": "Fungal nail infection",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Nấm móng' (Fungal nail infection / Onychomycosis). A stylized adult big toe with a smooth sculpted nail showing subtle gentle yellowish-white discoloration along the outer distal edge of the nail plate.",
+    "file": "fungal-nail-infection.webp"
+  },
+  {
+    "key": "discoid-eczema",
+    "name": "Chàm đồng tiền",
+    "english_name": "Discoid eczema",
+    "prompt": "3D layered papercraft and smooth clay medical illustration for 'Chàm đồng tiền' (Discoid eczema / Nummular eczema). A stylized adult lower leg or forearm showing a distinct circular coin-shaped (discoid) pink raised lesion with gentle textured surface.",
+    "file": "discoid-eczema.webp"
+  }
+]

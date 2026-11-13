@@ -12,7 +12,7 @@ from app.core.password_policy import valid_new_password, PASSWORD_REQUIREMENT
 from app.modules.auth.dependencies import get_user, current_session, public_user, start_session
 from pydantic import BaseModel, Field, ConfigDict
 from app.database.models import Bookmark, Disease
-from app.modules.library.catalog import serialize_disease
+from app.modules.library.catalog import serialize_disease, preload_disease_relations
 from app.modules.library.icd_links import article_icd_links
 
 router = APIRouter()
@@ -67,7 +67,10 @@ def bookmarks(db: Session = Depends(get_db), user: User = Depends(get_user)):
         .join(Bookmark, Bookmark.disease_id == Disease.id)
         .where(Bookmark.user_id == user.id, Disease.published == True)
         .order_by(Bookmark.created_at.desc(), Disease.id)
-    )
+    ).all()
+    if not rows:
+        return []
+    preload_disease_relations(db, rows)
     links = article_icd_links(db)
     return [serialize_disease(row, db, links) for row in rows]
 

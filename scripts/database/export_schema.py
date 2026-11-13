@@ -15,8 +15,8 @@ from sqlalchemy.dialects import postgresql, mssql
 from app.database.models import Base
 from app.main import app
 
-target = ROOT / "docs"
-target.mkdir(exist_ok=True)
+target = ROOT / "docs" / "database"
+target.mkdir(parents=True, exist_ok=True)
 for name, dialect in [("postgresql", postgresql.dialect()), ("sqlserver", mssql.dialect())]:
     ddl = ["-- Generated from SQLAlchemy models. Initial schema, not a migration."]
     for table in Base.metadata.sorted_tables:
@@ -24,7 +24,7 @@ for name, dialect in [("postgresql", postgresql.dialect()), ("sqlserver", mssql.
         for index in table.indexes:
             ddl.append(str(CreateIndex(index).compile(dialect=dialect)) + ";")
     (target / ("schema-" + name + ".sql")).write_text("\n\n".join(ddl), encoding="utf-8")
-(target / "openapi.json").write_text(
+(ROOT / "docs" / "openapi.json").write_text(
     json.dumps(app.openapi(), ensure_ascii=False, indent=2), encoding="utf-8"
 )
 print("Exported PostgreSQL / SQL Server DDL and OpenAPI.")

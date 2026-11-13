@@ -50,6 +50,24 @@ def match_model_result(result, db):
         ),
         "message": "Chưa đủ cơ sở đối chiếu ảnh với bệnh lý trong CSDL; không thể kết luận ảnh nằm ngoài thư viện.",
     }
+    if status == "group_result":
+        related = []
+        seen = set()
+        for candidate in result.get("related_articles", []):
+            topic = find_record(db, Disease, candidate["disease_id"])
+            if topic and topic.published and supports_photo(topic) and topic.id not in seen:
+                seen.add(topic.id)
+                related.append({"disease_id": topic.id, "name": topic.name})
+        result["related_articles"] = related
+        result.pop("candidates", None)
+        result["database_match"] = {
+            "status": "matched" if related else "missing_article",
+            "message": (
+                "Bài đọc liên quan đến nhóm nhãn, không xác nhận bệnh riêng lẻ."
+                if related else "Nhóm nhãn chưa có bài da liễu đang xuất bản để liên kết."
+            ),
+        }
+        return result
     if status != "research_result":
         result.pop("candidates", None)
         return result
@@ -61,8 +79,9 @@ def match_model_result(result, db):
             result.pop("candidates", None)
             result["status"] = "catalog_mismatch"
             result["message"] = (
-                "Chủ đề mô hình trả về chưa có hoặc đã bị ẩn trong thư viện. Chưa thể gợi ý bệnh lý."
+                "Nhãn mô hình chưa có bài đang xuất bản phù hợp trong thư viện. Điều này không xác nhận ảnh thuộc một bệnh mới."
             )
+            result["database_match"] = {"status": "missing_article", "message": result["message"]}
             return result
         enriched.append(
             {

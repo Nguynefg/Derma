@@ -44,6 +44,16 @@ export function ImageModelSummary() {
           Phiên bản {state.version} · {state.label_count || 0} nhóm
         </p>
       )}
+      {!!state?.data_limitations?.length && (
+        <details className="model-limitations">
+          <summary>Giới hạn của mô hình</summary>
+          <ul>
+            {state.data_limitations.map((note) => (
+              <li key={note}>{note}</li>
+            ))}
+          </ul>
+        </details>
+      )}
     </>
   );
 }

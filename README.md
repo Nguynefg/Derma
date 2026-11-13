@@ -18,15 +18,15 @@ Website hỗ trợ tra cứu thông tin bệnh lý bằng tiếng Việt theo t�
 
 Dự án đã có mã nguồn chuẩn bị dữ liệu, huấn luyện, đánh giá và đóng gói mô hình ResNet-18 bằng PyTorch và Torchvision. Backend có nhánh hỗ trợ nạp mô hình và chạy suy luận trên máy chủ.
 
-Luồng hướng đến: người dùng tải ảnh và chọn vùng cần xem → backend kiểm tra và tiền xử lý ảnh → ResNet-18 phân loại nhóm ảnh → hệ thống đối chiếu nhãn với bài viết trong SQL Server. Khi chưa đủ cơ sở, hệ thống cần trả trạng thái **Chưa xác định**.
+Luồng mặc định trên giao diện: người dùng tải ảnh và chọn vùng cần xem → backend kiểm tra và tiền xử lý ảnh → ResNet-18 phân loại nhóm ảnh → hệ thống đối chiếu nhãn với bài viết trong SQL Server. Khi chưa đủ cơ sở, hệ thống cần trả trạng thái **Chưa xác định**.
 
-Mô hình phân loại theo **nhóm**. Việc chuyển toàn bộ luồng trên giao diện sang mô hình cục bộ và kiểm thử xuyên suốt vẫn thuộc phạm vi Sprint 4.
+Mô hình phân loại theo **nhóm**. Giao diện gửi ảnh tới nhánh cục bộ. Cần cài model card và trọng số hợp lệ; nếu chưa có, hệ thống trả chưa xác định. Ngưỡng điểm không bảo đảm nhận ra mọi ảnh ngoài tập huấn luyện.
 
 ### Hỏi đáp dựa trên tài liệu
 
 Chức năng hỏi đáp được thiết kế để nhận câu hỏi, tìm nội dung liên quan trong tài liệu đã xuất bản và hiển thị đoạn trích kèm nguồn. Khi thư viện không có tài liệu phù hợp, hệ thống thông báo chưa tìm thấy thông tin.
 
-Backend đã có nền tảng tra cứu tài liệu. Phần giao diện hỏi đáp và kiểm thử toàn bộ luồng là công việc của Sprint 4.
+Giao diện hội thoại dùng API nội bộ `/api/v1/chat`, truy xuất BM25 và trả đoạn trích nguyên văn kèm nguồn; không cần Gemini API key. Đây là hỏi đáp trích xuất, không phải mô hình ngôn ngữ trò chuyện tự do. Có nhánh Gemini/Google Search dự phòng khi thư viện chưa có bài hoặc tài liệu phù hợp và người dùng cho phép. Nguồn web được hiển thị riêng; xem [luồng kết hợp](docs/hybrid-ai.md).
 
 ## Dữ liệu và nguồn tham khảo
 
@@ -91,3 +91,11 @@ Thông tin đăng nhập cơ sở dữ liệu, ảnh riêng, dữ liệu huấn 
 ## Phạm vi sử dụng
 
 Derma phục vụ tra cứu thông tin sức khỏe. Kết quả tìm kiếm theo triệu chứng, đoạn trích tài liệu và nhóm ảnh do mô hình gợi ý chỉ dùng để tham khảo, không thay thế việc khám và chẩn đoán của bác sĩ.
+
+## Tài liệu yêu cầu và nghiệm thu
+
+- [Yêu cầu và Use Case](docs/requirements.md)
+- [Bố cục và tiêu chí kiểm tra giao diện](docs/interface-layout.md)
+- [Kế hoạch 5 Sprint](docs/ISSUES.md)
+
+Các snapshot phiên bản mới áp dụng cho thao tác biên tập từ bản cập nhật này; không tái tạo lịch sử chưa từng được lưu. Hiệu năng SQL Server và cấu hình bảo vệ nhánh GitHub cần xác nhận trên môi trường thật.

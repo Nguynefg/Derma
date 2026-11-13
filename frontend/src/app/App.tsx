@@ -4,6 +4,7 @@ import { lazy, Suspense, useEffect, useState } from 'react';
 import {
   BookOpen,
   Bookmark,
+  CircleCheck,
   ChevronRight,
   CircleHelp,
   ExternalLink,
@@ -136,6 +137,7 @@ export function App() {
   const [selected, setSelected] = useState<Disease | null>(null);
   const [toast, setToast] = useState('');
   const [initialQuery, setInitialQuery] = useState('');
+  const [initialSpecialty, setInitialSpecialty] = useState('');
   useEffect(() => {
     if (!toast) return;
     const t = setTimeout(() => setToast(''), 5000);
@@ -179,6 +181,7 @@ export function App() {
   };
   const search = (value: string) => {
     setInitialQuery(value);
+    setInitialSpecialty('');
     go('library');
   };
   const logout = async () => {
@@ -202,17 +205,6 @@ export function App() {
     }
   };
 
-  const shortNames: Record<Page, string> = {
-    home: 'Trang chủ',
-    library: 'Thư viện',
-    questions: 'Trợ lý AI',
-    symptoms: 'Triệu chứng',
-    images: 'Hình ảnh',
-    history: 'Lịch sử',
-    sources: 'Nguồn',
-    admin: 'Quản trị',
-    profile: 'Tài khoản',
-  };
   useEffect(() => {
     if (!mobile) return;
     const oldOverflow = document.body.style.overflow;
@@ -269,7 +261,8 @@ export function App() {
                 aria-current={page === n.id ? 'page' : undefined}
                 aria-label={n.label}
               >
-                {shortNames[n.id]}
+                <n.icon size={19} aria-hidden="true" />
+                <span>{n.label}</span>
               </button>
             ))}
             <button
@@ -277,7 +270,8 @@ export function App() {
               onClick={() => go('sources')}
               aria-label="Nguồn tham khảo"
             >
-              Nguồn
+              <ShieldCheck size={19} aria-hidden="true" />
+              <span>Nguồn tham khảo</span>
             </button>
           </nav>
           <div className="header-actions">
@@ -409,6 +403,7 @@ export function App() {
               {page === 'home' && (
                 <HomePage
                   diseases={all}
+                  browse={(specialty) => { setInitialQuery(''); setInitialSpecialty(specialty); go('library'); }}
                   search={search}
                   navigate={go}
                   open={setSelected}
@@ -419,8 +414,9 @@ export function App() {
               )}
               {page === 'library' && (
                 <LibraryPage
-                  key={initialQuery}
+                  key={initialQuery + initialSpecialty}
                   initialQuery={initialQuery}
+                  initialSpecialty={initialSpecialty}
                   all={all}
                   open={setSelected}
                   user={user}
@@ -565,17 +561,25 @@ export function App() {
               </dl>
             </section>
           )}
+          <div className="catalog-reading-layout">
+            <nav className="catalog-reading-toc" aria-label="Mục lục bài viết">
+              <strong>TRONG BÀI VIẾT</strong>
+              {[['overview', 'Tổng quan'], ['symptoms', 'Dấu hiệu'], ['risk', 'Yếu tố liên quan'], ['care', 'Phòng ngừa & chăm sóc'], ['sources', 'Nguồn tham khảo'], ['related', 'Bài liên quan']].map(([id, label]) => (
+                <button key={id} onClick={() => document.getElementById('article-' + id)?.scrollIntoView({block: 'start', behavior: 'instant'})}>{label}</button>
+              ))}
+            </nav>
+            <article className="catalog-reading-body">
           <p className="detail-summary">{selected.summary}</p>
           <ReadingGuide />
           <div className="inline-note">
             <Info size={18} />
             <span>Bản tóm tắt tham khảo, chưa thẩm định lâm sàng. Không dùng để tự chẩn đoán.</span>
           </div>
-          <div className="detail-section">
+          <div className="detail-section" id="article-overview">
             <h3>Tổng quan</h3>
             <p>{selected.details}</p>
           </div>
-          <div className="detail-section">
+          <div className="detail-section" id="article-symptoms">
             <h3>Dấu hiệu được đề cập</h3>
             <div className="chips">
               {selected.symptoms.map((s) => (
@@ -585,15 +589,15 @@ export function App() {
               ))}
             </div>
           </div>
-          <div className="detail-section">
+          <div className="detail-section" id="article-risk">
             <h3>Yếu tố liên quan</h3>
             <p>{selected.risk_factors}</p>
           </div>
-          <div className="detail-section">
+          <div className="detail-section" id="article-care">
             <h3>Phòng ngừa & chăm sóc</h3>
             <p>{selected.prevention}</p>
           </div>
-          <div className="detail-section sources-box">
+          <div className="detail-section sources-box" id="article-sources">
             <h3>
               <ShieldCheck size={18} />
               Nguồn tham khảo
@@ -619,7 +623,7 @@ export function App() {
               </a>
             )}
           </div>
-          <div className="detail-section">
+          <div className="detail-section" id="article-related">
             <h3>Bài viết liên quan</h3>
             <div className="related-topics">
               {all
@@ -647,6 +651,8 @@ export function App() {
               ? 'Đã được biên tập'
               : 'Tóm tắt từ tài liệu nguồn'}
           </small>
+            </article>
+          </div>
         </Modal>
       )}
       {authOpen && (
@@ -660,17 +666,20 @@ export function App() {
         />
       )}
       {toast && (
-        <div className="toast" role="status" aria-live="polite" aria-atomic="true">
-          <span className="toast-icon">
-            <Info size={26} />
+        <div className="toast toast-refined" role="status" aria-live="polite" aria-atomic="true">
+          <span className="toast-icon" aria-hidden="true">
+            {toast.startsWith('Đã đăng nhập.') ? <CircleCheck size={24} /> : <Info size={24} />}
           </span>
           <div className="toast-content">
-            <strong>Thông báo</strong>
-            <p>{toast}</p>
+            <strong>{toast.startsWith('Đã đăng nhập.') ? 'Đăng nhập thành công' : 'Thông báo'}</strong>
+            <p>{toast.replace(/^Đã đăng nhập\.\s*/, '')}</p>
           </div>
-          <span className="toast-countdown" aria-hidden="true" />
+          <div className="toast-footer" aria-hidden="true">
+            <small>Tự đóng sau 5 giây</small>
+            <span className="toast-progress-track"><span className="toast-countdown" /></span>
+          </div>
           <button aria-label="Đóng thông báo" onClick={() => setToast('')}>
-            <X size={15} />
+            <X size={18} />
           </button>
         </div>
       )}

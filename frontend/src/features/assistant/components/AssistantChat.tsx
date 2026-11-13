@@ -14,29 +14,49 @@ import {
 } from 'lucide-react';
 import { api } from '../../../shared/api/api';
 import type { Answer } from '../../../shared/types/documents';
+import { WebSources } from '../../../shared/components/WebSources';
 
-export type ImageChatContext = { observations: string; explanation: string; disease_ids: string[] };
+export type ImageChatContext = {
+  observations: string;
+  explanation: string;
+  disease_ids: string[];
+  external?: boolean;
+};
 export type ChatTurn = {
   role: 'user' | 'assistant';
   content: string;
   passages?: Answer['passages'];
+  external_sources?: Answer['external_sources'];
+  search_suggestions_html?: string;
 };
 
 // Render a small Markdown subset as React nodes; never interpret model output as HTML.
-function inline(text: string): ReactNode {
+function citation(part: string, key: number, sources: Answer['external_sources']): ReactNode {
+  const match = part.match(/^\[([^\]]+)\]\((https:\/\/[^\s)]+)\)$/);
+  const source =
+    match && sources?.find((s) => s.url.replace(/\(/g, '%28').replace(/\)/g, '%29') === match[2]);
+  return source ? (
+    <a key={key} href={source.url} target="_blank" rel="noopener noreferrer">
+      {match![1]}
+    </a>
+  ) : (
+    part
+  );
+}
+function inline(text: string, sources: Answer['external_sources']): ReactNode {
   return text
-    .split(/(\*\*[^*\n]+\*\*|`[^`\n]+`)/g)
+    .split(/(\*\*[^*\n]+\*\*|`[^`\n]+`|\[[^\]\n]+\]\(https:\/\/[^\s)]+\))/g)
     .map((part, i) =>
       part.startsWith('**') && part.endsWith('**') ? (
         <strong key={i}>{part.slice(2, -2)}</strong>
       ) : part.startsWith('`') && part.endsWith('`') ? (
         <code key={i}>{part.slice(1, -1)}</code>
       ) : (
-        part
+        citation(part, i, sources)
       ),
     );
 }
-function Reply({ text }: { text: string }) {
+export function Reply({ text, sources }: { text: string; sources?: Answer['external_sources'] }) {
   const lines = text.split('\n');
   const blocks: ReactNode[] = [];
   for (let i = 0; i < lines.length; ) {
@@ -60,14 +80,14 @@ function Reply({ text }: { text: string }) {
         </div>,
       );
     } else if (/^#{1,6}\s/.test(line)) {
-      blocks.push(<h3 key={i}>{inline(line.replace(/^#{1,6}\s+/, ''))}</h3>);
+      blocks.push(<h3 key={i}>{inline(line.replace(/^#{1,6}\s+/, ''), sources)}</h3>);
       i++;
     } else if (/^\s*(?:[-*+] |\d+[.)] )/.test(line)) {
       const ordered = /^\s*\d+[.)] /.test(line);
       const items: ReactNode[] = [];
       const pattern = ordered ? /^\s*\d+[.)] / : /^\s*[-*+] /;
       while (i < lines.length && pattern.test(lines[i])) {
-        items.push(<li key={i}>{inline(lines[i].replace(pattern, ''))}</li>);
+        items.push(<li key={i}>{inline(lines[i].replace(pattern, ''), sources)}</li>);
         i++;
       }
       blocks.push(ordered ? <ol key={i}>{items}</ol> : <ul key={i}>{items}</ul>);
@@ -85,7 +105,7 @@ function Reply({ text }: { text: string }) {
           {paragraph.map((p, j) => (
             <Fragment key={j}>
               {j > 0 && <br />}
-              {inline(p)}
+              {inline(p, sources)}
             </Fragment>
           ))}
         </p>,
@@ -109,6 +129,10 @@ export function AssistantChat({
   open: (id: string) => void;
 }) {
   const [input, setInput] = useState('');
+  const [allowExternal, setAllowExternal] = useState(false);
+  useEffect(() => {
+    setAllowExternal(Boolean(context?.external));
+  }, [context?.external]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
@@ -177,12 +201,21 @@ export function AssistantChat({
             .slice(-12)
             .map(({ role, content }) => ({ role, content: content.slice(0, 4000) })),
           image_context: context,
+          allow_external_ai: allowExternal,
         }),
       });
       if (controller.signal.aborted || request.current !== controller) return;
       setTurns([
         ...pending,
-        { role: 'assistant', content: answer.reply || answer.message, passages: answer.passages },
+        {
+          role: 'assistant',
+          content:
+            (answer.reply || answer.message) +
+            (answer.fallback?.message ? '\n\n' + answer.fallback.message : ''),
+          passages: answer.passages,
+          external_sources: answer.external_sources,
+          search_suggestions_html: answer.search_suggestions_html,
+        },
       ]);
       retry.current = null;
     } catch (e) {
@@ -260,7 +293,7 @@ export function AssistantChat({
             <h1>
               Hôm nay bạn muốn <span>tìm hiểu điều gì?</span>
             </h1>
-            <p>Cùng Derma giải đáp thắc mắc, khám phá sức khỏe và hiểu thêm mỗi ngày.</p>
+            <p>Tìm câu trả lời trong tài liệu sức khỏe, kèm nguồn để bạn đọc thêm.</p>
             <div className="assistant-suggestions">
               {(context
                 ? [
@@ -269,8 +302,8 @@ export function AssistantChat({
                   ]
                 : [
                     ['Tìm hiểu sức khỏe', 'Giải thích bệnh vảy nến bằng ngôn ngữ dễ hiểu'],
-                    ['Một thói quen tốt hơn', 'Giúp tôi xây dựng thói quen ngủ tốt hơn'],
-                    ['Học điều mới', 'Giải thích trí tuệ nhân tạo bằng một ví dụ đơn giản'],
+                    ['Nhận biết dấu hiệu', 'Hen phế quản có những triệu chứng nào?'],
+                    ['Chủ động phòng ngừa', 'Phòng ngừa đái tháo đường típ 2 như thế nào?'],
                   ]
               ).map(([title, prompt]) => (
                 <button key={title} onClick={() => void send(prompt)}>
@@ -293,7 +326,7 @@ export function AssistantChat({
               {turn.role === 'user' ? (
                 <p className="assistant-user-text">{turn.content}</p>
               ) : (
-                <Reply text={turn.content} />
+                <Reply text={turn.content} sources={turn.external_sources} />
               )}
               {!!turn.passages?.length && (
                 <div className="assistant-references">
@@ -316,6 +349,12 @@ export function AssistantChat({
                     ))}
                   </details>
                 </div>
+              )}
+              {turn.role === 'assistant' && (
+                <WebSources
+                  sources={turn.external_sources}
+                  suggestions={turn.search_suggestions_html}
+                />
               )}
               {turn.role === 'assistant' && (
                 <div className="assistant-actions">
@@ -359,6 +398,17 @@ export function AssistantChat({
         )}
       </div>
       <footer className="assistant-input-area">
+        <label className="external-ai-consent">
+          <input
+            type="checkbox"
+            checked={allowExternal}
+            onChange={(e) => setAllowExternal(e.target.checked)}
+          />
+          <span>
+            Dùng AI trực tuyến khi thư viện chưa có tài liệu. Câu hỏi, các lượt trao đổi gửi kèm và
+            ngữ cảnh ảnh sẽ được gửi tới nhà cung cấp AI đã cấu hình.
+          </span>
+        </label>
         <form
           className="assistant-input-box"
           onSubmit={(e) => {
@@ -369,7 +419,7 @@ export function AssistantChat({
           <textarea
             ref={textarea}
             aria-label="Tin nhắn cho trợ lý"
-            placeholder="Hỏi Derma bất cứ điều gì…"
+            placeholder="Hỏi về bệnh lý, dấu hiệu hoặc cách phòng ngừa…"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             maxLength={4000}
@@ -411,7 +461,9 @@ export function AssistantChat({
             AI có thể mắc lỗi. Hãy kiểm tra thông tin quan trọng; thông tin sức khỏe không thay thế
             việc khám bệnh.
           </span>
-          <small>Hội thoại chỉ giữ trong phiên này · Nội dung được gửi đến dịch vụ AI</small>
+          <small>
+            Hội thoại chỉ giữ trong phiên này · Nguồn thư viện và nguồn web được hiển thị riêng
+          </small>
         </div>
         {notice && (
           <p className="assistant-notice" role="status">

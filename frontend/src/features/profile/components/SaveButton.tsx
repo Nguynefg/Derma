@@ -14,13 +14,14 @@ export function SaveButton({
   user: User | null;
   auth: () => void;
   toast: (s: string) => void;
-  mode: 'keyword' | 'symptom';
+  mode: 'keyword' | 'symptom' | 'image';
   query: string;
-  items: Disease[];
+  items: Pick<Disease, 'id'>[];
 }) {
   const [busy, setBusy] = useState(false),
     [saved, setSaved] = useState(false);
-  useEffect(() => setSaved(false), [query, items]);
+  const resultKey = items.map((item) => item.id).join(',');
+  useEffect(() => setSaved(false), [query, resultKey, mode, user?.id]);
   const save = async () => {
     if (!user) {
       auth();
@@ -30,7 +31,7 @@ export function SaveButton({
     try {
       await api('/history', {
         method: 'POST',
-        body: JSON.stringify({ consent: true, mode, query, result_ids: items.map((d) => d.id) }),
+        body: JSON.stringify({ consent: true, mode, query: query.slice(0, 300), result_ids: Array.from(new Set(items.map((d) => d.id))).slice(0, 30) }),
       });
       setSaved(true);
       toast('Đã lưu vào lịch sử của bạn. Bạn có thể xóa bất cứ lúc nào.');

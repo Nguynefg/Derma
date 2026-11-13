@@ -23,6 +23,8 @@ CREATE TABLE tbldiseases (
 ;
 
 
+CREATE INDEX ix_tbldiseases_name ON tbldiseases (name);
+
 CREATE TABLE tbllibrary_updates (
 	update_id NVARCHAR(100) NOT NULL, 
 	applied_at DATETIMEOFFSET NOT NULL, 

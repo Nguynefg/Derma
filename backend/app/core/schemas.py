@@ -31,7 +31,7 @@ class SymptomSearch(BaseModel):
 
 class SaveHistory(BaseModel):
     consent: bool
-    mode: Literal["keyword", "symptom", "question"]
+    mode: Literal["keyword", "symptom", "question", "image"]
     query: str = Field(max_length=300)
     result_ids: list[str] = Field(max_length=30)
 
@@ -73,12 +73,14 @@ class ImageChatContext(BaseModel):
     observations: str = Field(default="", max_length=2000)
     explanation: str = Field(default="", max_length=3000)
     disease_ids: list[str] = Field(default_factory=list, max_length=3)
+    external: bool = False
 
 
 class ChatInput(BaseModel):
     question: str = Field(min_length=1, max_length=4000)
     history: list[ChatMessage] = Field(default_factory=list, max_length=12)
     image_context: ImageChatContext | None = None
+    allow_external_ai: bool = False
 
     @field_validator("question")
     @classmethod

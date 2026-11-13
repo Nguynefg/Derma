@@ -7,7 +7,17 @@ import csv
 import json
 from collections import Counter
 from pathlib import Path
-from scripts.import_export.sync_word_database import read_folder, ROOT
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def read_folder(folder):
+    try:
+        from scripts.import_export.sync_word_database import read_folder as read_word_folder
+    except ModuleNotFoundError as error:
+        if error.name != 'scripts.import_export.sync_word_database':
+            raise
+        raise SystemExit('Word audit requires the retired sync_word_database.py reader. Use the web editor for current content; no data was changed.') from None
+    return read_word_folder(folder)
 
 EMPTY={'','Thông tin tóm tắt đang được bổ sung.','Nội dung tổng quan đang được bổ sung.','Chưa bổ sung thông tin về yếu tố liên quan.','Chưa bổ sung thông tin về phòng ngừa và chăm sóc.'}
 FIELDS=['summary','details','risk_factors','prevention']

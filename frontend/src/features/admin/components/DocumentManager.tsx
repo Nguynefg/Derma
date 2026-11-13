@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown, Plus, X } from 'lucide-react';
 import { api } from '../../../shared/api/api';
 import type { Disease } from '../../../shared/types/index';
@@ -30,16 +30,34 @@ export function DocumentManager({
     { version: number; title: string; content: string; checksum: string }[]
   >([]);
   const [historyId, setHistoryId] = useState('');
-  const load = async () => {
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const requestId = useRef(0);
+  const pageSize = 10;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const currentPage = Math.min(page, totalPages);
+  const load = useCallback(async () => {
+    const id = ++requestId.current;
+    setLoading(true);
+    setError('');
     try {
-      setDocs(await api<Doc[]>('/admin/documents'));
+      const response = await api<{items: Doc[]; total: number}>(`/admin/documents-page?page=${page}&page_size=${pageSize}`);
+      if (id !== requestId.current) return;
+      setDocs(response.items);
+      setTotal(response.total);
+      const lastPage = Math.max(1, Math.ceil(response.total / pageSize));
+      if (page > lastPage) setPage(lastPage);
     } catch (e) {
-      setError((e as Error).message);
+      if (id === requestId.current) setError((e as Error).message);
+    } finally {
+      if (id === requestId.current) setLoading(false);
     }
-  };
+  }, [page]);
   useEffect(() => {
     void load();
-  }, []);
+    return () => { requestId.current += 1; };
+  }, [load]);
   const edit = (doc?: Doc) => {
     setError('');
     setHistoryId('');
@@ -202,7 +220,7 @@ export function DocumentManager({
               </tr>
             </thead>
             <tbody>
-              {docs.map((d) => (
+              {loading ? <tr><td colSpan={4}>Đang tải tài liệu…</td></tr> : error ? <tr><td colSpan={4}><button className="button secondary" onClick={() => void load()}>Thử lại</button></td></tr> : docs.length === 0 ? <tr><td colSpan={4}>Chưa có tài liệu.</td></tr> : docs.map((d) => (
                 <tr key={d.id}>
                   <td>
                     <strong>{d.title}</strong>
@@ -229,6 +247,13 @@ export function DocumentManager({
             </tbody>
           </table>
         </div>
+      )}
+      {!editing && total > pageSize && (
+        <nav className="pagination" aria-label="Phân trang kho tài liệu">
+          <button disabled={loading || currentPage === 1} onClick={() => setPage(currentPage - 1)}>Trước</button>
+          <span>Trang {currentPage} / {totalPages}</span>
+          <button disabled={loading || currentPage === totalPages} onClick={() => setPage(currentPage + 1)}>Sau</button>
+        </nav>
       )}
       {historyId && (
         <div className="panel document-versions">

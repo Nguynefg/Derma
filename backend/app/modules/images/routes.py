@@ -16,6 +16,7 @@ from app.modules.images.image_model import public_status, analyze_with_model
 from app.modules.images.image_catalog import catalog_coverage, match_model_result
 from app.modules.images.image_store import store_image, reference_result, image_path
 from app.modules.images.image_gemini import analyze_with_gemini
+from app.modules.assistant.external import external_answer
 from app.modules.images.vision_labels import ObservationContext, LABELS, SITES, photo_scope
 from app.database.models import Symptom
 from app.modules.library.specialties import supports_photo
@@ -98,6 +99,7 @@ def analyze_image(
     analysis_mode: Literal["ai", "reference", "gemini"] = Form("ai"),
     save_image: bool = Form(False),
     observations: str | None = Form(None),
+    allow_external_ai: bool = Form(False),
     db: Session = Depends(get_db),
 ):
     rate_limit(request, "image", 10)
@@ -126,6 +128,8 @@ def analyze_image(
         image, metadata, transparency = decode_image(file.file.read(5 * 1024 * 1024 + 1), region)
         quality = inspect_quality(image, transparency)
         if analysis_mode == "gemini":
+            if allow_external_ai is not True:
+                raise HTTPException(403, "Cần đồng ý gửi ảnh tới Gemini trước khi phân tích trực tuyến.")
             rate_limit(request, "image-gemini", 5)
             result = (
                 analyze_with_gemini(image, db, context)
@@ -144,6 +148,31 @@ def analyze_image(
                     "Chưa rõ: mô hình AI chưa sẵn sàng. Ảnh không được chẩn đoán bằng cách tìm ảnh trùng. Cần huấn luyện và cài mô hình trước khi nhận diện ảnh mới."
                 )
         result = match_model_result(result, db)
+        missing_article = result['status'] == 'catalog_mismatch' or (
+            result['status'] == 'group_result' and not result.get('related_articles')
+        )
+        uncertain = result['status'] == 'insufficient_confidence'
+        if analysis_mode == 'ai' and (missing_article or uncertain):
+            reason = 'insufficient_confidence' if uncertain else 'missing_article'
+            result['fallback'] = {'status': 'consent_required', 'reason': reason}
+            if allow_external_ai is True:
+                local = result
+                try:
+                    rate_limit(request, 'image-gemini', 5)
+                    external = external_answer(
+                        ('Tham khảo ảnh da và tìm nguồn đọc thêm. Mô hình cục bộ chưa đủ độ tin cậy; chưa thể kết luận thư viện có bài tương ứng hay không.'
+                         if uncertain else 'Tham khảo ảnh da và tìm nguồn đọc thêm; thư viện chưa có bài liên quan đến nhóm kết quả.'),
+                        image_context={'group': local.get('group'), 'local_status': local['status'],
+                                       'notice': 'Không có chẩn đoán được xác nhận. Không ép ảnh vào một bệnh.'},
+                        image=image,
+                    )
+                    result = {**local, 'external_result': external,
+                              'fallback': {'status': 'used' if external['status'] in {'external_result', 'external_observation'} else 'insufficient_evidence', 'reason': reason}}
+                except HTTPException as error:
+                    result = {**local, 'fallback': {'status': 'unavailable', 'reason': reason, 'message': str(error.detail),
+                                  'model': getattr(error, 'upstream_model', None),
+                                  'upstream_status': getattr(error, 'upstream_status', None),
+                                  'error_kind': getattr(error, 'error_kind', None)}}
         record = store_image(image, image_type, user, db) if user else None
         return {
             "file_valid": True,

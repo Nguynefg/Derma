@@ -1,0 +1,32 @@
+[
+  {
+    "key": "acne",
+    "prompt": "Generate one landscape 16:9 premium conceptual health-library card illustration. Soft sculpted-paper and gentle 3D editorial style, warm-white and pale lavender background, violet #7450b8 and muted coral accents. Clear central composition with safe crop margins. No text, numbers, labels, logos, watermark, collage or panel grid. Not a clinical photograph, not diagnostic evidence. A small clean anatomical skin cross-section with one enlarged hair follicle, visible sebaceous gland, trapped sebum plug and mild coral inflammation around the follicle. Friendly simple educational abstraction. No pus discharge, gore, bacteria or needles.",
+    "disease_id": 2,
+    "file": "exec-5ed19a79-353b-4ef2-9f5e-6f2c3a60fab9.png"
+  },
+  {
+    "key": "alopecia-areata",
+    "prompt": "Generate one landscape 16:9 premium conceptual health-library card illustration. Soft sculpted-paper and gentle 3D editorial style, warm-white and pale lavender background, violet #7450b8 and muted coral accents. Clear central composition with safe crop margins. No text, numbers, labels, logos, watermark, collage or panel grid. Not a clinical photograph, not diagnostic evidence. Dignified adult head viewed from behind and above, dark hair with one clearly defined smooth round patch without hair on the crown. Skin intact, no scarring, no redness or wounds. Soft abstract sculpted-paper portrait, not a patient photograph.",
+    "disease_id": 4,
+    "file": "exec-657449f0-bafb-46a4-a711-aab926492151.png"
+  },
+  {
+    "key": "psoriasis",
+    "prompt": "Generate one landscape 16:9 premium conceptual health-library card illustration. Soft sculpted-paper and gentle 3D editorial style, warm-white and pale lavender background, violet #7450b8 and muted coral accents. Clear central composition with safe crop margins. No text, numbers, labels, logos, watermark, collage or panel grid. Not a clinical photograph, not diagnostic evidence. A stylized bent elbow with one localized pink-red raised patch topped by delicate silvery-white scales. Soft clean educational representation, not a photograph or a wound. No blood, bacteria or treatment objects.",
+    "disease_id": 42,
+    "file": "exec-af04324b-7a08-4265-8301-79cbec9f7585.png"
+  },
+  {
+    "key": "vitiligo",
+    "prompt": "Generate one landscape 16:9 premium conceptual health-library card illustration. Soft sculpted-paper and gentle 3D editorial style, warm-white and pale lavender background, violet #7450b8 and muted coral accents. Clear central composition with safe crop margins. No text, numbers, labels, logos, watermark, collage or panel grid. Not a clinical photograph, not diagnostic evidence. A dignified stylized adult hand and forearm with natural medium-brown skin and several clearly bounded milky-white depigmented patches. Smooth intact skin, no flakes, redness or wounds. Elegant sculpted-paper abstraction, neutral non-stigmatizing presentation.",
+    "disease_id": 49,
+    "file": "exec-7fdc812c-64d2-4eea-9ef3-276e4acb4615.png"
+  },
+  {
+    "key": "allergic-rhinitis",
+    "prompt": "Generate one landscape 16:9 premium conceptual health-library card illustration. Soft sculpted-paper and gentle 3D editorial style, warm-white and pale lavender background, violet #7450b8 and muted coral accents. Clear central composition with safe crop margins. No text, numbers, labels, logos, watermark, collage or panel grid. Not a clinical photograph, not diagnostic evidence. A friendly clean side-profile head silhouette with simple nose and nasal passage, gently pink irritated nasal lining, a few pollen grains floating outside the nose, one folded tissue at lower corner. Soft conceptual educational anatomy, not a clinical diagram, no germs implying infection.",
+    "disease_id": 7142,
+    "file": "exec-f35c1d79-b428-4a99-ba35-03ad067d49ba.png"
+  }
+]

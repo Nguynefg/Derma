@@ -4,8 +4,13 @@ import os
 import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
+from dotenv import load_dotenv
+from app.core.paths import PROJECT_ROOT
+
+load_dotenv(PROJECT_ROOT / '.env', override=False)
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.exceptions import RequestValidationError
 from fastapi.staticfiles import StaticFiles
 from PIL import Image
 from app.database.connection import Base, engine
@@ -38,7 +43,7 @@ Image.MAX_IMAGE_PIXELS = 12_000_000
 
 @asynccontextmanager
 async def lifespan(_):
-    result = upgrade(engine, Path(__file__).resolve().parents[2] / 'storage/backups', apply=True)
+    result = upgrade(engine, PROJECT_ROOT / 'storage/backups', apply=True)
     logging.getLogger("uvicorn.error").info(
         "Database schema v2: %s; provider=%s; expected tables=%d",
         result["status"],
@@ -56,12 +61,12 @@ async def lifespan(_):
     seed_general()
     if engine.dialect.name == "mssql":
         merged_icd = merge_icd_tables(
-            engine, Path(__file__).resolve().parents[2] / 'storage/backups'
+            engine, PROJECT_ROOT / 'storage/backups'
         )
         if merged_icd["status"] == "merged":
             logging.getLogger("uvicorn.error").info("ICD consolidation: %s", merged_icd)
     pending_icd = (
-        process_pending_import(engine, Path(__file__).resolve().parents[2] / 'storage/imports/icd-import')
+        process_pending_import(engine, PROJECT_ROOT / 'storage/imports/icd-import')
         if engine.dialect.name == "mssql"
         else None
     )
@@ -82,6 +87,16 @@ app = FastAPI(
     lifespan=lifespan,
     default_response_class=PublicJSONResponse,
 )
+@app.exception_handler(RequestValidationError)
+async def invalid_request(_request, error):
+    # Never reflect password fields, patient text or validator context in errors.
+    return JSONResponse(status_code=422, content={"detail": [
+        {"loc": item.get("loc", []), "type": item.get("type", "validation_error"),
+         "msg": "Thông tin chưa hợp lệ. Vui lòng kiểm tra lại."}
+        for item in error.errors()
+    ]})
+
+
 app.add_middleware(BoundedBody)
 app.add_middleware(PublicCompression)
 app.middleware("http")(safeguards)
@@ -96,7 +111,7 @@ def health():
 
 # Serve the production React build from the same origin as the API.
 FRONTEND = Path(
-    os.getenv("FRONTEND_DIST", str(Path(__file__).resolve().parents[2] / "frontend" / "dist"))
+    os.getenv("FRONTEND_DIST", str(PROJECT_ROOT / "frontend" / "dist"))
 )
 if (FRONTEND / "assets").exists():
     app.mount("/assets", StaticFiles(directory=FRONTEND / "assets"), name="assets")

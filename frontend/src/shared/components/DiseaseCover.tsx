@@ -6,12 +6,13 @@ const normalize = (value: string) => value.trim().toLocaleLowerCase('en').replac
 const coverByName = new Map(
   covers.flatMap((cover) => cover.names.map((name) => [normalize(name), cover] as const)),
 );
-export function findDiseaseCover(englishName?: string) {
-  return englishName ? coverByName.get(normalize(englishName)) : undefined;
+export function findDiseaseCover(englishName?: string, name?: string) {
+  return (englishName ? coverByName.get(normalize(englishName)) : undefined)
+    ?? (name ? coverByName.get(normalize(name)) : undefined);
 }
 
 export function DiseaseCover({ name, englishName }: { name: string; englishName?: string }) {
-  const cover = findDiseaseCover(englishName);
+  const cover = findDiseaseCover(englishName, name);
   const [failedSource, setFailedSource] = useState('');
   if (!cover || failedSource === cover.src)
     return (
@@ -29,7 +30,7 @@ export function DiseaseCover({ name, englishName }: { name: string; englishName?
     <div className="disease-cover">
       <img
         src={cover.src}
-        alt={name}
+        alt={cover.src.startsWith('/assets/library/illustrations/') ? `${name} — minh họa` : name}
         loading="lazy"
         decoding="async"
         width={960}

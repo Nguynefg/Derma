@@ -1,0 +1,38 @@
+[
+  {
+    "disease_id": 1,
+    "key": "acanthosis-nigricans",
+    "prompt": "Create ONE landscape 16:9 conceptual medical editorial illustration for a health library. Premium sculpted-paper and soft 3D style, pale lavender/warm white background, violet #7450b8 accents and muted coral. Clean central subject with generous crop-safe margin. No text, labels, numbers, logo or watermark. Not a clinical photograph. No gore. Dignified adult rear neck and upper shoulders, medium skin tone, showing a localized darker brown thickened velvety patch in the neck fold. Skin intact, no dirt marks, no redness, no open lesions, no implication of poor hygiene.",
+    "file": "exec-3667488c-077a-42ea-ac1b-a61552f6cadd.png"
+  },
+  {
+    "disease_id": 10,
+    "key": "chickenpox",
+    "prompt": "Create ONE landscape 16:9 conceptual medical editorial illustration for a health library. Premium sculpted-paper and soft 3D style, pale lavender/warm white background, violet #7450b8 accents and muted coral. Clean central subject with generous crop-safe margin. No text, labels, numbers, logo or watermark. Not a clinical photograph. No gore. A friendly abstract adult upper torso and one arm, with a few small scattered pink spots and tiny clear fluid vesicles, some subtle crusted spots at differing stages. Non-graphic calm educational representation, no exposed chest detail, no virus characters.",
+    "file": "exec-72db220c-c0cd-431f-9697-c27965fac3f2.png"
+  },
+  {
+    "disease_id": 13,
+    "key": "contact-dermatitis",
+    "prompt": "Create ONE landscape 16:9 conceptual medical editorial illustration for a health library. Premium sculpted-paper and soft 3D style, pale lavender/warm white background, violet #7450b8 accents and muted coral. Clean central subject with generous crop-safe margin. No text, labels, numbers, logo or watermark. Not a clinical photograph. No gore. A stylized adult hand and wrist with a localized red irritated patch where a wristwatch strap touches skin; the unbranded simple watch lies beside the wrist. Clearly a contact-trigger concept, skin intact, no severe wound or infection.",
+    "file": "exec-f915a63f-9d3b-435a-a24d-196acd8c817f.png"
+  },
+  {
+    "disease_id": 15,
+    "key": "dandruff",
+    "prompt": "Create ONE landscape 16:9 conceptual medical editorial illustration for a health library. Premium sculpted-paper and soft 3D style, pale lavender/warm white background, violet #7450b8 accents and muted coral. Clean central subject with generous crop-safe margin. No text, labels, numbers, logo or watermark. Not a clinical photograph. No gore. A close conceptual view of dark scalp hair parted gently, with small loose white flakes on the scalp and hair, a simple dark shoulder surface catching a few flakes. No lice, no insects, no open sores. Elegant clean sculpted-paper composition.",
+    "file": "exec-090585e5-b7e9-4ec8-93ef-254a48cb7cf2.png"
+  },
+  {
+    "disease_id": 27,
+    "key": "hives",
+    "prompt": "Create ONE landscape 16:9 conceptual medical editorial illustration for a health library. Premium sculpted-paper and soft 3D style, pale lavender/warm white background, violet #7450b8 accents and muted coral. Clean central subject with generous crop-safe margin. No text, labels, numbers, logo or watermark. Not a clinical photograph. No gore. A stylized forearm with several smooth raised pink wheals, rounded and irregular, some with paler centers. No scales, no pustules, no open wounds, no marks implying infection. Neutral dignified conceptual skin illustration.",
+    "file": "exec-d8ba7b87-8845-42da-bae5-0be07a900d1f.png"
+  },
+  {
+    "disease_id": 30,
+    "key": "ingrown-toenail",
+    "prompt": "Create ONE landscape 16:9 conceptual medical editorial illustration for a health library. Premium sculpted-paper and soft 3D style, pale lavender/warm white background, violet #7450b8 accents and muted coral. Clean central subject with generous crop-safe margin. No text, labels, numbers, logo or watermark. Not a clinical photograph. No gore. Clean conceptual close-up of an adult big toe with a normal pale nail whose lateral edge presses into one gently pink swollen nail fold. No pus, no blood, no surgical tools, no fungus or severe damage. Simple accurate recognizable toe, soft sculpted-paper anatomy.",
+    "file": "exec-78447338-dbe1-4e78-aaae-ed8417978e67.png"
+  }
+]

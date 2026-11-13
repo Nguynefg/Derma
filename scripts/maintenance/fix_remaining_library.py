@@ -17,7 +17,15 @@ from sqlalchemy import select, update, delete, inspect
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'backend'))
 from app.database.models import Disease,MedicalDocument,DocumentVersion,Bookmark,DiseaseSymptom,Reference,ImageRecord,LibraryUpdate,now
-from scripts.maintenance.delete_non_disease_entries import TABLES,batches
+TABLES = [model.__table__ for model in (
+    Disease, MedicalDocument, DocumentVersion, Reference, Bookmark, DiseaseSymptom, ImageRecord
+)]
+
+
+def batches(values, size=500):
+    values = list(values)
+    for offset in range(0, len(values), size):
+        yield values[offset:offset + size]
 
 SNAPSHOT=ROOT/'storage/exports/database-word/20261020T235915095684Z/tbldiseases.jsonl'
 EMPTY={'','Thông tin tóm tắt đang được bổ sung.','Nội dung tổng quan đang được bổ sung.','Chưa bổ sung thông tin về yếu tố liên quan.','Chưa bổ sung thông tin về phòng ngừa và chăm sóc.'}

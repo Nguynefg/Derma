@@ -63,12 +63,17 @@ def symptom_search(body: SymptomSearch, db: Session = Depends(get_db)):
         raise HTTPException(422, "Hãy chọn ít nhất một triệu chứng đang có.")
     result = []
     links = article_icd_links(db)
-    for row in db.scalars(select(Disease).where(Disease.published == True)):
-        if body.specialty and specialty_for(row.category) != body.specialty:
-            continue
-        linked = set(
-            db.scalars(select(DiseaseSymptom.symptom_id).where(DiseaseSymptom.disease_id == row.id))
-        )
+    matching_ids = select(DiseaseSymptom.disease_id).where(
+        DiseaseSymptom.symptom_id.in_(present)
+    )
+    rows = list(db.scalars(select(Disease).where(
+        Disease.published == True, Disease.id.in_(matching_ids)
+    )))
+    if body.specialty:
+        rows = [row for row in rows if specialty_for(row.category) == body.specialty]
+    preload_disease_relations(db, rows)
+    for row in rows:
+        linked = {symptom.id for symptom in row._catalog_symptoms}
         matched = sorted(linked & present)
         if matched:
             result.append(

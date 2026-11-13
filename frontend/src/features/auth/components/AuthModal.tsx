@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowRight, LockKeyhole, Sparkles } from 'lucide-react';
+import React, { useEffect, useId, useRef, useState } from 'react';
+import { ArrowRight, Eye, EyeOff, LockKeyhole, Sparkles } from 'lucide-react';
 import { api, setCsrf } from '../../../shared/api/api';
 import type { User } from '../../../shared/types/index';
 import { Modal } from '../../../shared/components/Modal';
@@ -11,12 +11,18 @@ export function AuthModal({
   onClose: () => void;
   onSuccess: (u: User) => void;
 }) {
+  const id = useId();
+  const errorRef = useRef<HTMLDivElement>(null);
+  const [showPassword, setShowPassword] = useState(false);
   const [register, setRegister] = useState(false),
     [email, setEmail] = useState(''),
     [password, setPassword] = useState(''),
     [name, setName] = useState(''),
     [busy, setBusy] = useState(false),
     [error, setError] = useState('');
+  useEffect(() => {
+    if (error) errorRef.current?.focus();
+  }, [error]);
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (
@@ -60,6 +66,18 @@ export function AuthModal({
         Đăng nhập để lưu những điều bạn muốn tìm hiểu. Lịch sử luôn do bạn lựa chọn.
       </p>
       <form onSubmit={submit} className="auth-form">
+        {error && (
+          <div
+            className="form-error-summary"
+            role="alert"
+            tabIndex={-1}
+            ref={errorRef}
+            id={id + '-error'}
+          >
+            <strong>{register ? 'Chưa thể tạo tài khoản' : 'Chưa thể đăng nhập'}</strong>
+            <p>{error}</p>
+          </div>
+        )}
         {register && (
           <label>
             Tên của bạn
@@ -86,23 +104,37 @@ export function AuthModal({
         </label>
         <label>
           Mật khẩu
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            minLength={6}
-            maxLength={128}
-            autoComplete={register ? 'new-password' : 'current-password'}
-          />
-          {register && <small>Từ 6–128 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.</small>}
+          <span className="password-control">
+            <input
+              type={showPassword ? 'text' : 'password'}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              minLength={6}
+              maxLength={128}
+              autoComplete={register ? 'new-password' : 'current-password'}
+              aria-describedby={register ? id + '-password-hint' : undefined}
+            />
+            <button
+              type="button"
+              aria-label={showPassword ? 'Ẩn mật khẩu' : 'Hiện mật khẩu'}
+              aria-pressed={showPassword}
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? (
+                <EyeOff size={18} aria-hidden="true" />
+              ) : (
+                <Eye size={18} aria-hidden="true" />
+              )}
+            </button>
+          </span>
+          {register && (
+            <small id={id + '-password-hint'}>
+              Từ 6–128 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.
+            </small>
+          )}
         </label>
-        {error && (
-          <p className="error-text" role="alert">
-            {error}
-          </p>
-        )}
-        <button className="button primary full" disabled={busy}>
+        <button className="button primary full" disabled={busy} aria-busy={busy}>
           {busy ? 'Đang xử lý…' : register ? 'Tạo tài khoản' : 'Đăng nhập'}
           <ArrowRight size={17} />
         </button>
@@ -112,6 +144,7 @@ export function AuthModal({
         onClick={() => {
           setRegister(!register);
           setError('');
+          setShowPassword(false);
         }}
       >
         {register ? 'Đã có tài khoản? Đăng nhập' : 'Chưa có tài khoản? Đăng ký'}

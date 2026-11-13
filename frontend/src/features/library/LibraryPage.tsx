@@ -1,12 +1,13 @@
 import { DiseaseCover } from '../../shared/components/DiseaseCover';
 import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, LoaderCircle, Search } from 'lucide-react';
+import { ArrowLeft, ArrowRight, LoaderCircle, Search, LayoutGrid, List, SlidersHorizontal } from 'lucide-react';
 import { api } from '../../shared/api/api';
 import { libraryPresentation } from '../../shared/utils/libraryPresentation';
 import { libraryArtwork } from '../../shared/utils/libraryArtwork';
 import type { Disease, User } from '../../shared/types/index';
 import { Heading } from '../../shared/components/Heading';
 import { ICDDetailModal } from './components/ICDCatalog';
+import { SaveButton } from '../profile/components/SaveButton';
 
 type Entry = {
   id: string;
@@ -21,10 +22,15 @@ type Entry = {
 type Results = { items: Entry[]; total: number; article_count: number; icd_count: number };
 export function LibraryPage({
   initialQuery,
+  initialSpecialty = '',
   all,
   open,
+  user,
+  auth,
+  toast,
 }: {
   initialQuery: string;
+  initialSpecialty?: string;
   all: Disease[];
   open: (d: Disease) => void;
   user: User | null;
@@ -33,10 +39,11 @@ export function LibraryPage({
 }) {
   const [q, setQ] = useState(initialQuery),
     [submitted, setSubmitted] = useState(initialQuery);
-  const [specialty, setSpecialty] = useState(''),
+  const [specialty, setSpecialty] = useState(initialSpecialty),
     [category, setCategory] = useState(''),
     [symptom, setSymptom] = useState(''),
     [sort, setSort] = useState('name');
+  const [view, setView] = useState<'cards' | 'list'>('cards');
   const [page, setPage] = useState(1),
     [retry, setRetry] = useState(0),
     [busy, setBusy] = useState(true),
@@ -50,6 +57,13 @@ export function LibraryPage({
   const [chapters, setChapters] = useState<{ code: string; title: string }[]>([]);
   const [selectedIcd, setSelectedIcd] = useState<string | null>(null);
   const resultRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setSubmitted(q.trim());
+      setPage(1);
+    }, 350);
+    return () => window.clearTimeout(timer);
+  }, [q]);
   const chapter = category.startsWith('chapter:')
     ? category.slice('chapter:'.length)
     : symptom === 'chapter:21'
@@ -130,10 +144,10 @@ export function LibraryPage({
   };
   const pages = Math.max(1, Math.ceil(data.total / 12));
   return (
-    <>
+    <section className="catalog-library">
       <Heading
         eyebrow="THƯ VIỆN SỨC KHỎE"
-        title="Khám phá thư viện."
+        title="Thư viện bệnh lý"
         description="Thông tin sức khỏe, được trình bày rõ ràng. Tra cứu theo tên, chuyên khoa hoặc dấu hiệu bạn quan tâm."
       />
       <form
@@ -157,11 +171,17 @@ export function LibraryPage({
           Tìm kiếm <ArrowRight size={16} />
         </button>
       </form>
+      <div className="catalog-layout">
+      <aside className="catalog-filters" aria-label="Bộ lọc thư viện">
+      <details open>
+        <summary><SlidersHorizontal size={17} /> Bộ lọc thư viện</summary>
+        <p className="catalog-filter-caption">CHUYÊN KHOA</p>
       <div className="filter-row">
         {['', ...specialties].map((s) => (
           <button
             key={s}
             className={'filter-chip ' + (specialty === s ? 'selected' : '')}
+            aria-pressed={specialty === s}
             onClick={() => {
               setSpecialty(s);
               setCategory('');
@@ -241,7 +261,16 @@ export function LibraryPage({
           Xóa bộ lọc
         </button>
       </div>
-      <div className="results-heading library-result-heading" ref={resultRef}>
+      </details>
+      </aside>
+      <section className="catalog-results" aria-label="Nội dung thư viện">
+      <div
+        className="results-heading library-result-heading"
+        ref={resultRef}
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      >
         <p>
           {busy ? (
             'Đang tìm…'
@@ -259,7 +288,16 @@ export function LibraryPage({
             </>
           )}
         </p>
+        <div className="catalog-view-switch" role="group" aria-label="Cách hiển thị thư viện">
+          <button aria-label="Hiển thị dạng thẻ" aria-pressed={view === 'cards'} onClick={() => setView('cards')}><LayoutGrid size={18} /></button>
+          <button aria-label="Hiển thị dạng danh sách" aria-pressed={view === 'list'} onClick={() => setView('list')}><List size={18} /></button>
+        </div>
       </div>
+      {!busy && !error && data.items.length > 0 && (
+        <SaveButton user={user} auth={auth} toast={toast} mode="keyword"
+          query={[submitted, specialty, category, symptom].filter(Boolean).join(' · ')}
+          items={data.items.filter((item) => item.type === 'article').map((item) => ({ id: item.id }))} />
+      )}
       {error ? (
         <div className="inline-note error">
           {error}
@@ -274,7 +312,7 @@ export function LibraryPage({
         </div>
       ) : data.items.length ? (
         <>
-          <div className="unified-library-grid">
+          <div className={"unified-library-grid catalog-view-" + view}>
             {data.items.map((d) => {
               const presentation = libraryPresentation(d);
               const artwork = libraryArtwork(d, presentation.category);
@@ -284,12 +322,17 @@ export function LibraryPage({
                   key={d.id}
                   aria-labelledby={`library-title-${d.id}`}
                 >
-                  <DiseaseCover name={d.title} englishName={d.article?.english_name || d.icd?.original_title} />
+                  <DiseaseCover
+                    name={d.title}
+                    englishName={d.article?.english_name || d.icd?.original_title}
+                  />
                   <div className="library-card-body">
                     <span className="library-card-group" title={artwork.groupTitle}>
                       {presentation.supplemental ? presentation.label : artwork.label}
                     </span>
-                    {presentation.scientificName && <small className="muted">Tên theo danh pháp quốc tế</small>}
+                    {presentation.scientificName && (
+                      <small className="muted">Tên theo danh pháp quốc tế</small>
+                    )}
                     <button
                       className={`unified-card-title${d.title.split(/\s+/).some((word) => word.length > 32) ? ' library-card-long-title' : ''}`}
                       id={`library-title-${d.id}`}
@@ -344,7 +387,9 @@ export function LibraryPage({
           </button>
         </div>
       )}
+      </section>
+      </div>
       {selectedIcd && <ICDDetailModal id={selectedIcd} onClose={() => setSelectedIcd(null)} />}
-    </>
+    </section>
   );
 }

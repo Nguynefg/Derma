@@ -21,13 +21,22 @@ def article_icd_links(db):
             by_name[article.english_name.strip().lower()].append(article.id)
     if not by_name:
         return {}
-    candidates = db.scalars(
-        select(Disease).options(load_only(Disease.id, Disease.aliases, Disease.details)).where(
-            Disease.review_status == "icd_classification",
-            or_(func.lower(Disease.english_name).in_([n[:120] for n in by_name]),
-                func.lower(Disease.summary).in_(list(by_name))),
-        )
-    ).all()
+    # A large library exceeds SQL Server's parameter budget if every name is
+    # placed into both IN clauses at once. Deduplicate rows across batches:
+    # different full names can share the same truncated English title.
+    names = list(by_name)
+    candidates_by_id = {}
+    for offset in range(0, len(names), 500):
+        batch = names[offset:offset + 500]
+        for row in db.scalars(
+            select(Disease).options(load_only(Disease.id, Disease.aliases, Disease.details)).where(
+                Disease.review_status == "icd_classification",
+                or_(func.lower(Disease.english_name).in_(list(dict.fromkeys(n[:120] for n in batch))),
+                    func.lower(Disease.summary).in_(batch)),
+            )
+        ):
+            candidates_by_id[row.id] = row
+    candidates = list(candidates_by_id.values())
     matches = defaultdict(list)
     retained = [a for a in articles if any(alias.startswith('merged-id:') for alias in (a.aliases or []))]
     preload_sources(db, retained)

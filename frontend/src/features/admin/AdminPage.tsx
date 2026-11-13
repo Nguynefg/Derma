@@ -5,7 +5,6 @@ import { api } from '../../shared/api/api';
 import type { Disease, Symptom, User } from '../../shared/types/index';
 import { formatDate } from '../../shared/utils/date';
 import { Modal } from '../../shared/components/Modal';
-import { Heading } from '../../shared/components/Heading';
 import { ImageModelSummary } from '../images/components/ImageModelSummary';
 import { DocumentManager } from './components/DocumentManager';
 import { ImageArchive } from '../images/components/ImageArchive';
@@ -72,7 +71,7 @@ export function AdminPage({
     total_all: 0,
     categories: [],
   });
-  const pageSize = 25;
+  const pageSize = 10;
   const [items, setItems] = useState<Disease[]>([]),
     [stats, setStats] = useState<Record<string, number>>({}),
     [error, setError] = useState(''),
@@ -225,11 +224,7 @@ export function AdminPage({
   );
   return (
     <>
-      <Heading
-        eyebrow="QUẢN TRỊ"
-        title="Chăm chút từng thông tin."
-        description="Quản lý bài viết, nguồn tham khảo và theo dõi thay đổi."
-      />
+      <header className="admin-compact-heading"><h1>Quản lý nội dung</h1></header>
       {user?.role !== 'admin' ? (
         <div className="empty">
           <LockKeyhole size={35} />
@@ -248,7 +243,7 @@ export function AdminPage({
       ) : (
         <>
           {error && !editing && <div className="inline-note error">{error}</div>}
-          <div className="stats-grid">
+          <div className="stats-grid admin-compact-stats">
             {[
               ['articles', 'Nội dung thư viện'],
               ['users', 'Tài khoản'],

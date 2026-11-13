@@ -1,17 +1,19 @@
 """Knowledge HTTP endpoints."""
 
 import re
-from fastapi import APIRouter, Depends, Request
+from fastapi import APIRouter, Depends, Request, HTTPException
 from app.modules.library.identifiers import find_record
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from app.database.connection import get_db, Disease, DiseaseSymptom, MedicalDocument, Symptom
+from app.database.models import DocumentVersion
 from app.core.security import rate_limit
 from app.modules.library.documents import serialize_document
 from app.modules.assistant.knowledge import extract_symptoms, retrieve
 from app.core.schemas import QuestionInput, ChatInput
 from app.modules.library.catalog import normalize
 from app.modules.assistant.chat import generate_answer
+from app.modules.assistant.external import external_answer
 from app.modules.library.specialties import supports_photo
 
 router = APIRouter()
@@ -73,7 +75,7 @@ def chat_question(body: ChatInput, request: Request, db: Session = Depends(get_d
             r"\b(?:benh|suc khoe|trieu chung|bac si|dau|sot|thuoc|chan doan|dieu tri|"
             r"dinh duong|y te|phong ngua|kham|ket qua anh)\b", normalize(body.question)
         ))
-        if body.image_context and followup_message(body.question) and not current and not image_topics:
+        if body.image_context and followup_message(body.question) and not current and not image_topics and not body.allow_external_ai:
             return {"status": "insufficient_evidence", "passages": [],
                     "method": "image-context-unavailable",
                     "message": "Kết quả ảnh chưa có chủ đề bệnh lý được xác nhận trong thư viện.",
@@ -87,7 +89,15 @@ def chat_question(body: ChatInput, request: Request, db: Session = Depends(get_d
             if evidence["passages"]:
                 result.update(status="supported", message="Có bài viết tham khảo trong thư viện.")
     result["reply"] = generate_answer(body.question, result["passages"], history, image_context)
-    result["method"] = "gemini-library-grounded" if result["passages"] else "gemini-conversation"
+    result["method"] = "bm25-extractive-v1"
+    if not social and not result["passages"]:
+        result.update(status="insufficient_evidence", message="Chưa tìm thấy tài liệu phù hợp trong thư viện.")
+        if body.allow_external_ai:
+            try:
+                rate_limit(request, 'chat-gemini', 5)
+                return external_answer(body.question, history, image_context)
+            except HTTPException as error:
+                result['fallback'] = {'status': 'unavailable', 'message': str(error.detail)}
     return result
 
 
@@ -121,37 +131,44 @@ def retrieve_answer(body, request, db, *, focus_ids=None, allow_personal=False):
             "message": "Câu hỏi yêu cầu kết luận hoặc điều trị cá nhân nằm ngoài phạm vi thư viện. Bạn có thể hỏi thông tin tổng quan về một chủ đề.",
         }
     query = (
-        select(MedicalDocument)
-        .join(Disease)
+        select(MedicalDocument, DocumentVersion, Disease)
+        .join(Disease, Disease.id == MedicalDocument.disease_id)
+        .join(DocumentVersion, (DocumentVersion.document_id == MedicalDocument.id)
+              & (DocumentVersion.version == MedicalDocument.version))
         .where(MedicalDocument.published == True, Disease.published == True)
     )
     if focus_ids:
         query = query.where(Disease.id.in_(focus_ids))
-    docs = db.scalars(query).all()
-    corpus = []
-    for doc in docs:
-        value = serialize_document(doc, db, True)
-        disease = find_record(db, Disease, doc.disease_id)
-        symptom_ids = list(
-            db.scalars(
-                select(Symptom.slug)
-                .join(DiseaseSymptom, DiseaseSymptom.symptom_id == Symptom.id)
-                .where(DiseaseSymptom.disease_id == doc.disease_id)
-            )
+    docs = db.execute(query).all()
+    eligible = select(MedicalDocument.disease_id).where(
+        MedicalDocument.published == True, MedicalDocument.disease_id.in_(
+            select(Disease.id).where(Disease.published == True)
         )
+    )
+    if focus_ids:
+        eligible = eligible.where(MedicalDocument.disease_id.in_(focus_ids))
+    symptoms_by_disease = {}
+    for disease_id, slug in db.execute(
+        select(DiseaseSymptom.disease_id, Symptom.slug)
+        .join(Symptom, Symptom.id == DiseaseSymptom.symptom_id)
+        .where(DiseaseSymptom.disease_id.in_(eligible))
+    ):
+        symptoms_by_disease.setdefault(disease_id, []).append(slug)
+    corpus = []
+    for doc, version, disease in docs:
         corpus.append(
             {
                 "document_id": doc.id,
                 "document_version": doc.version,
                 "title": doc.title,
-                "content": value["content"],
-                "checksum": value["checksum"],
+                "content": version.content,
+                "checksum": version.checksum,
                 "publisher": doc.publisher,
                 "source_url": doc.source_url,
                 "usage_note": doc.usage_note,
                 "disease_id": doc.disease_id,
                 "disease_name": disease.name,
-                "symptom_ids": symptom_ids,
+                "symptom_ids": symptoms_by_disease.get(disease.id, []),
             }
         )
     found = retrieve(body.question, corpus)

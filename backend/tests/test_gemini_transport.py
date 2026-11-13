@@ -97,3 +97,31 @@ def test_timeout_retried_with_delay(monkeypatch):
     assert gemini.generate("test", [{"text": "test"}]) == "ok"
     assert len(calls) == 2
     assert delays == [1]
+
+
+def test_quota_error_keeps_model_without_leaking_raw_payload(monkeypatch):
+    monkeypatch.setenv('GEMINI_API_KEY', 'test-only')
+    monkeypatch.setenv('GEMINI_CHAT_MODEL', 'gemini-3.8-flash')
+    def fail(*args, **kwargs):
+        raise HTTPError('https://example.test', 429, 'quota', {}, io.BytesIO(json.dumps({
+            'error': {'message': 'private test-only', 'details': [
+                {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}).encode()))
+    monkeypatch.setattr(gemini, 'urlopen', fail)
+    with pytest.raises(HTTPException) as caught:
+        gemini.generate('test', [{'text': 'test'}])
+    assert caught.value.upstream_status == 429
+    assert caught.value.upstream_model == 'gemini-3.8-flash'
+    assert caught.value.retry_after_seconds == 12
+    assert 'private' not in caught.value.detail and 'test-only' not in caught.value.detail
+
+
+def test_timeout_has_separate_error_kind_without_claiming_quota(monkeypatch):
+    monkeypatch.setenv('GEMINI_API_KEY', 'test-only')
+    monkeypatch.setattr(gemini.time, 'sleep', lambda *_: None)
+    def fail(*args, **kwargs):
+        raise TimeoutError()
+    monkeypatch.setattr(gemini, 'urlopen', fail)
+    with pytest.raises(HTTPException) as caught:
+        gemini.generate('test', [{'text': 'test'}])
+    assert caught.value.error_kind == 'timeout'
+    assert not hasattr(caught.value, 'upstream_status')

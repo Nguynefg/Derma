@@ -523,6 +523,7 @@ def test_image_context_validation_and_forwarding(client, monkeypatch):
         files={"file": ("test.png", content.getvalue(), "image/png")},
         data={
             "analysis_mode": "gemini",
+            "allow_external_ai": "true",
             "observations": '{"site":"nails","label_ids":["nail-separation"]}',
         },
     )
@@ -673,6 +674,19 @@ def test_symptom_match_and_unknown_presence(client):
         client.post("/api/v1/search/symptoms", json={"symptoms": [{"id": "made-up"}]}).status_code
         == 422
     )
+
+
+def test_image_history_requires_consent_and_persists_without_article(client):
+    _, headers = register(client)
+    body = {"consent": False, "mode": "image", "query": "Phân tích ảnh: vùng da cần theo dõi", "result_ids": []}
+    assert client.post("/api/v1/history", json=body, headers=headers).status_code == 422
+    body["consent"] = True
+    response = client.post("/api/v1/history", json=body, headers=headers)
+    assert response.status_code == 201, response.text
+    saved = next(item for item in client.get("/api/v1/history").json() if item["id"] == response.json()["id"])
+    assert saved["mode"] == "image"
+    assert saved["query"] == body["query"]
+    assert saved["results"] == []
 
 
 def test_no_implicit_history_and_consent(client):
@@ -858,6 +872,27 @@ def test_answers_are_grounded_and_do_not_save_history(client):
         ).json()["status"]
         == "out_of_scope"
     )
+
+
+def test_admin_document_pages_are_bounded_private_and_stable(client):
+    assert client.get("/api/v1/admin/documents-page").status_code == 401
+    data, _ = register(client)
+    assert client.get("/api/v1/admin/documents-page").status_code == 403
+    with SessionLocal() as db:
+        db.get(User, data["user"]["id"]).role = "admin"
+        db.commit()
+    first = client.get("/api/v1/admin/documents-page?page=1&page_size=10")
+    assert first.status_code == 200
+    body = first.json()
+    assert len(body["items"]) <= 10
+    assert body["page_size"] == 10
+    second = client.get("/api/v1/admin/documents-page?page=2&page_size=10").json()
+    assert not ({item["id"] for item in body["items"]} & {item["id"] for item in second["items"]})
+    all_documents = client.get("/api/v1/admin/documents").json()
+    assert body["total"] == len(all_documents)
+    assert [item["id"] for item in body["items"]] == [item["id"] for item in all_documents[:10]]
+    assert client.get("/api/v1/admin/documents-page?page=0").status_code == 422
+    assert client.get("/api/v1/admin/documents-page?page_size=101").status_code == 422
 
 
 def test_documents_admin_versioning_visibility_and_concurrency(client):
@@ -1106,7 +1141,7 @@ def test_image_result_links_real_catalog_and_rejects_unknown_labels(client, monk
     monkeypatch.setattr(images, "analyze_with_model", lambda *args: response("does-not-exist"))
     data = analyze().json()
     assert data["status"] == "catalog_mismatch"
-    assert data["database_match"]["status"] == "not_evaluated"
+    assert data["database_match"]["status"] == "missing_article"
     assert "candidates" not in data
     monkeypatch.setattr(
         images,
@@ -1396,3 +1431,24 @@ def test_admin_unified_library_pagination_and_versioned_import_edit(client):
             db.execute(delete(MedicalDocument).where(MedicalDocument.disease_id.in_(ids)))
             db.execute(delete(Disease).where(Disease.id.in_(ids)))
             db.commit()
+
+
+def test_validation_errors_never_echo_credentials(client):
+    secret = 'Sensitive-test-password-' * 10
+    response = client.post('/api/v1/auth/login', json={'email': 'invalid', 'password': secret})
+    assert response.status_code == 422
+    assert secret not in response.text
+    assert all('input' not in error and 'ctx' not in error for error in response.json()['detail'])
+
+
+def test_direct_gemini_upload_requires_explicit_consent(client, monkeypatch):
+    import app.modules.images.routes as images
+    def forbidden(*args, **kwargs):
+        pytest.fail('Image must not leave the server without consent')
+    monkeypatch.setattr(images, 'analyze_with_gemini', forbidden)
+    content = io.BytesIO()
+    Image.new('RGB', (300, 300)).save(content, format='PNG')
+    response = client.post('/api/v1/images/analyze',
+        files={'file': ('test.png', content.getvalue(), 'image/png')},
+        data={'analysis_mode': 'gemini'})
+    assert response.status_code == 403

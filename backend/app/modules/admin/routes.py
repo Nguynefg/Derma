@@ -247,6 +247,32 @@ def apply_edit(row, body, db, admin, action):
         now().date().isoformat(),
     )
     db.add(ref)
+    # Keep an immutable snapshot for ordinary articles too. This document is
+    # private: JSON revision snapshots must not enter the public retrieval corpus.
+    import hashlib
+    import json
+
+    revision = db.scalar(select(MedicalDocument).where(
+        MedicalDocument.slug == f"article-revision-{row.id}"
+    ))
+    if revision is None:
+        revision = MedicalDocument(slug=f"article-revision-{row.id}", disease_id=row.id)
+        db.add(revision)
+    revision.title = row.name
+    revision.publisher = "Ban biên tập thư viện"
+    revision.source_url = body.source_url
+    revision.usage_note = "Lịch sử biên tập bài viết"
+    revision.published = False
+    revision.version = row.version
+    revision.updated_at = row.updated_at
+    db.flush()
+    content = json.dumps(body.model_dump(), ensure_ascii=False, sort_keys=True)
+    db.add(DocumentVersion(
+        document_id=revision.id, version=row.version, title=revision.title,
+        publisher=revision.publisher, source_url=revision.source_url,
+        usage_note=revision.usage_note, content=content,
+        checksum=hashlib.sha256(content.encode()).hexdigest(), editor_id=admin.id,
+    ))
     db.add(
         AuditLog(
             actor_id=admin.id,
@@ -313,6 +339,22 @@ def admin_documents(db: Session = Depends(get_db), admin: User = Depends(get_adm
             .order_by(MedicalDocument.title)
         )
     ]
+
+
+@router.get("/api/v1/admin/documents-page")
+def admin_documents_page(
+    page: int = Query(1, ge=1),
+    page_size: int = Query(10, ge=1, le=100),
+    db: Session = Depends(get_db),
+    admin: User = Depends(get_admin),
+):
+    visible = (~MedicalDocument.slug.startswith(PREFIX), ~MedicalDocument.slug.startswith(SOURCE_PREFIX))
+    total = db.scalar(select(func.count()).select_from(MedicalDocument).where(*visible)) or 0
+    documents = db.scalars(select(MedicalDocument).where(*visible)
+                           .order_by(MedicalDocument.title, MedicalDocument.id)
+                           .offset((page - 1) * page_size).limit(page_size))
+    return {"items": [serialize_document(doc, db, True) for doc in documents],
+            "total": total, "page": page, "page_size": page_size}
 
 
 @router.get("/api/v1/admin/documents/{document_id}/versions")
